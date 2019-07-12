@@ -1,0 +1,17 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:58:04 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+60LOGRE-SE4ESTRU,FECHA,HORA,ID-ESTRU,USUAYN                0DEFAULT   00000000000YNN   N
+71LOGRE-SE4         9C829619C68C2342AE24C3D815D4682E
+30LOGRE-SE4         LOGRE             OVER              C
+30ESTRU             LOGRE-SE4         ORDINATE                 A                                                                                                                              N
+30FECHA             LOGRE-SE4         ORDINATE                 A                                                                                                                              N
+30HORA              LOGRE-SE4         ORDINATE                 A                                                                                                                              N
+30ID-ESTRU          LOGRE-SE4         ORDINATE                 A                                                                                                                              N
+30USUARIO           LOGRE-SE4         ORDINATE                 A                                                                                                                              N
+35SEGURIDAD         LOGRE-SE4         INCLUDES  0     0      *         *

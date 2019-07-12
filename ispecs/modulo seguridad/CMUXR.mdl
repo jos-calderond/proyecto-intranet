@@ -1,0 +1,140 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:03 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CMUXRMI00000000CONSULTA USUARIOS X ROL       000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000800000016YNNNNNNYYYYN                            DNN   NDNYYN01920000400060006 Y
+71CMUXR             233DDFF8F574AF4D9F429A9C9DFD3EDA09405267FE39F943A10133ED248452481810FC31EFA449499F4706F995467BA84DEE93EAFA78DF45B5429EBF4584D49622F55AA945AC63468294BAF84DDDC4B0326630E32096BA4EAD0C221F9A0D6A7A94F17B734CDBAE4E876CA75030985D41
+31                  CMUXR              -1      -1      N000LincDefault New                 NN0008N000000000000004800000640000000480000000001000 -1      UYYYNN
+90CMUXR             ------------------------------------------------------------------------------  0000300278 NNNN N                    000NNNNNNN01
+90CMUXR             USU:                                                                            0000202404 NNNN N                    000NNNNNNN01
+90CMUXR             ROL:                                                                            0000201204 NNNN N                    000NNNNNNN01
+90CMUXR             TIPO:                                                                           0000200205 NNNN N                    000NNNNNNN01
+90CMUXR             CONSULTA USUARIOS POR ROL                                                       0000104225 NNNN N                    000NNNNNNN01
+30MENJ35            CMUXR             INQUIRY   00000000A003500                           MENSAJE DE 35 POSICIONES                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0002400043
+31MENJ35            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000336000003700000028000000016000000000100000       UUN
+51CMUXR             MENJ35            NNN000010L                                                                                N0000NN
+30INDROLPRE         CMUXR             INQUIRY   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000600076
+31INDROLPRE         CMUXR              -1      -1      N000LincDefault New                 NN0008N00000328000000180000000800000016000000000100000       UUN
+51CMUXR             INDROLPRE         NNN000010L                                                                                N0000NN
+30GLOROL            CMUXR             INQUIRY   00000000A003000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000600002
+31GLOROL            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000352000000180000024000000016000000000100000       UUN
+51CMUXR             GLOROL            NNN000010L                                                                                N0000NN
+30APEMAT            CMUXR             INQUIRY   00000000A002000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000500054
+31APEMAT            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000424000000660000016000000016000000000100000       UUN
+51CMUXR             APEMAT            NNN000010L                                                                                N0000NN
+30APEPAT            CMUXR             INQUIRY   00000000A002000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000500033
+31APEPAT            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000256000000660000016000000016000000000100000       UUN
+51CMUXR             APEPAT            NNN000010L                                                                                N0000NN
+30NOMBRES           CMUXR             INQUIRY   00000000A003000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000500002
+31NOMBRES           CMUXR              -1      -1      N000LincDefault New                 NN0008N00000008000000660000024000000016000000000100000       UUN
+51CMUXR             NOMBRES           NNN000010L                                                                                N0000NN
+30ESTADO            CMUXR             INQUIRY   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000400077
+31ESTADO            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000608000000500000000800000016000000000100000       UUN
+51CMUXR             ESTADO            NNN000010L                                                                                N0000NN
+30FECPASS           CMUXR             INQUIRY   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000N N0000400068
+31FECPASS           CMUXR              -1      -1      N000LincDefault New                 NN0008N00000536000000500000006400000016000000000100000       UUN
+51CMUXR             FECPASS           NNN000010R                                                                                N0000NN
+30PASSWORD          CMUXR             INQUIRY   00000000A003200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000400035
+31PASSWORD          CMUXR              -1      -1      N000LincDefault New                 NN0008N00000272000000500000025600000016000000000100000       UUN
+51CMUXR             PASSWORD          NNN000010L                                                                                N0000NN
+30FECTER            CMUXR             INQUIRY   00000000N000800                           FECHA TERMINO                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000N N0000400026
+31FECTER            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000200000000500000006400000016000000000100000       UUN
+51CMUXR             FECTER            NNN000010R                                                                                N0000NN
+30FECINI            CMUXR             INQUIRY   00000000N000800                           FECHA INICIO                                                D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000N N0000400017
+31FECINI            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000128000000500000006400000016000000000100000       UUN
+51CMUXR             FECINI            NNN000010R                                                                                N0000NN
+30RUT               CMUXR             INQUIRY   00000000A001000                           RUT USUARIO                                                 D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000400006
+31RUT               CMUXR              -1      -1      N000LincDefault New                 NN0008N00000040000000500000008000000016000000000100000       UUN
+51CMUXR             RUT               NNN000010L                                                                                N0000NN
+30CODROL            CMUXR             INQUIRY   00000000N000300                           CODIGO ROL                                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000N N0000400002
+31CODROL            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000008000000500000002400000016000000000100000       UUN
+51CMUXR             CODROL            NNN000010R                                                                                N0000NN
+30RUT-B             CMUXR             DEFAULT   00000000A001000                           CONSULTA POR RUT USUARIO                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000200029
+31RUT-B             CMUXR              -1      -1      N000LincDefault New                 NN0008N00000224000000180000008000000016000000000100000       UUN
+51CMUXR             RUT-B             NYN000010L                                                                                N0000NN
+30CODROL-B          CMUXR             DEFAULT   00000000N000300                           CONSULTA POR CODIGO ROL                                     D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000N N0000200017
+31CODROL-B          CMUXR              -1      -1      N000LincDefault New                 NN0008N00000136000000180000002400000016000000000100000       UUN
+51CMUXR             CODROL-B          NYN000010R                                                                                N0000NN
+30OPCION            CMUXR             DEFAULT   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000200008
+31OPCION            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000064000000180000000800000016000000000100000       UUN
+51CMUXR             OPCION            NYN000010L                                                                                N0000NN
+31ACTMTH            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000176000000020000003200000016000000000100000       UU
+51CMUXR             ACTMTH            NNN000010R                                                                                N0000NN
+31INPUT-DATE        CMUXR              -1      -1      N000LincDefault New                 NN0008N00000112000000020000005600000016000000000100000       UU
+51CMUXR             INPUT-DATE        NNN000010L                                                                                N0000NN
+31TRANNO            CMUXR              -1      -1      N000LincDefault New                 NN0008N00000064000000020000004800000016000000000100000       UU
+51CMUXR             TRANNO            NNN000010R                                                                                N0000NN
+31GLB.SOURCE        CMUXR              -1      -1      N000LincDefault New                 NN0008N00000056000000020000000800000016000000000100000       UU
+51CMUXR             GLB.SOURCE        NNN000010L                                                                                N0000NN
+31ISPEC             CMUXR              -1      -1      N000LincDefault New                 NN0008N00000016000000020000015200000016000000000100000       UU
+51CMUXR             ISPEC             NNN000010L                                                                                N0000NN
+91CMUXR             NO VIGENTES:                                                                    01200 -1      -1      N000LincDefault New                 NN0008N00000008000003700000009600000011TY00001                            0       UUSE
+91CMUXR             ------------------------------------------------------------------------------  07800 -1      -1      N000LincDefault New                 NN0008N00000008000000340000062400000011TY00001                            0       UUSE
+91CMUXR             USU:                                                                            00400 -1      -1      N000LincDefault New                 NN0008N00000176000000180000003200000011TY00001                            0       UUSE
+91CMUXR             ROL:                                                                            00400 -1      -1      N000LincDefault New                 NN0008N00000088000000180000003200000011TY00001                            0       UUSE
+91CMUXR             TIPO:                                                                           00500 -1      -1      N000LincDefault New                 NN0008N00000008000000180000004000000011TY00001                            0       UUSE
+91CMUXR             CONSULTA USUARIOS POR ROL                                                       02500 -1      -1      N000LincDefault New                 NN0008N00000328000000020000020000000011TY00001                            0       UUSE
+48SD-CODROL         CMUXR             0003N00(0)                                                                                                                                            CODIGO ROL
+48SD-NVIG           CMUXR             0001A00( )                                                                                                                                                                                                          D
+48SD-OPCION         CMUXR             0001A00( )                                                                                                                                                                                                          D
+48SD-RUT            CMUXR             0010A00( )                                                                                                                                            SETUP DATA RUT USUARIO                                        D
+42CMUXRDW; GLB.COPY    =   (1)                                                                                  N
+42CMUXR    MV; SD-OPCION           OPCION                                                                       N
+42CMUXR    MV; SD-CODROL           CODROL-B                                                                     N
+42CMUXR    MV; SD-RUT              RUT-B                                                                        N
+42CMUXREND;                                                                                                     N
+42CMUXR                                                                                                         N
+42CMUXRMV; GD-CF-NO            MENJ35                                                                           N
+42CMUXR                                                                                                         N
+42CMUXR:BUSQUEDA POR USUARIO                                                                                    N
+42CMUXRDW; OPCION  =   (U)                                                                                      N
+42CMUXR    DT; GROUP SEUXR-SE1 (RUT-B) FROM (CODROL-B) SERIAL                                                   N
+42CMUXR        MV; GD-CF-SI          MENJ35                                                                     N
+42CMUXR        BK;                                                                                              N
+42CMUXR    END;                                                                                                 N
+42CMUXREND;                                                                                                     N
+42CMUXR                                                                                                         N
+42CMUXR:BUSQUEDA POR ROL                                                                                        N
+42CMUXRDW;OPCION = (R)                                                                                          N
+42CMUXR    DT; GROUP SEUXR-SE2 (CODROL-B) FROM (RUT-B) SERIAL                                                   N
+42CMUXR        MV; GD-CF-SI          MENJ35                                                                     N
+42CMUXR        BK;                                                                                              N
+42CMUXR    END;                                                                                                 N
+42CMUXREND;                                                                                                     N
+42CMUXR                                                                                                         N
+42CMUXRDW; MENJ35  =   GD-CF-NO                                                                                 N
+42CMUXREE;                                                                                                      N
+42CMUXR                                                                                                         N
+42CMUXRMV; SEUXR.CODROL    CODROL-B                                                                             N
+42CMUXRMV; SEUXR.RUT       RUT-B                                                                                N
+42CMUXR                                                                                                         N
+42CMUXRMV; SEUXR.CODROL    CODROL                                                                               N
+42CMUXRMV; SEUXR.RUT       RUT                                                                                  N
+42CMUXRMV; SEUXR.FECINI    FECINI                                                                               N
+42CMUXRMV; SEUXR.FECTER    FECTER                                                                               N
+42CMUXRMV; SEUXR.INDROLPRE INDROLPRE                                                                            N
+42CMUXR                                                                                                         N
+42CMUXRDT; EVERY SEUSU-SE1 (SEUXR.RUT)                                                                          N
+42CMUXR    MV; SEUSU.NOMBRES       NOMBRES                                                                      N
+42CMUXR    MV; SEUSU.APEPAT        APEPAT                                                                       N
+42CMUXR    MV; SEUSU.APEMAT        APEMAT                                                                       N
+42CMUXR    MV; SEUSU.PASS          PASSWORD                                                                     N
+42CMUXR    MV; SEUSU.FECPASS       FECPASS                                                                      N
+42CMUXR    MV; SEUSU.ESTADO        ESTADO                                                                       N
+42CMUXR    BK;                                                                                                  N
+42CMUXREND;                                                                                                     N
+42CMUXR                                                                                                         N
+42CMUXRDT; EVERY SEROL-SE1 (SEUXR.CODROL)                                                                       N
+42CMUXR    MV; SEROL.NOMBRE    GLOROL                                                                           N
+42CMUXR    BK;                                                                                                  N
+42CMUXREND;                                                                                                     N
+43CMUXRDW; GLB.COPY    =   (1)                                                                                  N
+43CMUXR    MV; OPCION          SD-OPCION                                                                        N
+43CMUXR    MV; CODROL-B        SD-CODROL                                                                        N
+43CMUXR    MV; RUT-B           SD-RUT                                                                           N
+43CMUXREND;                                                                                                     N
+35SEGURIDAD         CMUXR             INCLUDES  0     0      *         *

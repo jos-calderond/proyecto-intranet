@@ -1,0 +1,61 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:56:49 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CMOXRMI00000000CONSULTA OPCIONES X ROL       000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000400050010 Y
+71CMOXR             5AD1311F94628A4C8729CF47FCAB5E6766DE8D321F8B6C44AD1819B5947EBEDC1810FC31EFA449499F4706F995467BA84E6D6F34C5705F41A7CB973FA16219167F6BCEA592AC4B48B1F1AF5E69B2AE52326630E32096BA4EAD0C221F9A0D6A7A94F17B734CDBAE4E876CA75030985D41
+90CMOXR             ORDEN                                                                           0000306305 NNNN N                    000NNNNNNN01
+90CMOXR             PADRE                                                                           0000305705 NNNN N                    000NNNNNNN01
+90CMOXR             DESCRIPCION                                                                     0000300611 NNNN N                    000NNNNNNN01
+90CMOXR             COD                                                                             0000300203 NNNN N                    000NNNNNNN01
+90CMOXR             OPCION:                                                                         0000201307 NNNN N                    000NNNNNNN01
+90CMOXR             ROL:                                                                            0000200204 NNNN N                    000NNNNNNN01
+90CMOXR             CONSULTA OPCIONES POR ROL                                                       0000104025 NNNN N                    000NNNNNNN01
+30MENJ35            CMOXR             INQUIRY   00000000A003500                           MENSAJE DE 35 POSICIONES                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400043
+30ORDEN             CMOXR             INQUIRY   00000000N000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500077
+30CODPADRE          CMOXR             INQUIRY   00000000N000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500073
+30FORMU             CMOXR             INQUIRY   00000000A007000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500002
+30ICONO             CMOXR             INQUIRY   00000000A002000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400057
+30DESCRIP           CMOXR             INQUIRY   00000000A005000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400006
+30CODOPC            CMOXR             INQUIRY   00000000N000300                           CODIGO OPCION                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400002
+30CODOPC-B          CMOXR             DEFAULT   00000000N000300                           CONSULTA POR CODIGO OPCION                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200021
+30CODROL-B          CMOXR             DEFAULT   00000000N000300                           CONSULTA POR CODIGO ROL                                     D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200007
+48SD-CODOPC         CMOXR             0003N00(0)                                                                                                                                            CODIGO OPCION
+48SD-CODROL         CMOXR             0003N00(0)                                                                                                                                            CODIGO ROL
+48SD-OPCION         CMOXR             0001A00( )                                                                                                                                                                                                          D
+42CMOXRDW; GLB.COPY    =   (1)                                                                                  N
+42CMOXR    MV; SD-CODROL             CODROL-B                                                                   N
+42CMOXR    MV; SD-CODOPC             CODOPC-B                                                                   N
+42CMOXREND;                                                                                                     N
+42CMOXR                                                                                                         N
+42CMOXRMV; GD-CF-NO       MENJ35                                                                                N
+42CMOXR                                                                                                         N
+42CMOXRDT; GROUP SEOXR-SE1 (CODROL-B) FROM (CODOPC-B) SERIAL                                                    N
+42CMOXR    MV; GD-CF-SI          MENJ35                                                                         N
+42CMOXR    BK;                                                                                                  N
+42CMOXREND;                                                                                                     N
+42CMOXR                                                                                                         N
+42CMOXRDW; MENJ35  =   GD-CF-NO                                                                                 N
+42CMOXREE;                                                                                                      N
+42CMOXR                                                                                                         N
+42CMOXRMV; SEOXR.CODOPC        CODOPC-B                                                                         N
+42CMOXR                                                                                                         N
+42CMOXRDT; EVERY SEOPC-SE1 (CODOPC-B)                                                                           N
+42CMOXR    MV; SEOPC.CODIGO        CODOPC                                                                       N
+42CMOXR    MV; SEOPC.DESCRIP       DESCRIP                                                                      N
+42CMOXR    MV; SEOPC.CODPADRE      CODPADRE                                                                     N
+42CMOXR    MV; SEOPC.ORDEN         ORDEN                                                                        N
+42CMOXR    MV; SEOPC.FORMU         FORMU                                                                        N
+42CMOXR    MV; SEOPC.ICONO         ICONO                                                                        N
+42CMOXR    BK;                                                                                                  N
+42CMOXREND;                                                                                                     N
+43CMOXR                                                                                                         N
+43CMOXRDW;GLB.COPY = (1)                                                                                        N
+43CMOXR    MV; CODROL-B            SD-CODROL                                                                    N
+43CMOXR    MV; CODOPC-B            SD-CODOPC                                                                    N
+43CMOXREND;                                                                                                     N
+35SEGURIDAD         CMOXR             INCLUDES  0     0      *         *

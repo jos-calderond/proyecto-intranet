@@ -1,0 +1,119 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:56:39 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CLOGRMI00000000CONS.MASIVA LOGRE             000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000VFO                 NN           N000                                NN0000N00000000000000000000000800000016YNNNNNNNYYYN                            DNN   NDNYYN01920000400050010 Y
+71CLOGR             2D88E71D56FD244488F3D852D43CB4ADC401285478C7534082E0A6154D25CD5DE67AD6B49769974B99D26955A16D2535B425753D1F66DE408E9C01668DC9E3CB22AFE70C03B5804BB94678686D401FBA4C5B088832D3BE46B97EFDA5452A3ADF26F7055AFBD86A4B99E01ACF26C06FC1
+90CLOGR             OPCION                                                                          0000200106 NNNN N                    000NNNNNNN01
+90CLOGR             CONSULTA MASIVA LOGRE                                                           0000102821 NNNN N                    000NNNNNNN01
+30MENSAJE           CLOGR             INQUIRY   00000000A003500 MENSAJE                                                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400038
+30ID-ESTRU          CLOGR             INQUIRY   00000000A006000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500001
+30NOMUSU            CLOGR             INQUIRY   00000000A004000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400036
+30ACCION            CLOGR             INQUIRY   00000000A000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400032
+30USUARIO           CLOGR             INQUIRY   00000000A001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400022
+30ESTRU             CLOGR             INQUIRY   00000000A000500                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400017
+30HORA              CLOGR             INQUIRY   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400009
+30FECHA             CLOGR             INQUIRY   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400001
+30ID-ESTRU-B        CLOGR             DEFAULT   00000000A006000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000300001
+30USUARIO-B         CLOGR             DEFAULT   00000000A001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200038
+30ESTRU-B           CLOGR             DEFAULT   00000000A000500                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200031
+30HORA-B            CLOGR             DEFAULT   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200021
+30FECHA-B           CLOGR             DEFAULT   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200010
+30OPCION            CLOGR             DEFAULT   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200007
+48SD-ESTRU          CLOGR             0005A00( )                                                                                                                                                                                                          D
+48SD-FECHA          CLOGR             0008N00(0)
+48SD-HORA           CLOGR             0008N00(0)
+48SD-ID-ESTRU       CLOGR             0060A00( )                                                                                                                                                                                                          D
+48SD-OPCION         CLOGR             0001A00( )                                                                                                                                                                                                          D
+48SD-USUARIO        CLOGR             0010A00( )                                                                                                                                                                                                          D
+42CLOGRDW;GLB.COPY = (1)                                                                                        N
+42CLOGR   MV;SD-OPCION              OPCION                                                                      N
+42CLOGR   MV;SD-FECHA               FECHA-B                                                                     N
+42CLOGR   MV;SD-HORA                HORA-B                                                                      N
+42CLOGR   MV;SD-USUARIO             USUARIO-B                                                                   N
+42CLOGR   MV;SD-ESTRU               ESTRU-B                                                                     N
+42CLOGR   MV;SD-ID-ESTRU            ID-ESTRU-B                                                                  N
+42CLOGREND;                                                                                                     N
+42CLOGR                                                                                                         N
+42CLOGRMV;GD-CF-NO               MENSAJE                                                                        N
+42CLOGR                                                                                                         N
+42CLOGRDW;OPCION = (F) ::BUSCAR POR FECHA                                                                       N
+42CLOGR    DT;FROM LOGRE-SE2(FECHA-B HORA-B ESTRU-B ID-ESTRU-B                                                  N
+42CLOGR             USUARIO-B) SERIAL                                                                           N
+42CLOGR        MV;GD-CF-SI                 MENSAJE                                                              N
+42CLOGR        BK;                                                                                              N
+42CLOGR    END;                                                                                                 N
+42CLOGREND;                                                                                                     N
+42CLOGR                                                                                                         N
+42CLOGRDW;OPCION = (U) ::BUSCAR POR USUARIO                                                                     N
+42CLOGR    DT;FROM LOGRE-SE3(USUARIO-B FECHA-B HORA-B ESTRU-B                                                   N
+42CLOGR             ID-ESTRU-B) SERIAL                                                                          N
+42CLOGR        DW;LOGRE.USUARIO NOT = USUARIO-B                                                                 N
+42CLOGR           BK;                                                                                           N
+42CLOGR        END;                                                                                             N
+42CLOGR        MV;GD-CF-SI                 MENSAJE                                                              N
+42CLOGR        BK;                                                                                              N
+42CLOGR    END;                                                                                                 N
+42CLOGREND;                                                                                                     N
+42CLOGR                                                                                                         N
+42CLOGRDW;OPCION = (E) ::BUSCAR POR ESTRUCTURA                                                                  N
+42CLOGR    DT;FROM LOGRE-SE4(ESTRU-B FECHA-B HORA-B ID-ESTRU-B                                                  N
+42CLOGR             USUARIO-B) SERIAL                                                                           N
+42CLOGR        DW;LOGRE.ESTRU NOT = ESTRU-B                                                                     N
+42CLOGR           BK;                                                                                           N
+42CLOGR        END;                                                                                             N
+42CLOGR        MV;GD-CF-SI                 MENSAJE                                                              N
+42CLOGR        BK;                                                                                              N
+42CLOGR    END;                                                                                                 N
+42CLOGREND;                                                                                                     N
+42CLOGR                                                                                                         N
+42CLOGRDW;OPCION = (R) ::BUSCAR POR REGISTRO EN PARTICULAR                                                      N
+42CLOGR    DT;FROM LOGRE-SE1(ESTRU-B ID-ESTRU-B FECHA-B HORA-B                                                  N
+42CLOGR             USUARIO-B) SERIAL                                                                           N
+42CLOGR        DW;LOGRE.ESTRU    NOT = ESTRU-B    OR                                                            N
+42CLOGR        DW;LOGRE.ID-ESTRU NOT = ID-ESTRU-B                                                               N
+42CLOGR           BK;                                                                                           N
+42CLOGR        END;                                                                                             N
+42CLOGR        MV;GD-CF-SI                 MENSAJE                                                              N
+42CLOGR        BK;                                                                                              N
+42CLOGR    END;                                                                                                 N
+42CLOGREND;                                                                                                     N
+42CLOGR                                                                                                         N
+42CLOGR                                                                                                         N
+42CLOGRDW; MENSAJE = GD-CF-NO                                                                                   N
+42CLOGREE;                                                                                                      N
+42CLOGR                                                                                                         N
+42CLOGRMV;LOGRE.FECHA            FECHA-B                                                                        N
+42CLOGRMV;LOGRE.HORA             HORA-B                                                                         N
+42CLOGRMV;LOGRE.USUARIO          USUARIO-B                                                                      N
+42CLOGRMV;LOGRE.ESTRU            ESTRU-B                                                                        N
+42CLOGRMV;LOGRE.ID-ESTRU         ID-ESTRU-B                                                                     N
+42CLOGR                                                                                                         N
+42CLOGR                                                                                                         N
+42CLOGRMV;LOGRE.FECHA            FECHA                                                                          N
+42CLOGRMV;LOGRE.HORA             HORA                                                                           N
+42CLOGRMV;LOGRE.USUARIO          USUARIO                                                                        N
+42CLOGRMV;LOGRE.ESTRU            ESTRU                                                                          N
+42CLOGRMV;LOGRE.ID-ESTRU         ID-ESTRU                                                                       N
+42CLOGRMV;LOGRE.ACCION           ACCION                                                                         N
+42CLOGR                                                                                                         N
+42CLOGRDT;EVERY SEUSU-SE1(USUARIO)                                                                              N
+42CLOGR    MV;SEUSU.NOMBRES      NOMUSU                                                                         N
+42CLOGR    ATS;SEUSU.APEPAT      NOMUSU                                                                         N
+42CLOGR    ATS;SEUSU.APEMAT      NOMUSU                                                                         N
+42CLOGR    BK;                                                                                                  N
+42CLOGREND;                                                                                                     N
+43CLOGR                                                                                                         N
+43CLOGR DW;GLB.COPY = (1)                                                                                       N
+43CLOGR    MV;OPCION                   SD-OPCION                                                                N
+43CLOGR    MV;FECHA-B                  SD-FECHA                                                                 N
+43CLOGR    MV;HORA-B                   SD-HORA                                                                  N
+43CLOGR    MV;USUARIO-B                SD-USUARIO                                                               N
+43CLOGR    MV;ESTRU-B                  SD-ESTRU                                                                 N
+43CLOGR    MV;ID-ESTRU-B               SD-ID-ESTRU                                                              N
+43CLOGR END;                                                                                                    N
+35SEGURIDAD         CLOGR             INCLUDES  0     0      *         *

@@ -1,0 +1,233 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:17 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10MAUSUMI00000000MANTENEDOR DE USUARIO         000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71MAUSU             7435078890ADAB48BC91B92D8FAD65DE3DC7B4E73001B74AB7AC672C51B740040D0FE2D34032384695420F05906915B060FEDA820AC9E74A841D19957995AB0B7D99645C75D9064A9C40A97AF0658C18568D40B68891074788F67632D6F8DF9EA60F9B392FD5814689C538B5BF14916B
+90MAUSU             (V: VIGENTE O N: NO VIGENTE)                                                    0002405028 NNNN N                    000NNNNNNN01
+90MAUSU             ESTADO:                                                                         0002403807 NNNN N                    000NNNNNNN01
+90MAUSU             TERMINO:                                                                        0001600208 NNNN N                    000NNNNNNN01
+90MAUSU             INICIO:                                                                         0001500207 NNNN N                    000NNNNNNN01
+90MAUSU             ROL:                                                                            0001400204 NNNN N                    000NNNNNNN01
+90MAUSU             INICIALES:                                                                      0001300210 NNNN N                    000NNNNNNN01
+90MAUSU             CORREO:                                                                         0001200207 NNNN N                    000NNNNNNN01
+90MAUSU             (V: VIGENTE O N: NO VIGENTE)                                                    0001102528 NNNN N                    000NNNNNNN01
+90MAUSU             ESTADO PASSWORD:                                                                0001100216 NNNN N                    000NNNNNNN01
+90MAUSU             FECPASS:                                                                        0001005608 NNNN N                    000NNNNNNN01
+90MAUSU             PASSWORD:                                                                       0001000209 NNNN N                    000NNNNNNN01
+90MAUSU             APELLIDO MATERNO:                                                               0000900217 NNNN N                    000NNNNNNN01
+90MAUSU             APELLIDO PATERNO:                                                               0000800217 NNNN N                    000NNNNNNN01
+90MAUSU             NOMBRES:                                                                        0000700208 NNNN N                    000NNNNNNN01
+90MAUSU             ------------------------------------------------------------------------------  0000500278 NNNN N                    000NNNNNNN01
+90MAUSU             RUT:                                                                            0000400204 NNNN N                    000NNNNNNN01
+90MAUSU             MANTENEDOR DE USUARIOS                                                          0000302822 NNNN N                    000NNNNNNN01
+90MAUSU             CODUSU:                                                                         0000106207 NNNN N                    000NNNNNNN01
+30ESTADO            MAUSU             DEFAULT   00000000A000100                           ESTADO                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400046
+30FECTER            MAUSU             INQUIRY   00000000N001000                           FECHA TERMINO ROL                                           D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0001600013
+30FECINI            MAUSU             INQUIRY   00000000N001000                           FECHA INICIO ROL                                            D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0001500013
+30ROL               MAUSU             INQUIRY   00000000N000300                           ROL DE USUARIO                                              D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0001400013
+30INICIALES         MAUSU             DEFAULT   00000000A000400                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0001300013
+30CORREO            MAUSU             DEFAULT   00000000A006000                           CORREO DEL USUARIO                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0001200013
+30FECPASS           MAUSU             DEFAULT   00000000N000800                           FECHA DE  PASSWORD                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0001000066
+30PASS              MAUSU             DEFAULT   00000000A003200                           PASSWORD                                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0001000021
+30APEMAT            MAUSU             DEFAULT   00000000A002000                           APELLIDO MATERNO                                            D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000900021
+30APEPAT            MAUSU             DEFAULT   00000000A002000                           APELLIDO PATERNO                                            D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000800021
+30NOMBRES           MAUSU             DEFAULT   00000000A003000                           NOMBRES USUARIO                                             D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000700021
+30RUT               MAUSU             DEFAULT   00000000A001000                           RUT USUARIO                                                 D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NNN0000400007
+30CODUSU            MAUSU             DEFAULT   00000000A001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100069
+30MANT              MAUSU             DEFAULT   00000000A000300                           ACCION                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100031
+30MAUSU             LOG-SEUSU         INSERT
+48SD-CODROL         MAUSU             0003N00(0)
+48SD-RUT            MAUSU             0010A00( )                                                                                                                                            SETUP DATA RUT                                                N
+42MAUSUMV; (INQ)           MANT                                                                                 N
+42MAUSUMV; SD-RUT          RUT                                                                                  N
+42MAUSU                                                                                                         N
+42MAUSUDT; EVERY SEUSU-SE1 (RUT)                                                                                N
+42MAUSU    BK;                                                                                                  N
+42MAUSUEND;                                                                                                     N
+42MAUSU                                                                                                         N
+42MAUSUDW; GLB.STATUS NOT = GLB.SPACES                                                                          N
+42MAUSUEE;                                                                                                      N
+42MAUSU                                                                                                         N
+42MAUSUMV; SEUSU.APEMAT    APEMAT                                                                               N
+42MAUSUMV; SEUSU.APEPAT    APEPAT                                                                               N
+42MAUSUMV; SEUSU.ESTADO    ESTADO                                                                               N
+42MAUSUMV; SEUSU.FECPASS   FECPASS                                                                              N
+42MAUSUMV; SEUSU.NOMBRES   NOMBRES                                                                              N
+42MAUSUMV; SEUSU.PASS      PASS                                                                                 N
+42MAUSUMV; SEUSU.RUT       RUT                                                                                  N
+42MAUSUMV; SEUSU.CORREO    CORREO                                                                               N
+42MAUSUMV; SEUSU.INICIALES INICIALES                                                                            N
+42MAUSU                                                                                                         N
+42MAUSUDT; FROM SEUXR-SE1 (RUT GLB.ZEROS)                                                                       N
+42MAUSU    DW;SEUXR.RUT NOT = RUT                                                                               N
+42MAUSU       BK;                                                                                               N
+42MAUSU    END;                                                                                                 N
+42MAUSU    DW;SEUXR.INDROLPRE NOT = (N)                                                                         N
+42MAUSU        MV; SEUXR.CODROL    ROL                                                                          N
+42MAUSU        MV; SEUXR.FECINI    FECINI                                                                       N
+42MAUSU        MV; SEUXR.FECTER    FECTER                                                                       N
+42MAUSU        BK;                                                                                              N
+42MAUSU    END;                                                                                                 N
+42MAUSUEND;                                                                                                     N
+43MAUSUDW; MANT    NOT =   (INQ) AND                                                                            N
+43MAUSUDW; MANT    NOT =   (CHG) AND                                                                            N
+43MAUSUDW; MANT    NOT =   (DEL) AND                                                                            N
+43MAUSUDW; MANT    NOT =   (ADD)                                                                                N
+43MAUSU    ME; ERROR GD-ERR-MANT                                                                                N
+43MAUSUEE;                                                                                                      N
+43MAUSU                                                                                                         N
+43MAUSUMV; RUT         SD-RUT                                                                                   N
+43MAUSU                                                                                                         N
+43MAUSUDW; RUT     =   GLB.SPACES                                                                               N
+43MAUSU    ME; ERROR ( DEBE INGRESAR RUT)                                                                       N
+43MAUSUEE;                                                                                                      N
+43MAUSU                                                                                                         N
+43MAUSUDT; EVERY SEUSU-SE1 (RUT)                                                                                N
+43MAUSU    BK;                                                                                                  N
+43MAUSUEND;                                                                                                     N
+43MAUSU                                                                                                         N
+43MAUSUDW; GLB.STATUS  NOT =   GLB.SPACES AND                                                                   N
+43MAUSUDW; MANT        NOT =   (ADD)                                                                            N
+43MAUSU    ME; ERROR GD-ERR-REG-NO                                                                              N
+43MAUSUEE;                                                                                                      N
+43MAUSU                                                                                                         N
+43MAUSUDW; GLB.STATUS  =   GLB.SPACES AND                                                                       N
+43MAUSUDW; MANT        =   (ADD)                                                                                N
+43MAUSU    ME; ERROR GD-ERR-REG-SI                                                                              N
+43MAUSUEE;                                                                                                      N
+43MAUSU                                                                                                         N
+43MAUSUDW; MANT    =   (CHG) OR                                                                                 N
+43MAUSUDW; MANT    =   (ADD)                                                                                    N
+43MAUSU    DW; NOMBRES  =   GLB.SPACES                                                                          N
+43MAUSU        ME; ERROR ( DEBE INGRESAR NOMBRES)                                                               N
+43MAUSU    EE;                                                                                                  N
+43MAUSU                                                                                                         N
+43MAUSU    DW; APEPAT  =   GLB.SPACES                                                                           N
+43MAUSU        ME; ERROR ( DEBE INGRESAR APELLIDO PATERNO)                                                      N
+43MAUSU    EE;                                                                                                  N
+43MAUSU                                                                                                         N
+43MAUSU    DW; APEMAT  =   GLB.SPACES                                                                           N
+43MAUSU        ME; ERROR ( DEBE INGRESAR APELLIDO MATERNO)                                                      N
+43MAUSU    EE;                                                                                                  N
+43MAUSU                                                                                                         N
+43MAUSU    DW; ESTADO  NOT =   (V) AND                                                                          N
+43MAUSU    DW; ESTADO  NOT =   (N)                                                                              N
+43MAUSU        ME; ERROR ( ESTADO SOLO PUEDE SER V O N)                                                         N
+43MAUSU    EE;                                                                                                  N
+43MAUSU                                                                                                         N
+43MAUSU    DW; INICIALES = GLB.SPACES                                                                           N
+43MAUSU        ME;ERROR (DEBE INGRESAR LAS INICIALES)                                                           N
+43MAUSU    EE;                                                                                                  N
+43MAUSU                                                                                                         N
+43MAUSUEND;                                                                                                     N
+41MAUSU             00DW; MANT    =   (INQ)                                                                                    N
+41MAUSU             00EE;                                                                                                      N
+41MAUSU             00                                                                                                         N
+41MAUSU             00                                                                                                         N
+41MAUSU             00DW; MANT    =   (ADD)                                                                                    N
+41MAUSU             00    AUTO.ENTRY; SEUSU                                                                                    N
+41MAUSU             00        AU; APEMAT          APEMAT                                                                       N
+41MAUSU             00        AU; APEPAT          APEPAT                                                                       N
+41MAUSU             00        AU; (V)             ESTADO                                                                       N
+41MAUSU             00        AU; FECPASS         FECPASS                                                                      N
+41MAUSU             00        AU; NOMBRES         NOMBRES                                                                      N
+41MAUSU             00        AU; RUT             RUT                                                                          N
+41MAUSU             00        AU; CORREO          CORREO                                                                       N
+41MAUSU             00        AU; INICIALES       INICIALES                                                                    N
+41MAUSU             00                                                                                                         N
+41MAUSU             00        DW; PASS    NOT =   GLB.SPACES                                                                   N
+41MAUSU             00            AU; PASS            PASS                                                                     N
+41MAUSU             00        END;                                                                                             N
+41MAUSU             00                                                                                                         N
+41MAUSU             00    AUTO;WRITE                                                                                           N
+41MAUSU             00                                                                                                         N
+41MAUSU             00    ::AUIDTORIA POST CAMBIO                                                                              N
+41MAUSU             00    MV;GLB.SPACES      GD-LOG                                                                            N
+41MAUSU             00    MV;CODUSU          GD-LOG-CODUSU                                                                     N
+41MAUSU             00    MV;MANT            GD-LOG-ACCION                                                                     N
+41MAUSU             00    MV;(SEUSU)         GD-LOG-ESTRU                                                                      N
+41MAUSU             00    MV;(NUEVO)         GD-LOG-TIPOREG                                                                    N
+41MAUSU             00    INS;LOG-SEUSU                                                       Y                                N
+41MAUSU             00                                                                                                         N
+41MAUSU             00                                                                                                         N
+41MAUSU             00ELSE;                                                                                                    N
+41MAUSU             00    DT; EVERY SEUSU-SE1 (RUT)                                                                            N
+41MAUSU             00        BK;                                                                                              N
+41MAUSU             00    END;                                                                                                 N
+41MAUSU             00                                                                                                         N
+41MAUSU             00                                                                                                         N
+41MAUSU             00    ::AUIDTORIA ANTES DEL CAMBIO                                                                         N
+41MAUSU             00    MV;GLB.SPACES      GD-LOG                                                                            N
+41MAUSU             00    MV;CODUSU          GD-LOG-CODUSU                                                                     N
+41MAUSU             00    MV;MANT            GD-LOG-ACCION                                                                     N
+41MAUSU             00    MV;(SEUSU)         GD-LOG-ESTRU                                                                      N
+41MAUSU             00    MV;(ANTER)         GD-LOG-TIPOREG                                                                    N
+41MAUSU             00    INS;LOG-SEUSU                                                       Y                                N
+41MAUSU             00                                                                                                         N
+41MAUSU             00                                                                                                         N
+41MAUSU             00    DW; MANT    =   (CHG)                                                                                N
+41MAUSU             00                                                                                                         N
+41MAUSU             00        :PCK                                                                                             N
+41MAUSU             00      :  DT; GROUP SEUXR-SE1 (SEUSU.RUT) FROM (GLB.ZEROS)                                                N
+41MAUSU             00      :      MV; SEUXR.CODROL    SD-CODROL                                                               N
+41MAUSU             00      :      DT; EVERY SEROL-SS1 (SD-CODROL)                                                             N
+41MAUSU             00      :          INS; FECHA-COMPUTADOR                                                                   N
+41MAUSU             00      :          MV;  GD-FECHA-AMD      GD-OPE-FEC-AMD                                                   N
+41MAUSU             00      :          MV;  (+)               GD-OPE-OPER                                                      N
+41MAUSU             00      :          MV;  SEROL.DPASS       GD-OPE-DIAS                                                      N
+41MAUSU             00      :          INS; OPE-FEC-DIAS                                                                       N
+41MAUSU             00      :          FL;  GD-OPE-FEC-RES    SEUSU.FECPASS                                                    N
+41MAUSU             00      :          BK;                                                                                     N
+41MAUSU             00      :      END;                                                                                        N
+41MAUSU             00      :      BK;                                                                                         N
+41MAUSU             00      :  END;                                                                                            N
+41MAUSU             00        :FIN PCK                                                                                         N
+41MAUSU             00                                                                                                         N
+41MAUSU             00        FL; APEMAT          SEUSU.APEMAT                                                                 N
+41MAUSU             00        FL; APEPAT          SEUSU.APEPAT                                                                 N
+41MAUSU             00        FL; ESTADO          SEUSU.ESTADO                                                                 N
+41MAUSU             00        FL; NOMBRES         SEUSU.NOMBRES                                                                N
+41MAUSU             00        FL; RUT             SEUSU.RUT                                                                    N
+41MAUSU             00        DW; PASS NOT = GLB.SPACES                                                                        N
+41MAUSU             00            FL; PASS            SEUSU.PASS                                                               N
+41MAUSU             00        END;                                                                                             N
+41MAUSU             00        FL; CORREO          SEUSU.CORREO                                                                 N
+41MAUSU             00        FL; INICIALES       SEUSU.INICIALES                                                              N
+41MAUSU             00                                                                                                         N
+41MAUSU             00        ::AUIDTORIA POST CAMBIO                                                                          N
+41MAUSU             00        MV;CODUSU          GD-LOG-CODUSU                                                                 N
+41MAUSU             00        MV;MANT            GD-LOG-ACCION                                                                 N
+41MAUSU             00        MV;(SEUSU)         GD-LOG-ESTRU                                                                  N
+41MAUSU             00        MV;(NUEVO)         GD-LOG-TIPOREG                                                                N
+41MAUSU             00        INS;LOG-SEUSU                                                   Y                                N
+41MAUSU             00                                                                                                         N
+41MAUSU             00    END;                                                                                                 N
+41MAUSU             00                                                                                                         N
+41MAUSU             00    DW; MANT    =   (DEL)                                                                                N
+41MAUSU             00        FL; (D)         SEUSU.MAINT                                                                      N
+41MAUSU             00        ::AUIDTORIA POST CAMBIO                                                                          N
+41MAUSU             00        MV;CODUSU          GD-LOG-CODUSU                                                                 N
+41MAUSU             00        MV;MANT            GD-LOG-ACCION                                                                 N
+41MAUSU             00        MV;(SEUSU)         GD-LOG-ESTRU                                                                  N
+41MAUSU             00        MV;(NUEVO)         GD-LOG-TIPOREG                                                                N
+41MAUSU             00        INS;LOG-SEUSU                                                   Y                                N
+41MAUSU             00                                                                                                         N
+41MAUSU             00                                                                                                         N
+41MAUSU             00        DT; GROUP SEUXR-SE1 (SEUSU.RUT) FROM (GLB.ZEROS)                                                 N
+41MAUSU             00            FL; (D)         SEUXR.MAINT                                                                  N
+41MAUSU             00                                                                                                         N
+41MAUSU             00                                                                                                         N
+41MAUSU             00            :MV; SEUXR.CODROL    GD-COD10                                                                N
+41MAUSU             00            :INS; DEL-CEROS                                                                              N
+41MAUSU             00                                                                                                         N
+41MAUSU             00            : MV; GD-COD10        GD-LOG-ID2                                                             N
+41MAUSU             00                                                                                                         N
+41MAUSU             00        END;                                                                                             N
+41MAUSU             00    END;                                                                                                 N
+41MAUSU             00END;                                                                                                     N
+35SEGURIDAD         MAUSU             INCLUDES  0     0      *         *

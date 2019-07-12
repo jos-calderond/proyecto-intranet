@@ -1,0 +1,21 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:39 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10SEUSUMO00000000SEG - USUARIO                 000000         YNNNYN00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71SEUSU             9C4D987D80A2F0489D5C6ACC9CBCAF26292FF5B729E04D489A8C8728B0F4FD5641D3239A55F1AF4783DDE9DA85414E388219161AB733F94C95F9F81D938111F95B5178E32B29844FB9442BD497017718DF43F845A5CE7245B82376E850002EBA15088D321D8EAF40AEA57134AF0CF36B
+30RUT               SEUSU             OUTPUT    00000000A001000                           RUT                                                         D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30PASS              SEUSU             OUTPUT    00000000A003200                           PASSWORD                                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30NOMBRES           SEUSU             OUTPUT    00000000A003000                           NOMBRES                                                     D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30MAINT             SEUSU             OUTPUT    00000000A000100                           MAINT                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30INICIALES         SEUSU             OUTPUT    00000000A000400                           INICIALES                                                   D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30FECPASS           SEUSU             OUTPUT    00000000N000800                           FECHA PASSWORD                                              D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30ESTADO            SEUSU             OUTPUT    00000000A000100                           ESTADO                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30CORREO            SEUSU             OUTPUT    00000000A006000                           CORREO DEL USUARIO                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30APEPAT            SEUSU             OUTPUT    00000000A002000                           APELLIDO PATERNO                                            D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30APEMAT            SEUSU             OUTPUT    00000000A002000                           APELLIDO MATERNO                                            D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+35SEGURIDAD         SEUSU             INCLUDES  0     0      *         *

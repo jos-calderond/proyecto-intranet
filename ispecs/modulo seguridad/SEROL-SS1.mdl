@@ -1,0 +1,16 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:58:29 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+60SEROL-SS1VIG - CODIGO                  YN                0DEFAULT   00000000000YNN   N
+71SEROL-SS1         4B6BB8137AE8E847BF0FDAE74B637652
+30SEROL-SS1         SEROL             WILDCARD
+30SEROL-SS1         SEROL             OVER              C
+30CODIGO            SEROL-SS1         ORDINATE                 A                                                                                                                              N
+46SEROL-SS1MAINT     NOT=      (D)                 AND
+46SEROL-SS1ESTADO       =      (V)
+35SEGURIDAD         SEROL-SS1         INCLUDES  0     0      *         *

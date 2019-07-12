@@ -1,0 +1,209 @@
+/* 
+ *
+ * JScrollV2 - Infinite Scrolling / Lazy Loading
+ * rev.7 Trunk
+ *
+ */
+
+/* tables */
+table.tablesorter thead tr .header
+{
+  background-image: url(bg.gif);
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp
+{
+  background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown
+{
+  background-image: url(desc.gif);
+}
+
+.jscroll-checkbox
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  padding: 10px;
+}
+
+/* Responsive table 1 */
+@media only screen and (max-width: 800px)
+{
+  #jscroll-responsive-table table, #jscroll-responsive-table thead, #jscroll-responsive-table tbody, #jscroll-responsive-table th, #jscroll-responsive-table td, #jscroll-responsive-table tr
+  {
+    display: block;
+  }
+
+  #jscroll-responsive-table thead tr
+  {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #jscroll-responsive-table tr
+  {
+    border: 1px solid #ccc;
+  }
+
+  #jscroll-responsive-table td[subgrid="0"]
+  {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
+
+  #jscroll-responsive-table td[subgrid="0"]:before
+  {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  #jscroll-responsive-table td[subgrid="0"]:before
+  {
+    content: attr(data-title);
+  }
+}
+
+/* Responsive table 2 */
+@media only screen and (max-width: 800px)
+{
+
+  #jscroll-responsive-table2 table
+  {
+    border-bottom: 1px solid #ccc;
+  }
+  #jscroll-responsive-table2 thead
+  {
+    display: none;
+  }
+  #jscroll-responsive-table2 td
+  {
+    display: block;
+  }
+  #jscroll-responsive-table2 tbody > tr:first-child > th + td
+  {
+    border-top: 1px solid #e2e2e2;
+  }
+  #jscroll-responsive-table2 td:first-child
+  {
+    border-top: 3px solid #ccc;
+    text-align: left;
+  }
+}
+
+/* Responsive table 3 */
+@media only screen and (min-width: 800px)
+{
+  #jscroll-responsive-table3 td[is-oneforall="true"]
+  {
+    display: none;
+  }
+  #jscroll-responsive-table3 th[is-oneforall="true"]
+  {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+
+  #jscroll-responsive-table3 table
+  {
+    border-bottom: 1px solid #ccc;
+  }
+  #jscroll-responsive-table3 thead
+  {
+    display: none;
+  }
+  #jscroll-responsive-table3 td
+  {
+    display: block;
+  }
+  #jscroll-responsive-table3 tbody > tr:first-child > th + td
+  {
+    border-top: 1px solid #e2e2e2;
+  }
+  #jscroll-responsive-table3 td:first-child
+  {
+    border-top: 3px solid #ccc;
+    text-align: left;
+  }
+
+  #jscroll-responsive-table3 td[is-oneforall="false"]
+  {
+    display: none;
+  }
+
+}
+
+.jscroll-table
+{
+}
+
+.jscroll-subgrid-table
+{
+}
+
+.jscroll-subgrid-table-tr
+{
+}
+
+.jscroll-subgrid-table-td
+{
+}
+
+.jscroll-subgrid-tr
+{
+}
+
+.jscroll-subgrid-td
+{
+}
+
+.jscroll-th
+{
+}
+
+.jscroll-td
+{
+  width: auto;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.jscroll-tr
+{
+  cursor: pointer;
+}
+
+.jscroll-th
+{
+  cursor: pointer;
+}
+
+.jscroll-tbody
+{
+}
+
+.jscroll-thead
+{
+}
+
+.jscroll-thead-tr
+{
+}

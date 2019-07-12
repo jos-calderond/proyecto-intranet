@@ -1,0 +1,14 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:32 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10SEOXRMO00000000SEG - OPCIONES X ROL          000000         YNNNYN00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71SEOXR             4EBE0E3158E8A54090C29CB9B0F4F60670FC1F666D0692458FF625C2179897CCDF98D6C565D368459D3C47DADD559FBD61ED34FD701D484A83FD0252B7911FEA495BF4807C0CC444AED6EF8949E51EB573AFB4217C14C84BAEE51A04DC23BA591F10E5194F5BB04FA6BD5EBC577AFAC1
+30MAINT             SEOXR             OUTPUT    00000000A000100                           MAINT                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30CODROL            SEOXR             OUTPUT    00000000N000300                           CODIGO ROL                                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30CODOPC            SEOXR             OUTPUT    00000000N000300                           CODIGO OPCION                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+35SEGURIDAD         SEOXR             INCLUDES  0     0      *         *

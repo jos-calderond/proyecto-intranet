@@ -1,0 +1,169 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:46 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10WAOPCMI00000000MANTENEDOR DE OPCIONES        000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71WAOPC             1C8ACD124785AF418454E8FFC2944ED90D9452951F8AF1419BD8571EDADC41E30D0FE2D34032384695420F05906915B01CEBC9BDB799FF4F80D26425710BF2DE7D99645C75D9064A9C40A97AF0658C18568D40B68891074788F67632D6F8DF9EA60F9B392FD5814689C538B5BF14916B
+90WAOPC             ICONO:                                                                          0001100206 NNNN N                    000NNNNNNN01
+90WAOPC             ORDEN:                                                                          0001000206 NNNN N                    000NNNNNNN01
+90WAOPC             OPCION PADRE:                                                                   0000900213 NNNN N                    000NNNNNNN01
+90WAOPC             FORM:                                                                           0000800205 NNNN N                    000NNNNNNN01
+90WAOPC             DESCRIPCION:                                                                    0000700212 NNNN N                    000NNNNNNN01
+90WAOPC             -----------------------------------------------------------------------------   0000500277 NNNN N                    000NNNNNNN01
+90WAOPC             OPCION:                                                                         0000400207 NNNN N                    000NNNNNNN01
+90WAOPC             MANTENEDOR DE OPCIONES                                                          0000302822 NNNN N                    000NNNNNNN01
+90WAOPC             CODUSU:                                                                         0000106207 NNNN N                    000NNNNNNN01
+30ICONO             WAOPC             DEFAULT   00000000A002000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0001100009
+30ORDEN             WAOPC             DEFAULT   00000000N000300                           ORDEN DE LA OPCION                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0001000009
+30CODPADRE          WAOPC             DEFAULT   00000000N000300                           CODIGO PADRE OPCION                                         D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000900016
+30FORMU             WAOPC             DEFAULT   00000000A007000                           FORMULARIO OPCION                                           D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000800008
+30DESCRIP           WAOPC             DEFAULT   00000000A005000                           DESCRIPCION OPCION                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000700014
+30CODIGO            WAOPC             DEFAULT   00000000N000300                           CODIGO OPCION                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400010
+30CODUSU            WAOPC             DEFAULT   00000000A001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100069
+30MANT              WAOPC             DEFAULT   00000000A000300                           ACCION                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100031
+30WAOPC             LOG-SEOPC         INSERT
+48SD-CODIGO         WAOPC             0003N00(0)                                                                                                                                            SETUP DATA CODIGO
+48SD-FLG-ROL        WAOPC             0001A00                                                                                                                                                                                                             D
+48SD-LAST           WAOPC             0003N00(999)
+42WAOPCMV; (INQ)           MANT                                                                                 N
+42WAOPCMV; SD-CODIGO       CODIGO                                                                               N
+42WAOPC                                                                                                         N
+42WAOPCDT; EVERY SEOPC-SE1 (CODIGO)                                                                             N
+42WAOPC    BK;                                                                                                  N
+42WAOPCEND;                                                                                                     N
+42WAOPC                                                                                                         N
+42WAOPCDW; GLB.STATUS NOT = GLB.SPACES                                                                          N
+42WAOPCEE;                                                                                                      N
+42WAOPC                                                                                                         N
+42WAOPCMV; SEOPC.CODIGO    CODIGO                                                                               N
+42WAOPCMV; SEOPC.CODPADRE  CODPADRE                                                                             N
+42WAOPCMV; SEOPC.DESCRIP   DESCRIP                                                                              N
+42WAOPCMV; SEOPC.FORMU     FORMU                                                                                N
+42WAOPCMV; SEOPC.ICONO     ICONO                                                                                N
+42WAOPCMV; SEOPC.ORDEN     ORDEN                                                                                N
+43WAOPCDW; MANT    NOT =   (INQ) AND                                                                            N
+43WAOPCDW; MANT    NOT =   (CHG) AND                                                                            N
+43WAOPCDW; MANT    NOT =   (DEL) AND                                                                            N
+43WAOPCDW; MANT    NOT =   (ADD)                                                                                N
+43WAOPC    ME; ERROR GD-ERR-MANT                                                                                N
+43WAOPCEE;                                                                                                      N
+43WAOPC                                                                                                         N
+43WAOPCMV; CODIGO         SD-CODIGO                                                                             N
+43WAOPC                                                                                                         N
+43WAOPCDW; MANT        NOT =   (ADD) AND                                                                        N
+43WAOPCDW; CODIGO      =       GLB.ZEROS                                                                        N
+43WAOPC    ME; ERROR ( DEBE INGRESAR OPCION)                                                                    N
+43WAOPCEE;                                                                                                      N
+43WAOPC                                                                                                         N
+43WAOPCDT; EVERY SEOPC-SE1 (CODIGO)                                                                             N
+43WAOPC    BK;                                                                                                  N
+43WAOPCEND;                                                                                                     N
+43WAOPC                                                                                                         N
+43WAOPCDW; GLB.STATUS  NOT =   GLB.SPACES AND                                                                   N
+43WAOPCDW; MANT        NOT =   (ADD)                                                                            N
+43WAOPC    ME; ERROR GD-ERR-REG-NO                                                                              N
+43WAOPCEE;                                                                                                      N
+43WAOPC                                                                                                         N
+43WAOPCDW; GLB.STATUS  =   GLB.SPACES AND                                                                       N
+43WAOPCDW; MANT        =   (ADD)                                                                                N
+43WAOPC    ME; ERROR GD-ERR-REG-SI                                                                              N
+43WAOPCEE;                                                                                                      N
+43WAOPC                                                                                                         N
+43WAOPCDW; MANT    =   (CHG) OR                                                                                 N
+43WAOPCDW; MANT    =   (ADD)                                                                                    N
+43WAOPC    DW; DESCRIP   =   GLB.SPACES                                                                         N
+43WAOPC        ME; ERROR ( DEBE INGRESAR DESCRIPCION)                                                           N
+43WAOPC    EE;                                                                                                  N
+43WAOPC                                                                                                         N
+43WAOPC    DW; ORDEN     =   GLB.ZEROS                                                                          N
+43WAOPC        ME; ERROR ( DEBE INGRESAR ORDEN)                                                                 N
+43WAOPC    EE;                                                                                                  N
+43WAOPCEND;                                                                                                     N
+43WAOPC                                                                                                         N
+43WAOPCDW; MANT    =   (DEL)                                                                                    N
+43WAOPC    MV; (0)             SD-FLG-ROL                                                                       N
+43WAOPC                                                                                                         N
+43WAOPC    DT; GROUP SEOXR-SS1 (CODIGO) FROM (GLB.ZEROS)                                                        N
+43WAOPC        MV; (1)             SD-FLG-ROL                                                                   N
+43WAOPC        BK;                                                                                              N
+43WAOPC    END;                                                                                                 N
+43WAOPC                                                                                                         N
+43WAOPC    DW; SD-FLG-ROL  =   (1)                                                                              N
+43WAOPC        ME; ERROR ( NO PUEDE ELIMINAR UNA OPCION PRESENTE EN UN ROL)                                     N
+43WAOPC    EE;                                                                                                  N
+43WAOPCEND;                                                                                                     N
+41WAOPC             00DW; MANT    =   (INQ)                                                                                    N
+41WAOPC             00    ::SALIR LG                                                                                           N
+41WAOPC             00EE;                                                                                                      N
+41WAOPC             00                                                                                                         N
+41WAOPC             00 ::AUIDTORIA                                                                                             N
+41WAOPC             00MV;GLB.SPACES      GD-LOG                                                                                N
+41WAOPC             00MV;CODUSU          GD-LOG-CODUSU                                                                         N
+41WAOPC             00MV;MANT            GD-LOG-ACCION                                                                         N
+41WAOPC             00                                                                                                         N
+41WAOPC             00DW;MANT = (CHG) OR                                                                                       N
+41WAOPC             00DW;MANT = (DEL)                                                                                          N
+41WAOPC             00   :::SE RESCATA LOS DATOS ANTES DEL CAMBIO                                                              N
+41WAOPC             00   MV;(SEOPC)         GD-LOG-ESTRU                                                                       N
+41WAOPC             00   MV;(ANTER)         GD-LOG-TIPOREG                                                                     N
+41WAOPC             00   INS;LOG-SEOPC                                                        Y                                N
+41WAOPC             00END;                                                                                                     N
+41WAOPC             00                                                                                                         N
+41WAOPC             00                                                                                                         N
+41WAOPC             00:MV; CODIGO      GD-COD10                                                                                N
+41WAOPC             00:INS; DEL-CEROS                                                                                          N
+41WAOPC             00: MV; GD-COD10    GD-LOG-ID1                                                                             N
+41WAOPC             00                                                                                                         N
+41WAOPC             00DW; MANT    =   (ADD)                                                                                    N
+41WAOPC             00    DT; LAST SEOPC-SE1 (SD-LAST) SECURE                                                                  N
+41WAOPC             00                                                                                                         N
+41WAOPC             00    DW; GLB.STATUS      = GLB.SPACES                                                                     N
+41WAOPC             00        MV; SEOPC.CODIGO    SD-CODIGO                                                                    N
+41WAOPC             00        ADD; (1)            SD-CODIGO                                                                    N
+41WAOPC             00    ELSE;                                                                                                N
+41WAOPC             00        MV; (1)             SD-CODIGO                                                                    N
+41WAOPC             00    END;                                                                                                 N
+41WAOPC             00                                                                                                         N
+41WAOPC             00    :MV; SD-CODIGO   GD-COD10                                                                            N
+41WAOPC             00    :INS; DEL-CEROS                                                                                      N
+41WAOPC             00    : MV; GD-COD10    GD-LOG-ID1                                                                         N
+41WAOPC             00                                                                                                         N
+41WAOPC             00    AUTO.ENTRY; SEOPC                                                                                    N
+41WAOPC             00        AU; SD-CODIGO       CODIGO                                                                       N
+41WAOPC             00        AU; CODPADRE        CODPADRE                                                                     N
+41WAOPC             00        AU; DESCRIP         DESCRIP                                                                      N
+41WAOPC             00        AU; FORMU           FORMU                                                                        N
+41WAOPC             00        AU; ICONO           ICONO                                                                        N
+41WAOPC             00        AU; ORDEN           ORDEN                                                                        N
+41WAOPC             00    AUTO;WRITE                                                                                           N
+41WAOPC             00                                                                                                         N
+41WAOPC             00ELSE;                                                                                                    N
+41WAOPC             00    DT; EVERY SEOPC-SE1 (CODIGO)                                                                         N
+41WAOPC             00        BK;                                                                                              N
+41WAOPC             00    END;                                                                                                 N
+41WAOPC             00                                                                                                         N
+41WAOPC             00    DW; MANT    =   (CHG)                                                                                N
+41WAOPC             00        FL; CODIGO          SEOPC.CODIGO                                                                 N
+41WAOPC             00        FL; CODPADRE        SEOPC.CODPADRE                                                               N
+41WAOPC             00        FL; DESCRIP         SEOPC.DESCRIP                                                                N
+41WAOPC             00        FL; FORMU           SEOPC.FORMU                                                                  N
+41WAOPC             00        FL; ICONO           SEOPC.ICONO                                                                  N
+41WAOPC             00        FL; ORDEN           SEOPC.ORDEN                                                                  N
+41WAOPC             00    END;                                                                                                 N
+41WAOPC             00                                                                                                         N
+41WAOPC             00    DW; MANT    =   (DEL)                                                                                N
+41WAOPC             00        FL; (D)     SEOPC.MAINT                                                                          N
+41WAOPC             00    END;                                                                                                 N
+41WAOPC             00                                                                                                         N
+41WAOPC             00END;                                                                                                     N
+41WAOPC             00                                                                                                         N
+41WAOPC             00 ::AUDITORIA                                                                                             N
+41WAOPC             00 ::SE RESCATA DATO POST CAMBIOS Y SE GRABA LOG                                                           N
+41WAOPC             00    MV;(SEOPC)          GD-LOG-ESTRU                                                                     N
+41WAOPC             00    MV;(NUEVO)          GD-LOG-TIPOREG                                                                   N
+41WAOPC             00    INS;LOG-SEOPC                                                       Y                                N
+35SEGURIDAD         WAOPC             INCLUDES  0     0      *         *

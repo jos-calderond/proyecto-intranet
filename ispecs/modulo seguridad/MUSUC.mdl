@@ -1,0 +1,86 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:24 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10MUSUCMI00000000CAMBIO DE CLAVE               000000         YNNYNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000800000016YNNNNNNNYYYN                            NNN   NDNYYN01920000000000000 Y
+71MUSUC             66E07D61050D8F459B05874711F6A91B4483561CE4A64F4D9366D5D34C8468E83C9B21693B2D7542B5F632AF870EF8A4BF25ECBCCD7FF644AF3712AA306D974C65954A551ACC2A448D378E72B33035559308F45357370C4AAC3AC5CD54DB44D3623C3D6A649A724FA7915BB6C0D6DFBB
+90MUSUC             MENSAJE:                                                                        0001300208 NNNN N                    000NNNNNNN01
+90MUSUC             REPITA PASSWORD:                                                                0001200216 NNNN N                    000NNNNNNN01
+90MUSUC             NUEVA PASSWORD:                                                                 0001100215 NNNN N                    000NNNNNNN01
+90MUSUC             PASWORD ACTUAL:                                                                 0001000215 NNNN N                    000NNNNNNN01
+90MUSUC             USUARIO:                                                                        0000900208 NNNN N                    000NNNNNNN01
+90MUSUC             -----------------------------------------------------------------------------   0000500277 NNNN N                    000NNNNNNN01
+90MUSUC             CAMBIO CLAVE                                                                    0000403212 NNNN N                    000NNNNNNN01
+30MENSAJE-OK        MUSUC             INQUIRY   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0001300020
+30REPITE-PAS        MUSUC             DEFAULT   00000000A003200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNYN                  D                                    0000NDN0001200020
+30NUEVA-PASW        MUSUC             DEFAULT   00000000A003200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNYN                  D                                    0000NDN0001100020
+30PASSWOR           MUSUC             DEFAULT   00000000A003200 PASSWOR                                                                               D DD NNNN N                    000NNNNNNNN      DDNNNYN                  D                                    0000NDN0001000020
+30USUARIO           MUSUC             DEFAULT   00000000A001000 USUARIO                                                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000900020
+30MUSUC             LOG-SEUSU         INSERT
+48SD-CODUNIGES      MUSUC             0006A00( )                                                                                                                                            CODIGO UNIDAD DE GESTION                                      D
+48SD-FECHA          MUSUC             0008N00(0)
+48SD-FLAG           MUSUC             0001A00( )                                                                                                                                                                                                          D
+48SD-USPASS         MUSUC             0000A00                                                            Y                                                                                                                                                N
+48SD-USUAR          MUSUC             0010A00( )                                                                                                                                                                                                          D
+48SD-PASSW          MUSUC             0010A00( )                                                                                                                                                                                                          D
+48END.GROUP;        MUSUC                                                                                 Y
+43MUSUC                                                                                                         N
+43MUSUCMV;GLB.SPACES                 MENSAJE-OK                                                                 N
+43MUSUC                                                                                                         N
+43MUSUC                                                                                                         N
+43MUSUCDT; EVERY SEUSU-SE1(USUARIO)                                                                             N
+43MUSUC    BK;                                                                                                  N
+43MUSUCEND;                                                                                                     N
+43MUSUCDW;GLB.STATUS NOT = GLB.SPACES OR                                                                        N
+43MUSUCDW;SEUSU.PASS NOT = PASSWOR                                                                              N
+43MUSUC    ME;ERROR(USUARIO Y/O CLAVE NO CORRESPONDE)                                                           N
+43MUSUCEE;                                                                                                      N
+43MUSUC                                                                                                         N
+43MUSUCDW;SEUSU.ESTADO NOT = (V)                                                                                N
+43MUSUC    ME;ERROR (USUARIO NO VIGENTE)                                                                        N
+43MUSUCEE;                                                                                                      N
+43MUSUC                                                                                                         N
+43MUSUCDW;NUEVA-PASW = GLB.SPACES OR                                                                            N
+43MUSUCDW;REPITE-PAS = GLB.SPACES                                                                               N
+43MUSUC   ME;ERROR (DEBE INGRESAR NUEVA PASSWORD)                                                               N
+43MUSUCEE;                                                                                                      N
+43MUSUC                                                                                                         N
+43MUSUCDW;NUEVA-PASW NOT = REPITE-PAS                                                                           N
+43MUSUC   ME;ERROR(DEBE REPETIR CORRECTAMENTE LA PASWORD)                                                       N
+43MUSUCEE;                                                                                                      N
+43MUSUC                                                                                                         N
+43MUSUCDW;NUEVA-PASW = SEUSU.PASS                                                                               N
+43MUSUC   ME;ERROR (DEBE INGRESAR PASSWORD DIFERENTE A LA ACTUAL)                                               N
+43MUSUCEE;                                                                                                      N
+41MUSUC             00:MV; USUARIO       GW-CODUSU                                                                             N
+41MUSUC             00:MV; PASSWOR       GW-PASWOR                                                                             N
+41MUSUC             00:MV; GW-WORK       GLB.WORK                                                                              N
+41MUSUC             00                                                                                                         N
+41MUSUC             00                                                                                                         N
+41MUSUC             00::AUIDTORIA ANTES DEL CAMBIO                                                                             N
+41MUSUC             00MV;GLB.SPACES      GD-LOG                                                                                N
+41MUSUC             00MV;USUARIO         GD-LOG-CODUSU                                                                         N
+41MUSUC             00MV;(CHG)           GD-LOG-ACCION                                                                         N
+41MUSUC             00MV;(SEUSU)         GD-LOG-ESTRU                                                                          N
+41MUSUC             00MV;(ANTER)         GD-LOG-TIPOREG                                                                        N
+41MUSUC             00INS;LOG-SEUSU                                                           Y                                N
+41MUSUC             00                                                                                                         N
+41MUSUC             00FL;NUEVA-PASW      SEUSU.PASS                                                                            N
+41MUSUC             00                                                                                                         N
+41MUSUC             00                                                                                                         N
+41MUSUC             00::AUIDTORIA POST CAMBIO                                                                                  N
+41MUSUC             00MV;GLB.SPACES      GD-LOG                                                                                N
+41MUSUC             00MV;USUARIO         GD-LOG-CODUSU                                                                         N
+41MUSUC             00MV;(CHG)           GD-LOG-ACCION                                                                         N
+41MUSUC             00MV;(SEUSU)         GD-LOG-ESTRU                                                                          N
+41MUSUC             00MV;(NUEVO)         GD-LOG-TIPOREG                                                                        N
+41MUSUC             00INS;LOG-SEUSU                                                           Y                                N
+41MUSUC             00                                                                                                         N
+41MUSUC             00MV;(S)             MENSAJE-OK                                                                            N
+41MUSUC             00                                                                                                         N
+41MUSUC             00RC; ISPEC                                                                                                N
+35SEGURIDAD         MUSUC             INCLUDES  0     0      *         *

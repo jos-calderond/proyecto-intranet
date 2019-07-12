@@ -1,0 +1,547 @@
+﻿/* Tipo y tamaño de fuente del sitio */
+
+:root
+{
+  --maincolor: #DCDCDC;
+  --secondcolor: #1d1297;
+  --thirdcolor: #e2532c;
+  --mainfontfamily: 'open sans' sans-serif;
+}
+
+.modal-title
+{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.span-login-titulo-sistema
+{
+  font-size: 27px;
+  margin-top: 50px;
+  height: 0px;
+  display: block;
+}
+
+.login-box
+{
+  margin-top: 100px;
+}
+
+/* */
+.panel
+{
+  margin-bottom: 0px;
+}
+
+.modal1 > .modal-dialog
+{
+  width: 30% !important;
+}
+
+.modal2 > .modal-dialog
+{
+  width: 50% !important;
+}
+
+.modal3 > .modal-dialog
+{
+  width: 100% !important;
+}
+
+.btn-primary
+{
+  color: #fff;
+  background-color: #0434A6;
+  border-color: #123795;
+}
+
+/* */
+#menu:last-child
+{
+  margin-bottom: 100px;
+}
+
+#ulOpciones, #ulOpcionesSeleccionadas
+{
+  border: 1px solid #000;
+  background: #fff;
+  width: 100%;
+  min-height: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  margin-right: 10px;
+  height: 200px;
+  overflow: scroll;
+}
+
+#ulOpcionesLoad
+{
+  border: 1px solid #000;
+  background: #eee;
+  width: 100%;
+  min-height: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  margin-right: 10px;
+  height: 200px;
+  overflow: scroll;
+}
+
+#ulOpciones li, #ulOpcionesSeleccionadas li
+{
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 97%;
+}
+
+.uppercase
+{
+  text-transform: uppercase;
+}
+
+/* Botones de navegación en modo mobile */
+
+#myBtn
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: Gray; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover
+{
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#myBtn2
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  top: 50%; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: Gray; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn2:hover
+{
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* This is to remove the arrow of select element in Explorer */
+select.selector::-ms-expand
+{
+  display: none;
+}
+select.selector
+{
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* */
+legend
+{
+  font-size: 18px;
+}
+
+/* */
+.btn-lg
+{
+  font-size: 15px;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+/* */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary
+{
+  color: var(--secondcolor);
+  background-color: var(--maincolor);
+  border-color: var(--maincolor);
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
+{
+  color: var(--secondcolor);
+}
+
+.navbar-default .navbar-nav > li > a
+{
+  color: var(--secondcolor);
+}
+
+.navbar-nav > li > a
+{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+a
+{
+  color: var(--secondcolor);
+  text-decoration: none;
+}
+
+body
+{
+  font-family: var(--mainfontfamily);
+  font-size: 15px;
+}
+
+.form-control
+{
+  font-family: var(--mainfontfamily);
+  font-size: 15px;
+}
+
+.modal-xlg
+{
+  width: 90%;
+}
+
+#menu
+{
+  font-family: var(--mainfontfamily);
+  background-color: var(--maincolor);
+  font-size: 15px;
+  font-weight: bold;
+  width: -webkit-fill-available;
+  margin-top: 0px;
+}
+
+.panel-default > .panel-heading
+{
+  background-color: var(--secondcolor);
+}
+
+#divPanel
+{
+  background-color: var(--secondcolor);
+  padding: 10px 0px;
+}
+
+.panel-primary
+{
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: -45px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.panel-default
+{
+  border-color: var(--secondcolor);
+}
+
+.span-titulo-sistema
+{
+  color: var(--secondcolor);
+  font-size: 20px;
+}
+
+.span-titulo-sistema-login
+{
+  color: var(--maincolor);
+  font-size: 30px;
+  margin-top: 0px;
+  height: 0px;
+}
+
+.span-usuario
+{
+  font-style: normal;
+  color: var(--secondcolor);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-primary, btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover
+{
+  color: var(--secondcolor);
+  background-color: var(--maincolor);
+  border-color: var(--maincolor);
+}
+
+.span-rol
+{
+  color: var(--secondcolor);
+  font-size: 10px;
+}
+
+label
+{
+  font-family: var(--mainfontfamily);
+  color: var(--secondcolor);
+  font-size: 100%;
+}
+
+.table-bordered
+{
+  border: 1px solid var(--maincolor);
+}
+
+.panel-title
+{
+  font-family: var(--mainfontfamily);
+  color: var(--maincolor);
+  font-weight: bold;
+}
+
+.modal-header-login
+{
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.modal-content
+{
+  height: 100%;
+  border-radius: 0;
+  position: relative;
+}
+
+.modal-footer-login
+{
+  border-radius: 0;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  background-color: var(--maincolor);
+  text-align: center;
+}
+
+.dropdown-menu
+{
+  font-family: var(--mainfontfamily);
+  color: var(--maincolor);
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover
+{
+  color: var(--secondcolor);
+  background-color: var(--maincolor);
+}
+
+.img-logo
+{
+  margin-top: -4px;
+  width: 80px;
+}
+
+#iuser
+{
+  color: var(--secondcolor);
+}
+
+#icaret
+{
+  color: var(--secondcolor);
+}
+
+/* jscroll table */
+.jscroll-thead-tr
+{
+  background-color: var(--maincolor);
+  font-family: var(--mainfontfamily);
+  color: var(--secondcolor);
+}
+
+.jscroll-td
+{
+  font-family: var(--mainfontfamily);
+}
+
+#navMenu
+{
+  margin-bottom: -10px;
+  margin-top: -12px;
+  background-color: transparent;
+  border: 0px;
+}
+
+#divNavbarBrand
+{
+  color: White;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#aDropdownToogle
+{
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-menu
+{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dropdown-menu-size
+{
+  font-size: 15px;
+}
+
+.dropdown-toggle
+{
+  height: 50px;
+  padding-top: 7px;
+}
+
+.px-checkbox
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  padding: 10px;
+}
+
+.px-subtitulo-2
+{
+  font-size: large;
+}
+
+.px-subtitulo
+{
+  color: #0434A6;
+  font-weight: bold;
+}
+
+.navbar-title
+{
+  background-color: #0434A6;
+  margin-bottom: 10px;
+}
+
+.form-horizontal .control-label-left
+{
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.container1
+{
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.container2
+{
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.container3
+{
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.container4
+{
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.container5
+{
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.panel-body-modal
+{
+  padding-top: 0px;
+}
+
+#divTitleContainer
+{
+  background-color: var(--thirdcolor);
+}
+
+@media (max-width: 767px)
+{
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a
+  {
+    color: Black;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover
+  {
+    color: Gray; /*background-color: transparent;*/
+  }
+}
+
+@media only screen and (min-width: 800px)
+{
+  .menuHeader
+  {
+    display: none;
+  }
+
+  .panel-primary
+  {
+    margin-top: -40px;
+  }
+}
+
+@media only screen and (max-width: 800px)
+{
+  .modal-header-login
+  {
+    display: none;
+  }
+
+  .modal-footer-login
+  {
+    display: none;
+  }
+
+  .span-titulo-sistema
+  {
+    font-size: 15px;
+  }
+
+  .panel-primary
+  {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .dropdown
+  {
+    margin-top: -15px;
+  }
+
+  #menu:last-child
+  {
+    margin-bottom: 0px;
+  }
+}

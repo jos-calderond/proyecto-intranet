@@ -1,0 +1,16 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:35 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10SEROLMO00000000SEG - ROL                     000000         YNNNYN00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71SEROL             1C4F74BA9B15C24F963CE42DB5DF810232452E06D1FCE640B3779DC6114ED00124E50E1C36E45640B882ADA237A2F4526A26902BE26F284CBC32CFCD7C0C9C6F3C3973C7246DCE4EACE91CD0A5C408EE1C8006DCCD5BC347A8EBDAAC3799EDB2DC7135D1AAB87F46AA2FA4449AE117CC
+30NOMBRE            SEROL             OUTPUT    00000000A003000                           NOMBRE DEL ROL                                              D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30MAINT             SEROL             OUTPUT    00000000A000100                           MAINT                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30ESTADO            SEROL             OUTPUT    00000000A000100                           ESTADO                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30DPASS             SEROL             OUTPUT    00000000N000200                           DIAS DURACION PASSWORD                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30CODIGO            SEROL             OUTPUT    00000000N000300                           CODIGO                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+35SEGURIDAD         SEROL             INCLUDES  0     0      *         *

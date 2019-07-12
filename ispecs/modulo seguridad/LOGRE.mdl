@@ -1,0 +1,19 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:07 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10LOGREMO00000000LOG AUDITORIA                 000000         YNNNYN00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71LOGRE             EB1EF232068E834594841C9E6431BD469681525EA50B6845B1CB42EB3E67E77D6F86D473DEFA8B45857A5F32AF75499E82D5F8693CD0DF4ABED4C035C68823FBE62BB1EA6BDE5C4B8538C513B4A230C94AD8C330FC52BA4E9C93B3E9E81064AB0CEF36C53F8F6645B37FFD298F8D5378
+30USUARIO           LOGRE             OUTPUT    00000000A001000                           USUARIO LOG                                                 D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30REG-NUEVO         LOGRE             OUTPUT    00000000A300000                           REGISTRO NUEVO                                              D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30REG-ANTER         LOGRE             OUTPUT    00000000A300000                           REGISTRO ANTERIOR                                           D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30ID-ESTRU          LOGRE             OUTPUT    00000000A006000                           CLAVE DEL REGISTRO                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30HORA              LOGRE             OUTPUT    00000000N000800                           HORA LOG                                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30FECHA             LOGRE             OUTPUT    00000000N000800                           FECHA LOG                                                   D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30ESTRU             LOGRE             OUTPUT    00000000A000500                           ESTRUCTURA                                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30ACCION            LOGRE             OUTPUT    00000000A000300                           ACCION REALIZADA                                            D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+35SEGURIDAD         LOGRE             INCLUDES  0     0      *         *

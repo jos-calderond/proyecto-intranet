@@ -1,0 +1,15 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:58:41 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+60SEUSU-DELRUT                           YN                0DEFAULT   00000000000YNN   N
+71SEUSU-DEL         7D4F772FA436244EB59BCDC0590827D7
+30SEUSU-DEL         SEUSU             WILDCARD
+30SEUSU-DEL         SEUSU             OVER              C
+30RUT               SEUSU-DEL         ORDINATE                 A                                                                                                                              N
+46SEUSU-DELMAINT        =      (D)
+35SEGURIDAD         SEUSU-DEL         INCLUDES  0     0      *         *

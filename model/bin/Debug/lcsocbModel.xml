@@ -1,0 +1,2281 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+lcsocbModel
+</name>
+</assembly>
+<members>
+<member name="M:lcsocbModel.Funciones.toRealString(System.String)">
+	<summary>
+ '10/05/2019 creacion Pablo Cornejo 
+ </summary>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gMcpFormatTime(System.String)">
+	<summary>
+	</summary>
+	<param name="hora"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gGetStringBetween2Strings(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="source"></param>
+	<param name="firstString"></param>
+	<param name="secondString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gGetMd5(System.String)">
+	<summary>
+	</summary>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gMcpFormatDate(System.String,lcsocbModel.Funciones.DateFormats)">
+	<summary>
+	</summary>
+	<param name="fecha"></param>
+	<param name="format"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gFormatPeriod(System.String)">
+	<summary>
+	</summary>
+	<param name="periodo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gFormatDate(System.String)">
+	<summary>
+	</summary>
+	<param name="fecha"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gSafeSubstring(System.String,System.Int32,System.Int32)">
+	<summary>
+  Substring seguro
+ </summary>
+	<param name="texto"></param>
+	<param name="indice"></param>
+	<param name="largo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gFormatTime(System.String)">
+	<summary>
+  HHMMSSMS en HH:MM:SS:MS
+ </summary>
+	<param name="hora">HHMMSSMS</param>
+	<returns>HH:MM:SS</returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gToSqlDecimal(System.String)">
+	<summary>
+  remueve separador de miles
+ remplaza separador decimal de , a .
+ </summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gHoraCerosIzq(System.Int32)">
+	<summary>
+	</summary>
+	<param name="hora"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gValidaRut(System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.gCleanMappingChars(System.String)">
+	<summary>
+ Reemplaza caracteres extraños del mapping.
+ </summary>
+	<param name="path"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Funciones.glimpiarCadenaReporte(System.String)">
+	<summary>
+	</summary>
+	<param name="cadena"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTD.__IspecToModel(lcsocbDll.MACTD)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTD.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTD.ejecuta(lcsocbModel.Tipos.oMACTD)">
+	<summary>
+	</summary>
+	<param name="oISPEC"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTD.__callIspec(lcsocbDll.MACTD)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMACTD">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMUSUC.__IspecToModel(lcsocbDll.MUSUC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMUSUC.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMUSUC.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMUSUC.__callIspec(lcsocbDll.MUSUC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMUSUC">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oIINFL.consultar(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+	<summary>
+	</summary>
+	<param name="NOMARCH"></param>
+	<param name="CREDEN"></param>
+	<param name="SHAREN"></param>
+	<param name="SEVERNOM"></param>
+	<param name="LINEA5"></param>
+	<param name="LINEA4"></param>
+	<param name="LINEA3"></param>
+	<param name="LINEA2"></param>
+	<param name="LINEA1"></param>
+	<param name="NOMWFL"></param>
+	<param name="NOMPROG"></param>
+	<param name="VAFTPIN"></param>
+	<param name="VAFTPCO"></param>
+	<param name="VAMENU"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oIINFL.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oIINFL.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oIINFL.generar(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+	<summary>
+	</summary>
+	<param name="NOMARCH"></param>
+	<param name="CREDEN"></param>
+	<param name="SHAREN"></param>
+	<param name="SEVERNOM"></param>
+	<param name="LINEA5"></param>
+	<param name="LINEA4"></param>
+	<param name="LINEA3"></param>
+	<param name="LINEA2"></param>
+	<param name="LINEA1"></param>
+	<param name="NOMWFL"></param>
+	<param name="NOMPROG"></param>
+	<param name="VAFTPIN"></param>
+	<param name="VAFTPCO"></param>
+	<param name="VAMENU"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oIINFL.borrar(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+	<summary>
+	</summary>
+	<param name="NOMARCH"></param>
+	<param name="CREDEN"></param>
+	<param name="SHAREN"></param>
+	<param name="SEVERNOM"></param>
+	<param name="LINEA5"></param>
+	<param name="LINEA4"></param>
+	<param name="LINEA3"></param>
+	<param name="LINEA2"></param>
+	<param name="LINEA1"></param>
+	<param name="NOMWFL"></param>
+	<param name="NOMPROG"></param>
+	<param name="VAFTPIN"></param>
+	<param name="VAFTPCO"></param>
+	<param name="VAMENU"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oIINFL.__callIspec(lcsocbDll.IINFL)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oIINFL">
+	<summary>
+ 13/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCPERS.#ctor(lcsocbDll.CPERS.CFType)">
+	<summary>
+	</summary>
+	<param name="miCPERSFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCPERS.consultar(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="numero"></param>
+	<param name="calle"></param>
+	<param name="codfam"></param>
+	<param name="razsoc"></param>
+	<param name="rut"></param>
+	<param name="tiporden"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCPERS">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ 09/05/2019 rtorreblanca: Modificación: se eliminan comentarios y se modifica método consultar.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCSOL2.#ctor(lcsocbDll.CSOL2.CFType)">
+	<summary>
+	</summary>
+	<param name="miCSOL2FType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCSOL2.__callIspec(lcsocbDll.CSOL2)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCSOL2.consultaMasiva(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="tiporden"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCSOL2">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMHADM.__IspecToModel(lcsocbDll.MHADM)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMHADM.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMHADM.consultar(System.String)">
+	<summary>
+	</summary>
+	<param name="numeroFicha"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMHADM.__callIspec(lcsocbDll.MHADM)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMHADM">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAROS.__IspecToModel(lcsocbDll.MAROS)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAROS.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAROS.consultar(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAROS.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAROS.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAROS.borrar(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAROS.__callIspec(lcsocbDll.MAROS)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMAROS">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTATE.__ModelToIspec">
+	<summary>
+ 09/05/2019 mbaeza - Creación.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTATE.__IspecToModel(lcsocbDll.MTATE)">
+	<summary>
+ 09/05/2019 mbaeza - Creación.
+ </summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTATE.#ctor(lcsocbDll.MTATE.CFType)">
+	<summary>
+ 09/05/2019 mbaeza - Creación.
+ </summary>
+	<param name="miMTATECFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTATE.__callIspec(lcsocbDll.MTATE)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTATE.consultaTipoFicha(System.String,System.String,System.String)">
+	<summary>
+ 09/05/2019 mbaeza - Creación.
+ </summary>
+	<param name="rMant"></param>
+	<param name="rARESOC"></param>
+	<param name="rTIPATE"></param>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMTATE">
+	<summary>
+ 08/05/2019 mbaeza: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAFAR.__IspecToModel(lcsocbDll.MAFAR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAFAR.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAFAR.consultar(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<param name="proceso"></param>
+	<param name="secuencia"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAFAR.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAFAR.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAFAR.borrar(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<param name="proceso"></param>
+	<param name="secuencia"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAFAR.__callIspec(lcsocbDll.MAFAR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMAFAR">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRMC.__IspecToModel(lcsocbDll.MCRMC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRMC.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRMC.consultar(System.Object,System.Object)">
+	<summary>
+	</summary>
+	<param name="ANOCAM"></param>
+	<param name="IDCAMPANA"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRMC.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRMC.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRMC.borrar(System.Object)">
+	<summary>
+	</summary>
+	<param name="IDCAMPANA"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRMC.__callIspec(lcsocbDll.MCRMC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMCRMC">
+	<summary>
+ 09/05/2019 xbravo: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUSU.__IspecToModel(lcsocbDll.MAUSU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUSU.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUSU.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUSU.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUSU.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUSU.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUSU.__callIspec(lcsocbDll.MAUSU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMAUSU">
+	<summary>
+ 09/05/2019 pcornejo: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACDP.#ctor(lcsocbDll.CACDP.CFType)">
+	<summary>
+	</summary>
+	<param name="miCACDPCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACDP.__callIspec(lcsocbDll.CACDP)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACDP.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACDP.consulta(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="CODSISB"></param>
+	<param name="CODUNIGESB"></param>
+	<param name="OPCION"></param>
+	<param name="CODROLB"></param>
+	<param name="RUTUSU"></param>
+	<param name="ANOFLU_B"></param>
+	<param name="NUMFLU_B"></param>
+	<param name="SECUENCIAB"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCACDP">
+	<summary>
+ 17/05/2019 croman: Se cambian los tipos de los parámetros de Integer a String.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFLUJ.#ctor(lcsocbDll.CFLUJ.CFType)">
+	<summary>
+	</summary>
+	<param name="miCFLUJCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFLUJ.__callIspec(lcsocbDll.CFLUJ)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFLUJ.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCFLUJ">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMFAR.#ctor(lcsocbDll.CMFAR.CFType)">
+	<summary>
+	</summary>
+	<param name="miCMFARCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMFAR.__callIspec(lcsocbDll.CMFAR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMFAR.consultactividadesPorFlujo(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="proceso"></param>
+	<param name="codigo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCMFAR">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMUSU.#ctor(lcsocbDll.CMUSU.CFType)">
+	<summary>
+	</summary>
+	<param name="miCMUSUCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMUSU.__callIspec(lcsocbDll.CMUSU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMUSU.consultaMasiva(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCMUSU">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCESXW.#ctor(lcsocbDll.CESXW.CFType)">
+	<summary>
+	</summary>
+	<param name="miCESXWCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCESXW.__callIspec(lcsocbDll.CESXW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCESXW.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCESXW">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMAS5.#ctor(lcsocbDll.CMAS5.CFType)">
+	<summary>
+	</summary>
+	<param name="miCMAS5CFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMAS5.__callIspec(lcsocbDll.CMAS5)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMAS5.consultaMasiva(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="año"></param>
+	<param name="areaSocial"></param>
+	<param name="codigoSubsidio"></param>
+	<param name="folio"></param>
+	<param name="tipoAtencion"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCMAS5">
+	<summary>
+ 04/05/2019  croman: Creación 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTEVE.__IspecToModel(lcsocbDll.MTEVE)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTEVE.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTEVE.consultar(System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="folio"></param>
+	<param name="codusu"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTEVE.agregar(System.String)">
+	<summary>
+	</summary>
+	<param name="codusu"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTEVE.modificar(System.String)">
+	<summary>
+	</summary>
+	<param name="codusu"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTEVE.borrar(System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<param name="proceso"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMTEVE.__callIspec(lcsocbDll.MTEVE)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMTEVE">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCPROW.#ctor(lcsocbDll.CPROW.CFType)">
+	<summary>
+	</summary>
+	<param name="miCPROWFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCPROW.__callIspec(lcsocbDll.CPROW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCPROW.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCPROW">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCSOLI.#ctor(lcsocbDll.CSOLI.CFType)">
+	<summary>
+	</summary>
+	<param name="miCSOLICFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCSOLI.__callIspec(lcsocbDll.CSOLI)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCSOLI.consultaMasiva(System.String)">
+	<summary>
+ 09/05/2019 mbaeza - Modificación.
+ </summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCSOLI.consultaNoSolicitud(System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 09/05/2019 mbaeza - Creación.
+ </summary>
+	<param name="tiporden"></param>
+	<param name="rut"></param>
+	<param name="tipoficha"></param>
+	<param name="numerosolicitud"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCSOLI">
+	<summary>
+ 08/05/2019 mbaeza: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTI.__IspecToModel(lcsocbDll.MACTI)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTI.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTI.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTI.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTI.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTI.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMACTI.__callIspec(lcsocbDll.MACTI)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMACTI">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAOXR.CFType.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAOXR.__IspecToModel(lcsocbDll.MAOXR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAOXR.__callIspec(lcsocbDll.MAOXR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAOXR.asignaPermisos(System.String,System.Int32,System.Collections.Generic.List{lcsocbModel.Tipos.oMAOXR.CFType},System.String)">
+	<summary>
+	</summary>
+	<param name="rol"></param>
+	<param name="opciones"></param>
+	<param name="mant"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAOXR.consulta(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="codsis"></param>
+	<param name="rol"></param>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMAOXR">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOXR.#ctor(lcsocbDll.CMOXR.CFType)">
+	<summary>
+	</summary>
+	<param name="miCMOXRCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOXR.consultarPermisosRol(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="codsis"></param>
+	<param name="rol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOXR.__callIspec(lcsocbDll.CMOXR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCMOXR">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.StrMappingConverter.fromMappingToString(System.String)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.StrMappingConverter">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oICURS.consultaMasiva(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="SOLOABIER"></param>
+	<param name="SEDEC_B"></param>
+	<param name="FECTERB"></param>
+	<param name="JVECI_B"></param>
+	<param name="FECCAM_B"></param>
+	<param name="GLOSA_B"></param>
+	<param name="SECCUR_B"></param>
+	<param name="CURSO_B"></param>
+	<param name="ESTADO_B"></param>
+	<param name="PERIODO_B"></param>
+	<param name="ANO_B"></param>
+	<param name="TIPATE_B"></param>
+	<param name="ARESOC_B"></param>
+	<param name="TIPORDEN"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oICURS.consultar(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="tiporden"></param>
+	<param name="aresoc"></param>
+	<param name="tipate"></param>
+	<param name="ano_b"></param>
+	<param name="periodo"></param>
+	<param name="estado"></param>
+	<param name="jveci"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oICURS">
+	<summary>
+ 09/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMICUR.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMICUR.__IspecToModel(lcsocbDll.MICUR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMICUR.__callIspec(lcsocbDll.MICUR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMICUR.consultaMasiva(System.String,System.String)">
+	<summary>
+ 09/05/2019 mbaeza - Modificación.
+ </summary>
+	<param name="codigo"></param>
+	<param name="proceso"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMICUR.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMICUR.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMICUR.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<param name="proceso"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMICUR.consultaExe(System.String,System.String,System.String)">
+	<summary>
+ 09/05/2019 mbaeza - Creación.
+ </summary>
+	<param name="rMANT"></param>
+	<param name="rNUMSOL"></param>
+	<param name="rRUTB"></param>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMICUR">
+	<summary>
+ 08/05/2019 mbaeza: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCEVED.#ctor(lcsocbDll.CEVED.CFType)">
+	<summary>
+	</summary>
+	<param name="miCEVEDCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCEVED.__callIspec(lcsocbDll.CEVED)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCEVED.consultaMasiva(System.Int32,System.Int32)">
+	<summary>
+	</summary>
+	<param name="ano"></param>
+	<param name="numero"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCEVED">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.CFType">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCLOGR.#ctor(lcsocbDll.CLOGR)">
+	<summary>
+	</summary>
+	<param name="miCLOGR"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCLOGR.consultar(lcsocbModel.Tipos.oCLOGR)">
+	<summary>
+	</summary>
+	<param name="o"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCLOGR.__callIspec(lcsocbDll.CLOGR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCLOGR">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMPER.__IspecToModel(lcsocbDll.WMPER)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMPER.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMPER.consultar(System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMPER.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMPER.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMPER.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="proceso"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMPER.__callIspec(lcsocbDll.WMPER)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oWMPER">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ 09/05/2019 rtorreblanca: Modificación. agregar(), modificar().
+ </summary>
+	<remarks></remarks>
+</member><member name="P:lcsocbModel.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:lcsocbModel.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:lcsocbModel.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="M:lcsocbModel.Tipos.oCESTW.#ctor(lcsocbDll.CESTW.CFType)">
+	<summary>
+	</summary>
+	<param name="miCESTWCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCESTW.__callIspec(lcsocbDll.CESTW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCESTW.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCESTW">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCONTA.#ctor(lcsocbDll.CONTA.CFType)">
+	<summary>
+	</summary>
+	<param name="miCONTAFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCONTA.__callIspec(lcsocbDll.CONTA)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCONTA.consultar(System.String)">
+	<summary>
+	</summary>
+	<param name="tipreg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCONTA.consultar(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="tipreg"></param>
+	<param name="tiporden"></param>
+	<param name="alfa2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCONTA">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPERS.__IspecToModel(lcsocbDll.MPERS)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPERS.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPERS.consultar(System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPERS.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPERS.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPERS.borrar(System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPERS.__callIspec(lcsocbDll.MPERS)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMPERS">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACTD.#ctor(lcsocbDll.CACTD.CFType)">
+	<summary>
+	</summary>
+	<param name="miCACTDCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACTD.__callIspec(lcsocbDll.CACTD)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACTD.consultaMasiva(System.String,System.String)">
+	<summary>
+ 16/05/2019 croman: Se corrige el tipo de los parámetros en string.
+ </summary>
+	<param name="ANO"></param>
+	<param name="NUMERO"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCACTD">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFCUR.__IspecToModel(lcsocbDll.MFCUR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFCUR.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFCUR.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<param name="proceso"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFCUR.__callIspec(lcsocbDll.MFCUR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFCUR.consultaExe(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 09/05/2019 mbaeza - Creación.
+ </summary>
+	<param name="rARESOC"></param>
+	<param name="rTIPATE"></param>
+	<param name="rNUMSOL"></param>
+	<param name="rCURSO"></param>
+	<param name="rSECCUR"></param>
+	<param name="rANO"></param>
+	<param name="rPERIODO"></param>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMFCUR">
+	<summary>
+ 08/05/2019 mbaeza: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRFC.__IspecToModel(lcsocbDll.MCRFC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRFC.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRFC.consultar(System.Object,System.Object)">
+	<summary>
+	</summary>
+	<param name="IDCAMPANA"></param>
+	<param name="SECUENCIA"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRFC.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRFC.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRFC.borrar(System.Object,System.Object)">
+	<summary>
+	</summary>
+	<param name="IDCAMPANA"></param>
+	<param name="SECUENCIA"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCRFC.__callIspec(lcsocbDll.MCRFC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMCRFC">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCURS.#ctor(lcsocbDll.CCURS.CFType)">
+	<summary>
+	</summary>
+	<param name="miCCURSCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCURS.__callIspec(lcsocbDll.CCURS)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCURS.consultaMasiva(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="ANO_B"></param>
+	<param name="ARESOC_B"></param>
+	<param name="CURSO_B"></param>
+	<param name="ESTADO_B"></param>
+	<param name="FECCAM_B"></param>
+	<param name="FECTER_B"></param>
+	<param name="GLOSA_B"></param>
+	<param name="JVECI_B"></param>
+	<param name="PERIODO_B"></param>
+	<param name="SECCUR_B"></param>
+	<param name="SEDEC_B"></param>
+	<param name="SOLOABIER"></param>
+	<param name="TIPATE_B"></param>
+	<param name="TIPORDEN"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCURS.consultar(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="tiporden"></param>
+	<param name="aresoc"></param>
+	<param name="tipate"></param>
+	<param name="ano_b"></param>
+	<param name="periodo"></param>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCCURS">
+	<summary>
+ 10/05/2019 croman: Se agrega parámetro ORQ a función consultaMasiva.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWCFCU.#ctor(lcsocbDll.WCFCU.CFType)">
+	<summary>
+	</summary>
+	<param name="miWCFCUCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWCFCU.__callIspec(lcsocbDll.WCFCU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWCFCU.consultaMasiva(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="ANOB"></param>
+	<param name="ARESOCB"></param>
+	<param name="CURSOB"></param>
+	<param name="FECESTB"></param>
+	<param name="HORESTB"></param>
+	<param name="NFICHAB"></param>
+	<param name="PERIODOB"></param>
+	<param name="RUTB"></param>
+	<param name="SECCURB"></param>
+	<param name="SELEC"></param>
+	<param name="TIPATEB"></param>
+	<param name="TIPORDEN"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oWCFCU">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCLGRE.#ctor(lcsocbDll.CLGRE)">
+	<summary>
+	</summary>
+	<param name="miCLGRE"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCLGRE.consultar(lcsocbModel.Tipos.oCLGRE)">
+	<summary>
+	</summary>
+	<param name="o"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCLGRE.__callIspec(lcsocbDll.CLGRE)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCLGRE">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOXU.#ctor(lcsocbDll.CMOXU.CFType)">
+	<summary>
+	</summary>
+	<param name="miCMOXUCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOXU.consultaPermisosUsuario(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="codsis"></param>
+	<param name="rut"></param>
+	<param name="rol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOXU.__callIspec(lcsocbDll.CMOXU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCMOXU">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMD.__IspecToModel(lcsocbDll.WMFMD)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMD.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMD.consultar(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="codfam"></param>
+	<param name="proceso"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMD.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMD.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMD.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="CODFAM"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMD.__callIspec(lcsocbDll.WMFMD)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oWMFMD">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.XmlHandler.translateInvalidCharacters(System.String)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.XmlHandler">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCONTT.#ctor(lcsocbDll.CONTT.CFType)">
+	<summary>
+	</summary>
+	<param name="miCONTTCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCONTT.__callIspec(lcsocbDll.CONTT)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCONTT.consultaMasiva(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="tiporden"></param>
+	<param name="tipreg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCONTT">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oIMORA.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oIMORA">
+	<summary>
+ 10/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMR80S.#ctor(lcsocbDll.MR80S.CFType)">
+	<summary>
+	</summary>
+	<param name="miMR80SCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMR80S.__callIspec(lcsocbDll.MR80S)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMR80S.consultaMasiva(System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="NOMARCH_B"></param>
+	<param name="HORA_B"></param>
+	<param name="FECHA_B"></param>
+	<param name="ESTACION_B"></param>
+	<param name="TODOSPROG"></param>
+	<param name="NOMPROG_B"></param>
+	<param name="TODOSUSU"></param>
+	<param name="CODUSU_B"></param>
+	<param name="CODSIS_B"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMR80S">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFLUJ.__IspecToModel(lcsocbDll.MFLUJ)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFLUJ.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFLUJ.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFLUJ.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFLUJ.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFLUJ.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMFLUJ.__callIspec(lcsocbDll.MFLUJ)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMFLUJ">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oEINFO.ejecutar(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+	<summary>
+	</summary>
+	<param name="CREDEN"></param>
+	<param name="SHAREN"></param>
+	<param name="SEVERNOM"></param>
+	<param name="HORA"></param>
+	<param name="FECHA"></param>
+	<param name="CODUSU"></param>
+	<param name="CODSIS"></param>
+	<param name="LINEA6"></param>
+	<param name="LINEA5"></param>
+	<param name="LINEA4"></param>
+	<param name="LINEA3"></param>
+	<param name="LINEA2"></param>
+	<param name="LINEA1"></param>
+	<param name="ESTACION"></param>
+	<param name="NOMWFL"></param>
+	<param name="EXIIMP"></param>
+	<param name="IMPRE"></param>
+	<param name="NOMPROG"></param>
+	<param name="VAMENU"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oEINFO.__callIspec(lcsocbDll.EINFO)">
+	<summary>
+ '
+ </summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oEINFO">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESXW.__IspecToModel(lcsocbDll.MESXW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESXW.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESXW.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESXW.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESXW.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESXW.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESXW.__callIspec(lcsocbDll.MESXW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMESXW">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCHADM.#ctor(lcsocbDll.CHADM.CFType)">
+	<summary>
+	</summary>
+	<param name="miCHADMCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCHADM.__callIspec(lcsocbDll.CHADM)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCHADM.consultaMasiva(System.String,System.String,System.Boolean,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="tipoOrden"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCHADM">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPER2.__IspecToModel(lcsocbDll.MPER2)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPER2.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPER2.consultar(System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPER2.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPER2.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPER2.borrar(System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPER2.__callIspec(lcsocbDll.MPER2)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMPER2">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPROW.__IspecToModel(lcsocbDll.MPROW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPROW.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPROW.consultar(System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPROW.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPROW.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPROW.borrar(System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMPROW.__callIspec(lcsocbDll.MPROW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMPROW">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUXR.mantenerRolUsuario(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="mant"></param>
+	<param name="rut"></param>
+	<param name="rol"></param>
+	<param name="fechaini"></param>
+	<param name="fechater"></param>
+	<param name="indrolpre"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUXR.quitarRol(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="rol"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUXR.__IspecToModel(lcsocbDll.MAUXR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMAUXR.__callIspec(lcsocbDll.MAUXR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMAUXR">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCRMC.#ctor(lcsocbDll.CCRMC.CFType)">
+	<summary>
+	</summary>
+	<param name="miCCRMCCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCRMC.__callIspec(lcsocbDll.CCRMC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCRMC.consultaMasiva(System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="IDCAMPA_B"></param>
+	<param name="ANO_F"></param>
+	<param name="ESTCAM_F"></param>
+	<param name="OPCION"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCCRMC">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFAME.#ctor(lcsocbDll.CFAME.CFType)">
+	<summary>
+	</summary>
+	<param name="miCFAMECFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFAME.__callIspec(lcsocbDll.CFAME)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFAME.consultaMasiva(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="NUMEXP_B"></param>
+	<param name="TIPEXP_B"></param>
+	<param name="VIGENTE_F"></param>
+	<param name="RUT_B"></param>
+	<param name="DEPTO_B"></param>
+	<param name="BLOCK_B"></param>
+	<param name="NUMERO_B"></param>
+	<param name="CALLE_B"></param>
+	<param name="CODFAM_B"></param>
+	<param name="OPCION"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCFAME">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ 09/05/2019 rtorreblanca: Se modifica consultaMasiva.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFMFC.#ctor(lcsocbDll.CFMFC.CFType)">
+	<summary>
+	</summary>
+	<param name="miCFMFCCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFMFC.__callIspec(lcsocbDll.CFMFC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCFMFC.consultaMasiva(System.Int32)">
+	<summary>
+	</summary>
+	<param name="ID_CAMPA_B"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCFMFC">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCTATE.#ctor(lcsocbDll.CTATE.CFType)">
+	<summary>
+	</summary>
+	<param name="miCTATECFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCTATE.__callIspec(lcsocbDll.CTATE)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCTATE.consultar(System.String,System.String,System.String)">
+	<summary>
+ 13/05/2019 croman. Creación.
+ </summary>
+	<param name="tiporden"></param>
+	<param name="rut"></param>
+	<param name="aresoc"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCTATE">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ 13/05/2019 croman: Se modifica toda la clase.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMRELA.#ctor(lcsocbDll.MRELA.CFType)">
+	<summary>
+	</summary>
+	<param name="miMRELACFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMRELA.__callIspec(lcsocbDll.MRELA)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMRELA.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codrel"></param>
+	<param name="codigo1"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMRELA">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ 16/05/2019 croman: Se eliminan métodos no utilizados. Se cambian los parámetros del método de consulta.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMROL.#ctor(lcsocbDll.CMROL.CFType)">
+	<summary>
+	</summary>
+	<param name="miCMROLCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMROL.__callIspec(lcsocbDll.CMROL)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMROL.consultarRoles(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMROL.consultaPorNombre(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="nombre"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCMROL">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMUXR.#ctor(lcsocbDll.CMUXR.CFType)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMUXR.consultaRolesPorUsuario(System.String,System.String)">
+	<summary>
+ Obtiene lista de roles por usuario.
+ </summary>
+	<param name="rut">Ej.: 11111111-1</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMUXR.consultaUsuariosPorRol(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMUXR.__callIspec(lcsocbDll.CMUXR)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCMUXR">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWLOGI.__IspecToModel(lcsocbDll.WLOGI)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWLOGI.consultar(System.String,System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="password"></param>
+	<param name="rol"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWLOGI.__callIspec(lcsocbDll.WLOGI)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oWLOGI">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMX.__IspecToModel(lcsocbDll.WMFMX)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMX.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMX.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codfam"></param>
+	<param name="proceso"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMX.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMX.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMX.borrar(System.String)">
+	<summary>
+	</summary>
+	<param name="codfam"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMFMX.__callIspec(lcsocbDll.WMFMX)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oWMFMX">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCARTI.#ctor(lcsocbDll.CARTI.CFType)">
+	<summary>
+	</summary>
+	<param name="miCARTICFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCARTI.__callIspec(lcsocbDll.CARTI)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCARTI.consultaMasiva(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codart"></param>
+	<param name="tiporden"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCARTI">
+	<summary>
+ 09/05/2019 rtorreblanca: Creación. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCALU.#ctor(lcsocbDll.CCALU.CFType)">
+	<summary>
+	</summary>
+	<param name="miCCALUCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCALU.__callIspec(lcsocbDll.CCALU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCCALU.consultaMasiva(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="UNIVEC_B"></param>
+	<param name="NOMCALLE_B"></param>
+	<param name="OPCION"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCCALU">
+	<summary>
+ 09/05/2019 rtorreblanca: Creación. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCTEVE.#ctor(lcsocbDll.CTEVE.CFType)">
+	<summary>
+	</summary>
+	<param name="miCTEVEFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCTEVE.__callIspec(lcsocbDll.CTEVE)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCTEVE.consultaMasiva(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<param name="tiporden"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCTEVE">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ 09/05/2019 rtorreblanca: Modificacion. ORQ.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACTI.#ctor(lcsocbDll.CACTI.CFType)">
+	<summary>
+	</summary>
+	<param name="miCACTICFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACTI.__callIspec(lcsocbDll.CACTI)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCACTI.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="estado"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCACTI">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMINDO.__IspecToModel(lcsocbDll.MINDO)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMINDO.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMINDO.consultar(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMINDO.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMINDO.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMINDO.borrar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMINDO.__callIspec(lcsocbDll.MINDO)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMINDO">
+	<summary>
+ 13/05/2019 croman: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCIND2.#ctor(lcsocbDll.CIND2.CFType)">
+	<summary>
+	</summary>
+	<param name="miCIND2CFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCIND2.__callIspec(lcsocbDll.CIND2)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCIND2.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="ficha"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCIND2">
+	<summary>
+ 17/05/2019 croman: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMASU.__IspecToModel(lcsocbDll.WMASU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMASU.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMASU.consultar(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMASU.agregar">
+	<summary>
+ 08/05/2019 croman: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMASU.modificar">
+	<summary>
+ 08/05/2019 croman: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWMASU.__callIspec(lcsocbDll.WMASU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oWMASU">
+	<summary>
+ 08/05/2019 croman: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESTW.__IspecToModel(lcsocbDll.MESTW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESTW.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESTW.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESTW.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESTW.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESTW.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="codigo"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMESTW.__callIspec(lcsocbDll.MESTW)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMESTW">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCURS.__IspecToModel(lcsocbDll.MCURS)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCURS.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCURS.consulta(System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 09/05/2019 mbaeza - Modificación.
+ </summary>
+	<param name="ARESOC"></param>
+	<param name="TIPATE"></param>
+	<param name="CURSO"></param>
+	<param name="SECCUR"></param>
+	<param name="ANO"></param>
+	<param name="PERIODO"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCURS.__callIspec(lcsocbDll.MCURS)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oMCURS.ConsultaCondPago(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ 09/05/2019 mbaeza - Creación.
+ </summary>
+	<param name="rMANT"></param>
+	<param name="rARESOC"></param>
+	<param name="rTIPATE"></param>
+	<param name="rCURSO"></param>
+	<param name="rSECCUR"></param>
+	<param name="rANO"></param>
+	<param name="rPERIODO"></param>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oMCURS">
+	<summary>
+ 09/05/2019 mbaeza - Modificación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCPAS2.#ctor(lcsocbDll.CPAS2.CFType)">
+	<summary>
+	</summary>
+	<param name="miCPAS2CFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCPAS2.__callIspec(lcsocbDll.CPAS2)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCPAS2.consultaMasiva(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="ANO"></param>
+	<param name="ESTPOST_F"></param>
+	<param name="ARESOC"></param>
+	<param name="CODSUB"></param>
+	<param name="DESCRIP"></param>
+	<param name="TIPATE"></param>
+	<param name="TIPFIC"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCPAS2">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOPC.#ctor(lcsocbDll.CMOPC.CFType)">
+	<summary>
+	</summary>
+	<param name="miCMOPCCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOPC.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="codsis"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oCMOPC.__callIspec(lcsocbDll.CMOPC)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oCMOPC">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWCFMD.#ctor(lcsocbDll.WCFMD.CFType)">
+	<summary>
+	</summary>
+	<param name="miWCFMDCFType"></param>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWCFMD.__callIspec(lcsocbDll.WCFMD)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:lcsocbModel.Tipos.oWCFMD.consultaMasiva(System.String)">
+	<summary>
+	</summary>
+	<param name="codfam"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:lcsocbModel.Tipos.oWCFMD">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ 09/05/2019 rtorreblanca: Modificación.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

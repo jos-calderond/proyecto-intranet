@@ -1,0 +1,16 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:58:20 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+60SEOXR-SS1CODOPC, CODROL                YN                0DEFAULT   00000000000YNN   N
+71SEOXR-SS1         B6A76E3EAA811440814EC3F6D4150FD2
+30SEOXR-SS1         SEOXR             WILDCARD
+30SEOXR-SS1         SEOXR             OVER              C
+30CODOPC            SEOXR-SS1         ORDINATE                 A                                                                                                                              N
+30CODROL            SEOXR-SS1         ORDINATE                 A                                                                                                                              N
+46SEOXR-SS1MAINT     NOT=      (D)
+35SEGURIDAD         SEOXR-SS1         INCLUDES  0     0      *         *

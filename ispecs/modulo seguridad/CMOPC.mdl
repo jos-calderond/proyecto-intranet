@@ -1,0 +1,48 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:56:45 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CMOPCMI00000000CONSULTA MASIVA OPCION        000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000400050010 Y
+71CMOPC             7BFF247FAD1004468ACB77507A92F569043C9E76CE152B4E802CE5FEB85CD0821810FC31EFA449499F4706F995467BA89161CDB8E855A148A3022DD18676FFE17F6BCEA592AC4B48B1F1AF5E69B2AE52326630E32096BA4EAD0C221F9A0D6A7A94F17B734CDBAE4E876CA75030985D41
+90CMOPC             ------------------------------------------------------------------------------  0000300278 NNNN N                    000NNNNNNN01
+90CMOPC             OPCION:                                                                         0000200207 NNNN N                    000NNNNNNN01
+90CMOPC             CONSULTA MASIVA DE OPCIONES                                                     0000104027 NNNN N                    000NNNNNNN01
+30MENJ35            CMOPC             INQUIRY   00000000A003500                           MENSAJE DE 35 POSICIONES                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400043
+30ORDEN             CMOPC             INQUIRY   00000000N000300                           ORDEN OPCION EN CATEGORIA                                   D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500077
+30CODPADRE          CMOPC             INQUIRY   00000000N000300                           CODIGO PADRE                                                D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500073
+30FORMU             CMOPC             INQUIRY   00000000A007000                           FORMULARIO OPCION                                           D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500002
+30ICONO             CMOPC             INQUIRY   00000000A002000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400057
+30DESCRIP           CMOPC             INQUIRY   00000000A005000                           DESCRIPCION DE OPCION                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400006
+30CODIGO            CMOPC             INQUIRY   00000000N000300                           CODIGO OPCION                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400002
+30CODIGO-B          CMOPC             DEFAULT   00000000N000300                           CONSULTA POR CODIGO                                         D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200010
+48SD-CODIGO         CMOPC             0003N00(0)                                                                                                                                            CODIGO OPCION
+42CMOPCDW; GLB.COPY    =   (1)                                                                                  N
+42CMOPC    MV; SD-CODIGO           CODIGO-B                                                                     N
+42CMOPCEND;                                                                                                     N
+42CMOPC                                                                                                         N
+42CMOPCMV; GD-CF-NO       MENJ35                                                                                N
+42CMOPC                                                                                                         N
+42CMOPCDT; FROM SEOPC-SE1 (CODIGO-B) SERIAL                                                                     N
+42CMOPC    MV; GD-CF-SI          MENJ35                                                                         N
+42CMOPC    BK;                                                                                                  N
+42CMOPCEND;                                                                                                     N
+42CMOPC                                                                                                         N
+42CMOPCDW; MENJ35  =   GD-CF-NO                                                                                 N
+42CMOPCEE;                                                                                                      N
+42CMOPC                                                                                                         N
+42CMOPCMV; SEOPC.CODIGO        CODIGO-B                                                                         N
+42CMOPC                                                                                                         N
+42CMOPCMV; SEOPC.CODIGO        CODIGO                                                                           N
+42CMOPCMV; SEOPC.DESCRIP       DESCRIP                                                                          N
+42CMOPCMV; SEOPC.CODPADRE      CODPADRE                                                                         N
+42CMOPCMV; SEOPC.ORDEN         ORDEN                                                                            N
+42CMOPCMV; SEOPC.FORMU         FORMU                                                                            N
+42CMOPCMV; SEOPC.ICONO         ICONO                                                                            N
+43CMOPCDW; GLB.COPY    =   (1)                                                                                  N
+43CMOPC    MV; CODIGO-B            SD-CODIGO                                                                    N
+43CMOPCEND;                                                                                                     N
+35SEGURIDAD         CMOPC             INCLUDES  0     0      *         *

@@ -1,0 +1,94 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:56:33 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CLGREMI00000000CONS.INDIVIDUAL LOGRE         000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000VFO                 NN           N000                                NN0000N00000000000000000000000800000016YNNNNNNYYYYN                            DNN   NDNYYN01920000000000000 Y
+71CLGRE             6CAC5D52F08BBF46887D5F628927AF4E5D486163DB9E7B4C92647DCB264C183FE67AD6B49769974B99D26955A16D253547C28AD7DDE39B488A007CD1342A40061CA1104E58CDF644BDB9A44FD9CFAF4A4C5B088832D3BE46B97EFDA5452A3ADF26F7055AFBD86A4B99E01ACF26C06FC1
+31                  CLGRE              -1      -1      N000LincDefault New                 NN0008N000000000000000000000000000000000000000001000 -1      UYYYNN
+90CLGRE             CONSULTA INDIVIDUAL LOGRE                                                       0000102825 NNNN N                    000NNNNNNN01
+30REG-NUEVO         CLGRE             INQUIRY   00000000A300000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000700001
+31REG-NUEVO         CLGRE              -1      -1      N000LincDefault New                 NN0008N00000000000000980002400000000016000000000100000       UUN
+51CLGRE             REG-NUEVO         NNN000010L                                                                                N0000NN
+30REG-ANTER         CLGRE             INQUIRY   00000000A300000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000500001
+31REG-ANTER         CLGRE              -1      -1      N000LincDefault New                 NN0008N00000000000000660002400000000016000000000100000       UUN
+51CLGRE             REG-ANTER         NNN000010L                                                                                N0000NN
+30ACCION            CLGRE             INQUIRY   00000000A000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000400055
+31ACCION            CLGRE              -1      -1      N000LincDefault New                 NN0008N00000432000000500000002400000016000000000100000       UUN
+51CLGRE             ACCION            NNN000010L                                                                                N0000NN
+30NOMUSU            CLGRE             INQUIRY   00000000A004000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000400013
+31NOMUSU            CLGRE              -1      -1      N000LincDefault New                 NN0008N00000096000000500000032000000016000000000100000       UUN
+51CLGRE             NOMUSU            NNN000010L                                                                                N0000NN
+30USUARIO           CLGRE             DEFAULT   00000000A001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000400001
+31USUARIO           CLGRE              -1      -1      N000LincDefault New                 NN0008N00000008000000500000008000000016000000000100000       UUN
+51CLGRE             USUARIO           NYN000010L                                                                                N0000NN
+30ID-ESTRU          CLGRE             DEFAULT   00000000A006000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000300001
+31ID-ESTRU          CLGRE              -1      -1      N000LincDefault New                 NN0008N00000008000000340000048000000016000000000100000       UUN
+51CLGRE             ID-ESTRU          NYN000010L                                                                                N0000NN
+30ESTRU             CLGRE             DEFAULT   00000000A000500                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000NDN0000200022
+31ESTRU             CLGRE              -1      -1      N000LincDefault New                 NN0008N00000176000000180000004000000016000000000100000       UUN
+51CLGRE             ESTRU             NYN000010L                                                                                N0000NN
+30HORA              CLGRE             DEFAULT   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000N N0000200011
+31HORA              CLGRE              -1      -1      N000LincDefault New                 NN0008N00000088000000180000006400000016000000000100000       UUN
+51CLGRE             HORA              NYN000010R                                                                                N0000NN
+30FECHA             CLGRE             DEFAULT   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D  F                                 0000N N0000200001
+31FECHA             CLGRE              -1      -1      N000LincDefault New                 NN0008N00000008000000180000006400000016000000000100000       UUN
+51CLGRE             FECHA             NYN000010R                                                                                N0000NN
+31ACTMTH            CLGRE              -1      -1      N000LincDefault New                 NN0008N00000176000000020000003200000016000000000100000       UU
+51CLGRE             ACTMTH            NNN000010R                                                                                N0000NN
+31INPUT-DATE        CLGRE              -1      -1      N000LincDefault New                 NN0008N00000112000000020000005600000016000000000100000       UU
+51CLGRE             INPUT-DATE        NNN000010L                                                                                N0000NN
+31TRANNO            CLGRE              -1      -1      N000LincDefault New                 NN0008N00000064000000020000004800000016000000000100000       UU
+51CLGRE             TRANNO            NNN000010R                                                                                N0000NN
+31GLB.SOURCE        CLGRE              -1      -1      N000LincDefault New                 NN0008N00000056000000020000000800000016000000000100000       UU
+51CLGRE             GLB.SOURCE        NNN000010L                                                                                N0000NN
+31ISPEC             CLGRE              -1      -1      N000LincDefault New                 NN0008N00000016000000020000015200000016000000000100000       UU
+51CLGRE             ISPEC             NNN000010L                                                                                N0000NN
+91CLGRE             CONSULTA INDIVIDUAL LOGRE                                                       02500 -1      -1      N000LincDefault New                 NN0008N00000216000000020000020000000011TY00001                            0       UUSE
+48SD-ESTRU          CLGRE             0005A00( )                                                                                                                                                                                                          D
+48SD-FECHA          CLGRE             0008N00(0)
+48SD-HORA           CLGRE             0008N00(0)
+48SD-ID-ESTRU       CLGRE             0060A00( )                                                                                                                                                                                                          D
+48SD-OPCION         CLGRE             0001A00( )                                                                                                                                                                                                          D
+48SD-USUARIO        CLGRE             0010A00( )                                                                                                                                                                                                          D
+42CLGREMV;SD-FECHA               FECHA                                                                          N
+42CLGREMV;SD-HORA                HORA                                                                           N
+42CLGREMV;SD-USUARIO             USUARIO                                                                        N
+42CLGREMV;SD-ESTRU               ESTRU                                                                          N
+42CLGREMV;SD-ID-ESTRU            ID-ESTRU                                                                       N
+42CLGRE                                                                                                         N
+42CLGRE                                                                                                         N
+42CLGREDT;EVERY LOGRE-SE1(ESTRU ID-ESTRU FECHA HORA USUARIO)                                                    N
+42CLGRE    BK;                                                                                                  N
+42CLGREEND;                                                                                                     N
+42CLGREDW;GLB.STATUS NOT = GLB.SPACES                                                                           N
+42CLGREEE;                                                                                                      N
+42CLGRE                                                                                                         N
+42CLGRE                                                                                                         N
+42CLGREMV;LOGRE.ACCION           ACCION                                                                         N
+42CLGREMV;LOGRE.REG-ANTER        REG-ANTER                                                                      N
+42CLGREMV;LOGRE.REG-NUEVO        REG-NUEVO                                                                      N
+42CLGRE                                                                                                         N
+42CLGREDT;EVERY SEUSU-SE1(USUARIO)                                                                              N
+42CLGRE    MV;SEUSU.NOMBRES      NOMUSU                                                                         N
+42CLGRE    ATS;SEUSU.APEPAT      NOMUSU                                                                         N
+42CLGRE    ATS;SEUSU.APEMAT      NOMUSU                                                                         N
+42CLGRE    BK;                                                                                                  N
+42CLGREEND;                                                                                                     N
+43CLGRE                                                                                                         N
+43CLGREMV;FECHA                  SD-FECHA                                                                       N
+43CLGREMV;HORA                   SD-HORA                                                                        N
+43CLGREMV;USUARIO                SD-USUARIO                                                                     N
+43CLGREMV;ESTRU                  SD-ESTRU                                                                       N
+43CLGREMV;ID-ESTRU               SD-ID-ESTRU                                                                    N
+43CLGRE                                                                                                         N
+43CLGREDT;EVERY LOGRE-SE1(ESTRU ID-ESTRU FECHA HORA USUARIO)                                                    N
+43CLGRE    BK;                                                                                                  N
+43CLGREEND;                                                                                                     N
+43CLGREDW;GLB.STATUS NOT = GLB.SPACES                                                                           N
+43CLGRE    ME;ERROR GD-ERR-REG-NO                                                                               N
+43CLGREEE;                                                                                                      N
+35SEGURIDAD         CLGRE             INCLUDES  0     0      *         *

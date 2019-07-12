@@ -1,0 +1,85 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:56:56 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CMROLMI00000000CONSULTA MASIVA ROL           000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000400040020 Y
+71CMROL             018B10A74B9B25439495B7422E7D8AB3F7E5112DBE326D4BBF47287EEF1B07A51810FC31EFA449499F4706F995467BA85CB30B450309D947957049E70F93DE977F6BCEA592AC4B48B1F1AF5E69B2AE52326630E32096BA4EAD0C221F9A0D6A7A94F17B734CDBAE4E876CA75030985D41
+90CMROL             NO VIGENTES:                                                                    0002400212 NNNN N                    000NNNNNNN01
+90CMROL             ------------------------------------------------------------------------------  0000300278 NNNN N                    000NNNNNNN01
+90CMROL             NOMBRE:                                                                         0000202607 NNNN N                    000NNNNNNN01
+90CMROL             CODIGO:                                                                         0000201207 NNNN N                    000NNNNNNN01
+90CMROL             TIPO:                                                                           0000200205 NNNN N                    000NNNNNNN01
+90CMROL             CONSULTA MASIVA DE ROLES                                                        0000104424 NNNN N                    000NNNNNNN01
+30MENJ35            CMROL             INQUIRY   00000000A003500                           MENSAJE DE 35 POSICIONES                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400043
+30NVIG              CMROL             DEFAULT   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400015
+30ESTADO            CMROL             INQUIRY   00000000A000100                           ESTADO                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400040
+30DPASS             CMROL             INQUIRY   00000000N000200                           DIAS DURACION PASWORD                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400037
+30NOMBRE            CMROL             INQUIRY   00000000A003000                           NOMBRE DEL ROL                                              D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400006
+30CODIGO            CMROL             INQUIRY   00000000N000300                           CODIGO ROL                                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400002
+30NOMBRE-B          CMROL             DEFAULT   00000000A003000                           CONSULTA POR NOMBRE                                         D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200034
+30CODIGO-B          CMROL             DEFAULT   00000000N000300                           CONSULTA POR CODIGO                                         D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200020
+30OPCION            CMROL             DEFAULT   00000000A000100                           OPCION DE CONSULTA                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200008
+48SD-CODIGO         CMROL             0003N00(0)                                                                                                                                            CODIGO OPCION
+48SD-NOMBRE         CMROL             0030A00( )                                                                                                                                            NOMBRE DEL ROL                                                D
+48SD-NVIG           CMROL             0001A00( )                                                                                                                                                                                                          D
+48SD-OPCION         CMROL             0001A00( )                                                                                                                                                                                                          D
+42CMROLDW; GLB.COPY    =   (1)                                                                                  N
+42CMROL    MV; SD-OPCION           OPCION                                                                       N
+42CMROL    MV; SD-CODIGO           CODIGO-B                                                                     N
+42CMROL    MV; SD-NOMBRE           NOMBRE-B                                                                     N
+42CMROL    MV; SD-NVIG             NVIG                                                                         N
+42CMROLEND;                                                                                                     N
+42CMROL                                                                                                         N
+42CMROLMV; GD-CF-NO       MENJ35                                                                                N
+42CMROL                                                                                                         N
+42CMROL:BUSQUEDA POR CODIGO                                                                                     N
+42CMROLDW; OPCION  =   (C)                                                                                      N
+42CMROL    DW; NVIG    =   GLB.SPACES                                                                           N
+42CMROL        DT; FROM SEROL-SS1 (CODIGO-B) SERIAL                                                             N
+42CMROL            MV; GD-CF-SI          MENJ35                                                                 N
+42CMROL            BK;                                                                                          N
+42CMROL        END;                                                                                             N
+42CMROL    ELSE;                                                                                                N
+42CMROL        DT; FROM SEROL-SS2 (CODIGO-B) SERIAL                                                             N
+42CMROL            MV; GD-CF-SI          MENJ35                                                                 N
+42CMROL            BK;                                                                                          N
+42CMROL        END;                                                                                             N
+42CMROL    END;                                                                                                 N
+42CMROLEND;                                                                                                     N
+42CMROL                                                                                                         N
+42CMROL:BUSQUEDA POR NOMBRE                                                                                     N
+42CMROLDW; OPCION  =   (N)                                                                                      N
+42CMROL    DW; NVIG    =   GLB.SPACES                                                                           N
+42CMROL        DT; FROM SEROL-SS3 (NOMBRE-B) SERIAL                                                             N
+42CMROL            MV; GD-CF-SI          MENJ35                                                                 N
+42CMROL            BK;                                                                                          N
+42CMROL        END;                                                                                             N
+42CMROL    ELSE;                                                                                                N
+42CMROL        DT; FROM SEROL-SS3 (NOMBRE-B) SERIAL                                                             N
+42CMROL            MV; GD-CF-SI          MENJ35                                                                 N
+42CMROL            BK;                                                                                          N
+42CMROL        END;                                                                                             N
+42CMROL    END;                                                                                                 N
+42CMROLEND;                                                                                                     N
+42CMROL                                                                                                         N
+42CMROLDW; MENJ35  =   GD-CF-NO                                                                                 N
+42CMROLEE;                                                                                                      N
+42CMROL                                                                                                         N
+42CMROLMV; SEROL.CODIGO    CODIGO-B                                                                             N
+42CMROLMV; SEROL.NOMBRE    NOMBRE-B                                                                             N
+42CMROL                                                                                                         N
+42CMROLMV; SEROL.CODIGO    CODIGO                                                                               N
+42CMROLMV; SEROL.NOMBRE    NOMBRE                                                                               N
+42CMROLMV; SEROL.DPASS     DPASS                                                                                N
+42CMROLMV; SEROL.ESTADO    ESTADO                                                                               N
+43CMROLDW; GLB.COPY    =   (1)                                                                                  N
+43CMROL    MV; OPCION          SD-OPCION                                                                        N
+43CMROL    MV; CODIGO-B        SD-CODIGO                                                                        N
+43CMROL    MV; NOMBRE-B        SD-NOMBRE                                                                        N
+43CMROL    MV; NVIG            SD-NVIG                                                                          N
+43CMROLEND;                                                                                                     N
+35SEGURIDAD         CMROL             INCLUDES  0     0      *         *

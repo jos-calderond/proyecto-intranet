@@ -1,0 +1,96 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:59:43 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+70LOG-SEUSU         LOG DATOS SEUSU               0Y                    N                  N000                                NN0000N0000000000000000YNNN                               NN
+71LOG-SEUSU         3D29BCD2FE6F9F46858E8742A89A23F91D11242F53F5634FB6413EC89150684C2408B7BF33FCFB439B936320E31ED459A0B8844DAAD48945B80335521B455A4111A3031FA9651E4FB4133C618798B2A8
+30LOG-SEUSU         FECHA-COMPUTADOR  INSERT
+41LOG-SEUSU         00:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::                                        N
+41LOG-SEUSU         00:   CREA LOG PARA ACCIONES ADD, CHG O DEL                       :                                        N
+41LOG-SEUSU         00:   PARAMETROS DE ENTRADA:                                      :                                        N
+41LOG-SEUSU         00:       GD-LOG-ACCION:  INDICA LA ACCION QUE SE REALIZARA       :                                        N
+41LOG-SEUSU         00:       GD-LOG-CODUSU:  INDICA EL USUARIO QUE REALIZA LA ACCION :                                        N
+41LOG-SEUSU         00:       GD-LOG-ESTRU:   INDICA LA ESTRUCTURA SOBRE LA QUE SE    :                                        N
+41LOG-SEUSU         00:       GD-LOG-TIPOREG: INDICA SI ES REGISTRO NUEVO O ANTERIOR  :                                        N
+41LOG-SEUSU         00:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::                                        N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00DW; GD-LOG-CODUSU   =   GLB.SPACES                                                                       N
+41LOG-SEUSU         00:    MV; (       1-9)            GD-LOG-CODUSU                                                           N
+41LOG-SEUSU         00END;                                                                                                     N
+41LOG-SEUSU         00INS; FECHA-COMPUTADOR                                                   Y                                N
+41LOG-SEUSU         00MV; GD-FECHA-AMD    GD-LOG-FECHA                                                                         N
+41LOG-SEUSU         00MV; GLB.TIME        GD-LOG-HORA                                                                          N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00DW; GD-LOG-ACCION = (ADD)  :SI ES ADD VA EN BLANCO REG-ANTER                                             N
+41LOG-SEUSU         00                           :SOLO SE MUEVE CONTENIDO A REG-NUEVO                                          N
+41LOG-SEUSU         00    MV; GLB.SPACES         GD-LOG-REG-ANTER                                                              N
+41LOG-SEUSU         00END;                                                                                                     N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00DW; GD-LOG-TIPOREG = (ANTER) AND                                                                         N
+41LOG-SEUSU         00DW; GD-LOG-ACCION  = (ADD)                                                                               N
+41LOG-SEUSU         00    MV; GLB.SPACES             GD-LOG-IDESTRU                                                            N
+41LOG-SEUSU         00    MV; GLB.SPACES             GD-LOG-PASO                                                               N
+41LOG-SEUSU         00ELSE;                                                                                                    N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00    :: SE DEBE ASEGURAR PREVIAMENTE QUE ESTE LEIDO EL REGISTRO A MOVER                                   N
+41LOG-SEUSU         00    :: ESO DEBE ESTAR EN LA LOGIA DEL ISPEC CORRESPONDIENTE                                              N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00    ::: ARMO LA CLAVE DEL REGISTRO A AUDITAR                                                             N
+41LOG-SEUSU         00    MV;GLB.SPACES              GD-LOG-IDESTRU                                                            N
+41LOG-SEUSU         00    MV;SEUSU.RUT               GD-LOG-IDESTRU                                                            N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00    ::: ARMO EL CONTENIDO COMPLETO DEL REGISTRO                                                          N
+41LOG-SEUSU         00    MV; GLB.SPACES             GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    MV; (APEMAT:)              GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.APEMAT          GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; (|APEPAT:)            GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.APEPAT          GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; (|ESTADO:)            GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.ESTADO          GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; (|FECPASS:)           GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.FECPASS         GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; (|MAINT:)             GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.MAINT           GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; (|NOMBRES:)           GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.NOMBRES         GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; (|PASS:)              GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.PASS            GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; (|RUT:)               GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.RUT             GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; (|INICIALES:)         GD-LOG-PASO                                                               N
+41LOG-SEUSU         00    ATT; SEUSU.INICIALES       GD-LOG-PASO                                                               N
+41LOG-SEUSU         00END;                                                                                                     N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00DW;GD-LOG-TIPOREG = (ANTER): SOLO SE RESCATARA LOS DATOS DEL REGISTRO                                    N
+41LOG-SEUSU         00                           : ANTERIOR Y LLENARA EN GD-LOG-REG-ANTER                                      N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00    MV;GD-LOG-PASO         GD-LOG-REG-ANTER                                                              N
+41LOG-SEUSU         00    :: SE SALE DEL CODIGO, SE ESPERA QUE SE INVOQUE                                                      N
+41LOG-SEUSU         00    :: ESTA MISMA RUTINA CUANDO LA ESTRUCTURA CONTENGA                                                   N
+41LOG-SEUSU         00    :: LOS NUEVOS DATOS Y AHORA VENGA CON PARAMETRO NUEVO                                                N
+41LOG-SEUSU         00ELSE;                                                                                                    N
+41LOG-SEUSU         00    :: CUANDO VIENE CON PARAMETRO NUEVO                                                                  N
+41LOG-SEUSU         00    :: SE GUARDA LOS DATOS EN LA ESTRUCTURA LOGRE                                                        N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00    MV;GD-LOG-PASO         GD-LOG-REG-NUEVO                                                              N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00    AUTO.ENTRY; LOGRE                                                                                    N
+41LOG-SEUSU         00        AU; GD-LOG-ACCION       ACCION                                                                   N
+41LOG-SEUSU         00        AU; GD-LOG-FECHA        FECHA                                                                    N
+41LOG-SEUSU         00        AU; GD-LOG-HORA         HORA                                                                     N
+41LOG-SEUSU         00        AU; GD-LOG-CODUSU       USUARIO                                                                  N
+41LOG-SEUSU         00        AU; GD-LOG-ESTRU        ESTRU                                                                    N
+41LOG-SEUSU         00        AU; GD-LOG-IDESTRU      ID-ESTRU                                                                 N
+41LOG-SEUSU         00        AU; GD-LOG-REG-ANTER    REG-ANTER                                                                N
+41LOG-SEUSU         00        AU; GD-LOG-REG-NUEVO    REG-NUEVO                                                                N
+41LOG-SEUSU         00    AUTO; WRITE                                                                                          N
+41LOG-SEUSU         00                                                                                                         N
+41LOG-SEUSU         00END;                                                                                                     N
+35SEGURIDAD         LOG-SEUSU         INCLUDES  0     0      *         *

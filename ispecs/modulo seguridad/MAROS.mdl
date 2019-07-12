@@ -1,0 +1,192 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:13 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10MAROSMI00000000MANTENEDOR DE ROL             000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71MAROS             C299013D56586F4C805D1352DD27C48843C42DBDC4853E489A3B56E7D17353690D0FE2D34032384695420F05906915B0094DB07495C73D419F28807DD5708E3E7D99645C75D9064A9C40A97AF0658C18568D40B68891074788F67632D6F8DF9EA60F9B392FD5814689C538B5BF14916B
+90MAROS             (V: VIGENTE O N: NO VIGENTE)                                                    0002405028 NNNN N                    000NNNNNNN01
+90MAROS             ESTADO:                                                                         0002403807 NNNN N                    000NNNNNNN01
+90MAROS             DIAS PASSWORD:                                                                  0000800214 NNNN N                    000NNNNNNN01
+90MAROS             NOMBRE:                                                                         0000700207 NNNN N                    000NNNNNNN01
+90MAROS             ------------------------------------------------------------------------------  0000500278 NNNN N                    000NNNNNNN01
+90MAROS             ROL:                                                                            0000400204 NNNN N                    000NNNNNNN01
+90MAROS             MANTENEDOR DE PERSONAS                                                          0000302822 NNNN N                    000NNNNNNN01
+90MAROS             CODUSU:                                                                         0000106207 NNNN N                    000NNNNNNN01
+30ESTADO            MAROS             DEFAULT   00000000A000100                           ESTADO                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400046
+30DPASS             MAROS             DEFAULT   00000000N000200                           DIAS PASWORD                                                D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000800017
+30NOMBRE            MAROS             DEFAULT   00000000A003000                           NOMBRE DEL ROL                                              D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000700017
+30CODIGO            MAROS             DEFAULT   00000000N000300                           CODIGO ROL                                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400020
+30CODUSU            MAROS             DEFAULT   00000000A001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100069
+30MANT              MAROS             DEFAULT   00000000A000300                           ACCION                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100031
+30MAROS             LOG-SEROL         INSERT
+48SD-CODIGO         MAROS             0003N00(0)                                                                                                                                            SETUP DATA CODIGO
+48SD-FLG-USU        MAROS             0001A00                                                                                                                                                                                                             D
+48SD-LAST           MAROS             0003N00(999)
+42MAROSMV; (INQ)           MANT                                                                                 N
+42MAROSMV; SD-CODIGO       CODIGO                                                                               N
+42MAROS                                                                                                         N
+42MAROSDT; EVERY SEROL-SE1 (CODIGO)                                                                             N
+42MAROS    BK;                                                                                                  N
+42MAROSEND;                                                                                                     N
+42MAROS                                                                                                         N
+42MAROSDW; GLB.STATUS NOT = GLB.SPACES                                                                          N
+42MAROSEE;                                                                                                      N
+42MAROS                                                                                                         N
+42MAROSMV;SEROL.CODIGO   CODIGO                                                                                 N
+42MAROSMV;SEROL.DPASS    DPASS                                                                                  N
+42MAROSMV;SEROL.ESTADO   ESTADO                                                                                 N
+42MAROSMV;SEROL.NOMBRE   NOMBRE                                                                                 N
+43MAROSDW; MANT    NOT =   (INQ) AND                                                                            N
+43MAROSDW; MANT    NOT =   (CHG) AND                                                                            N
+43MAROSDW; MANT    NOT =   (DEL) AND                                                                            N
+43MAROSDW; MANT    NOT =   (ADD)                                                                                N
+43MAROS    ME; ERROR GD-ERR-MANT                                                                                N
+43MAROSEE;                                                                                                      N
+43MAROS                                                                                                         N
+43MAROSMV; CODIGO         SD-CODIGO                                                                             N
+43MAROS                                                                                                         N
+43MAROSDW; MANT        NOT =   (ADD) AND                                                                        N
+43MAROSDW; CODIGO      =       GLB.ZEROS                                                                        N
+43MAROS    ME; ERROR ( DEBE INGRESAR UN ROL)                                                                    N
+43MAROSEE;                                                                                                      N
+43MAROS                                                                                                         N
+43MAROSDT; EVERY SEROL-SE1 (CODIGO)                                                                             N
+43MAROS    BK;                                                                                                  N
+43MAROSEND;                                                                                                     N
+43MAROS                                                                                                         N
+43MAROSDW; GLB.STATUS  NOT =   GLB.SPACES AND                                                                   N
+43MAROSDW; MANT        NOT =   (ADD)                                                                            N
+43MAROS    ME; ERROR GD-ERR-REG-NO                                                                              N
+43MAROSEE;                                                                                                      N
+43MAROS                                                                                                         N
+43MAROSDW; GLB.STATUS  =   GLB.SPACES AND                                                                       N
+43MAROSDW; MANT        =   (ADD)                                                                                N
+43MAROS    ME; ERROR GD-ERR-REG-SI                                                                              N
+43MAROSEE;                                                                                                      N
+43MAROS                                                                                                         N
+43MAROSDW; MANT    =   (CHG) OR                                                                                 N
+43MAROSDW; MANT    =   (ADD)                                                                                    N
+43MAROS    DW; NOMBRE     =   GLB.SPACES                                                                        N
+43MAROS        ME; ERROR ( DEBE INGRESAR NOMBRE)                                                                N
+43MAROS    EE;                                                                                                  N
+43MAROS                                                                                                         N
+43MAROS    DW; ESTADO  NOT =   (V) AND                                                                          N
+43MAROS    DW; ESTADO  NOT =   (N)                                                                              N
+43MAROS        ME; ERROR ( ESTADO SOLO PUEDE SER V O N)                                                         N
+43MAROS    EE;                                                                                                  N
+43MAROS                                                                                                         N
+43MAROS    DW; MANT            =   (CHG)   AND                                                                  N
+43MAROS    DW; SEROL.ESTADO    =   (V)     AND                                                                  N
+43MAROS    DW; ESTADO          =   (N)                                                                          N
+43MAROS        MV; (0)         SD-FLG-USU                                                                       N
+43MAROS                                                                                                         N
+43MAROS        DT; GROUP SEUXR-SE2 (CODIGO) FROM (GLB.SPACES)                                                   N
+43MAROS            MV; (1)         SD-FLG-USU                                                                   N
+43MAROS            BK;                                                                                          N
+43MAROS        END;                                                                                             N
+43MAROS                                                                                                         N
+43MAROS        DW; SD-FLG-USU  =   (1)                                                                          N
+43MAROS            ME; ERROR ( NO PUEDE ANULAR UN ROL EN USO)                                                   N
+43MAROS        EE;                                                                                              N
+43MAROS    END;                                                                                                 N
+43MAROSEND;                                                                                                     N
+43MAROS                                                                                                         N
+43MAROSDW; MANT            =   (DEL)                                                                            N
+43MAROS    MV; (0)         SD-FLG-USU                                                                           N
+43MAROS                                                                                                         N
+43MAROS    DT; GROUP SEUXR-SE2 (CODIGO) FROM (GLB.SPACES)                                                       N
+43MAROS        MV; (1)         SD-FLG-USU                                                                       N
+43MAROS        BK;                                                                                              N
+43MAROS    END;                                                                                                 N
+43MAROS                                                                                                         N
+43MAROS    DW; SD-FLG-USU  =   (1)                                                                              N
+43MAROS        ME; ERROR ( NO PUEDE ELIMINAR UN ROL EN USO)                                                     N
+43MAROS    EE;                                                                                                  N
+43MAROSEND;                                                                                                     N
+41MAROS             00DW; MANT    =   (INQ)                                                                                    N
+41MAROS             00    ::SALIR LG                                                                                           N
+41MAROS             00EE;                                                                                                      N
+41MAROS             00                                                                                                         N
+41MAROS             00                                                                                                         N
+41MAROS             00 ::AUIDTORIA                                                                                             N
+41MAROS             00MV;GLB.SPACES      GD-LOG                                                                                N
+41MAROS             00MV;CODUSU          GD-LOG-CODUSU                                                                         N
+41MAROS             00MV;MANT            GD-LOG-ACCION                                                                         N
+41MAROS             00                                                                                                         N
+41MAROS             00DW;MANT = (CHG) OR                                                                                       N
+41MAROS             00DW;MANT = (DEL)                                                                                          N
+41MAROS             00   :::SE RESCATA LOS DATOS ANTES DEL CAMBIO                                                              N
+41MAROS             00   MV;(SEROL)         GD-LOG-ESTRU                                                                       N
+41MAROS             00   MV;(ANTER)         GD-LOG-TIPOREG                                                                     N
+41MAROS             00   INS;LOG-SEROL                                                        Y                                N
+41MAROS             00END;                                                                                                     N
+41MAROS             00                                                                                                         N
+41MAROS             00                                                                                                         N
+41MAROS             00                                                                                                         N
+41MAROS             00:MV; CODIGO      GD-COD10                                                                                N
+41MAROS             00:INS; DEL-CEROS                                                                                          N
+41MAROS             00: MV; GD-COD10    GD-LOG-ID1                                                                             N
+41MAROS             00                                                                                                         N
+41MAROS             00DW; MANT    =   (ADD)                                                                                    N
+41MAROS             00    DT; LAST SEROL-SE1 (SD-LAST) SECURE                                                                  N
+41MAROS             00                                                                                                         N
+41MAROS             00    DW; GLB.STATUS      = GLB.SPACES                                                                     N
+41MAROS             00        MV; SEROL.CODIGO    SD-CODIGO                                                                    N
+41MAROS             00        ADD; (1)            SD-CODIGO                                                                    N
+41MAROS             00    ELSE;                                                                                                N
+41MAROS             00        MV; (1)             SD-CODIGO                                                                    N
+41MAROS             00    END;                                                                                                 N
+41MAROS             00                                                                                                         N
+41MAROS             00    :MV; SD-CODIGO   GD-COD10                                                                            N
+41MAROS             00    :INS; DEL-CEROS                                                                                      N
+41MAROS             00    : MV; GD-COD10    GD-LOG-ID1                                                                         N
+41MAROS             00                                                                                                         N
+41MAROS             00    AUTO.ENTRY; SEROL                                                                                    N
+41MAROS             00        AU; SD-CODIGO   CODIGO                                                                           N
+41MAROS             00        AU; DPASS       DPASS                                                                            N
+41MAROS             00        AU; (V)         ESTADO                                                                           N
+41MAROS             00        AU; NOMBRE      NOMBRE                                                                           N
+41MAROS             00    AUTO;WRITE                                                                                           N
+41MAROS             00                                                                                                         N
+41MAROS             00ELSE;                                                                                                    N
+41MAROS             00    DT; EVERY SEROL-SE1 (CODIGO)                                                                         N
+41MAROS             00        BK;                                                                                              N
+41MAROS             00    END;                                                                                                 N
+41MAROS             00                                                                                                         N
+41MAROS             00    DW; MANT    =   (CHG)                                                                                N
+41MAROS             00        FL; CODIGO          SEROL.CODIGO                                                                 N
+41MAROS             00        FL; DPASS           SEROL.DPASS                                                                  N
+41MAROS             00        FL; ESTADO          SEROL.ESTADO                                                                 N
+41MAROS             00        FL; NOMBRE          SEROL.NOMBRE                                                                 N
+41MAROS             00                                                                                                         N
+41MAROS             00    END;                                                                                                 N
+41MAROS             00                                                                                                         N
+41MAROS             00    DW; MANT    =   (DEL)                                                                                N
+41MAROS             00        FL; (D)             SEROL.MAINT                                                                  N
+41MAROS             00                                                                                                         N
+41MAROS             00:        SE INHIBE ESTAS LINEAS, SE MUEVEN MAS ABAJO                                                     N
+41MAROS             00:        DT; GROUP SEOXR-SE1 (CODIGO) FROM (GLB.ZEROS)                                                   N
+41MAROS             00:            FL; (D)             SEOXR.MAINT                                                             N
+41MAROS             00:        END;                                                                                            N
+41MAROS             00    END;                                                                                                 N
+41MAROS             00                                                                                                         N
+41MAROS             00                                                                                                         N
+41MAROS             00END;                                                                                                     N
+41MAROS             00                                                                                                         N
+41MAROS             00 ::AUDITORIA                                                                                             N
+41MAROS             00 ::SE RESCATA DATO POST CAMBIOS Y SE GRABA LOG                                                           N
+41MAROS             00 MV;(SEROL)          GD-LOG-ESTRU                                                                        N
+41MAROS             00 MV;(NUEVO)          GD-LOG-TIPOREG                                                                      N
+41MAROS             00 INS;LOG-SEROL                                                          Y                                N
+41MAROS             00                                                                                                         N
+41MAROS             00                                                                                                         N
+41MAROS             00DW; MANT    =   (DEL)                                                                                    N
+41MAROS             00    DT; GROUP SEOXR-SE1 (CODIGO) FROM (GLB.ZEROS)                                                        N
+41MAROS             00        FL; (D)             SEOXR.MAINT                                                                  N
+41MAROS             00    END;                                                                                                 N
+41MAROS             00END;                                                                                                     N
+35SEGURIDAD         MAROS             INCLUDES  0     0      *         *

@@ -1,0 +1,71 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:56:52 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CMOXUMI00000000CONSULTA OPCIONES X USUARIO   000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000400050010 Y
+71CMOXU             3EDE17598C25874F868BFD72F1FF36294F7BE7D6631F914893DC01F6493911211810FC31EFA449499F4706F995467BA84777690A87042C40A31A1B7C6243BEB07F6BCEA592AC4B48B1F1AF5E69B2AE52326630E32096BA4EAD0C221F9A0D6A7A94F17B734CDBAE4E876CA75030985D41
+90CMOXU             ICONO                                                                           0000305705 NNNN N                    000NNNNNNN01
+90CMOXU             DESCRIPCION                                                                     0000300611 NNNN N                    000NNNNNNN01
+90CMOXU             COD                                                                             0000300203 NNNN N                    000NNNNNNN01
+90CMOXU             ROL:                                                                            0000204704 NNNN N                    000NNNNNNN01
+90CMOXU             OPCION:                                                                         0000202407 NNNN N                    000NNNNNNN01
+90CMOXU             USUARIO:                                                                        0000200208 NNNN N                    000NNNNNNN01
+90CMOXU             CONSULTA OPCIONES USUARIO                                                       0000103925 NNNN N                    000NNNNNNN01
+30MENJ35            CMOXU             INQUIRY   00000000A003500                           MENSAJE DE 35 POSICIONES                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400043
+30ORDEN             CMOXU             INQUIRY   00000000N000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500077
+30CODPADRE          CMOXU             INQUIRY   00000000N000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500073
+30FORMU             CMOXU             INQUIRY   00000000A007000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500002
+30ICONO             CMOXU             INQUIRY   00000000A002000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400057
+30DESCRIP           CMOXU             INQUIRY   00000000A005000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400006
+30CODOPC            CMOXU             INQUIRY   00000000N000300                           CODIGO OPCION                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400002
+30ROL               CMOXU             DEFAULT   00000000N000300                           ROL DE BUSQUEDA                                             D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200051
+30CODOPC-B          CMOXU             DEFAULT   00000000N000300                           CONSULTA POR CODIGO OPCION                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200032
+30CODUSU            CMOXU             DEFAULT   00000000A001000                           CONSULTA POR USUARIO                                        D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NNN0000200011
+48SD-CODOPC         CMOXU             0003N00(0)                                                                                                                                            CODIGO OPCION
+48SD-CODUSU         CMOXU             0010A00( )                                                                                                                                            CODIGO USUARIO                                                N
+48SD-ROL            CMOXU             0003N00(0)
+42CMOXUDW; GLB.COPY    =   (1)                                                                                  N
+42CMOXU    MV; SD-CODUSU           CODUSU                                                                       N
+42CMOXU    MV; SD-CODOPC           CODOPC-B                                                                     N
+42CMOXU    MV; SD-ROL              ROL                                                                          N
+42CMOXUEND;                                                                                                     N
+42CMOXU                                                                                                         N
+42CMOXUMV; GD-CF-NO       MENJ35                                                                                N
+42CMOXU                                                                                                         N
+42CMOXU:DT; FROM SEUXR-SS1 (CODUSU GLB.ZEROS)                                                                   N
+42CMOXU:    DW; SEUXR.RUT   NOT =   CODUSU                                                                      N
+42CMOXU:        BK;                                                                                             N
+42CMOXU:    END;                                                                                                N
+42CMOXU:    MV; SEUXR.CODROL        SD-ROL                                                                      N
+42CMOXU:END;                                                                                                    N
+42CMOXU                                                                                                         N
+42CMOXUDT; GROUP SEOXR-SE1 (ROL) FROM (CODOPC-B) SERIAL                                                         N
+42CMOXU    MV; GD-CF-SI            MENJ35                                                                       N
+42CMOXU    BK;                                                                                                  N
+42CMOXUEND;                                                                                                     N
+42CMOXU                                                                                                         N
+42CMOXUDW; MENJ35 =  GD-CF-NO                                                                                   N
+42CMOXUEE;                                                                                                      N
+42CMOXU                                                                                                         N
+42CMOXUMV; SEOXR.CODOPC        CODOPC-B                                                                         N
+42CMOXU                                                                                                         N
+42CMOXUDT; EVERY SEOPC-SE1 (CODOPC-B)                                                                           N
+42CMOXU    MV; SEOPC.CODIGO        CODOPC                                                                       N
+42CMOXU    MV; SEOPC.CODPADRE      CODPADRE                                                                     N
+42CMOXU    MV; SEOPC.DESCRIP       DESCRIP                                                                      N
+42CMOXU    MV; SEOPC.FORMU         FORMU                                                                        N
+42CMOXU    MV; SEOPC.ICONO         ICONO                                                                        N
+42CMOXU    MV; SEOPC.ORDEN         ORDEN                                                                        N
+42CMOXU    BK;                                                                                                  N
+42CMOXUEND;                                                                                                     N
+43CMOXU                                                                                                         N
+43CMOXUDW; GLB.COPY    =   (1)                                                                                  N
+43CMOXU    MV; CODUSU              SD-CODUSU                                                                    N
+43CMOXU    MV; ROL                 SD-ROL                                                                       N
+43CMOXU    MV; CODOPC-B            SD-CODOPC                                                                    N
+43CMOXUEND;                                                                                                     N
+35SEGURIDAD         CMOXU             INCLUDES  0     0      *         *

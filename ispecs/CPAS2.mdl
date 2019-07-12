@@ -1,0 +1,120 @@
+
+     UNISYS Confidential
+
+     Created by croman on 03-05-2019, 09:23:37 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNY0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CPAS2MI00000000CONSULTA DE SUBSIDIOS         000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000800000016YNNNNNNNYYYN                            DNN   NDNYYN01920000500070006 Y
+71CPAS2             CD41C47DF59F3A41B52D0E23D0B0B84AAF5FA17250FD5E4CBB39ED04D4D924ADE67CFEDA00C31448A36D5B634E157CF47FDA61D41A46794290AA036FD7700061A2CA19835F0A59459AA03400849B936C8C28E87AD86FAF45AC229C841D993EADE203479CFAFE094AB79CAC3CE21F9C66
+90CPAS2             DESCRIP                                                                         0000300207 NNNN N                    000NNNNNNN01
+90CPAS2             TIPFIC                                                                          0000205306 NNNN N                    000NNNNNNN01
+90CPAS2             CODSUB                                                                          0000204106 NNNN N                    000NNNNNNN01
+90CPAS2             TIPATE                                                                          0000202806 NNNN N                    000NNNNNNN01
+90CPAS2             ARESOC                                                                          0000201406 NNNN N                    000NNNNNNN01
+90CPAS2             ANO                                                                             0000200203 NNNN N                    000NNNNNNN01
+90CPAS2             CONSULTA DE SUBSIDIOS                                                           0000103621 NNNY N                    000NNNNNNN01
+30MENSAJE           CPAS2             INQUIRY   00000000A003000 MENSAJE                                                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400005
+30FECTERPOS         CPAS2             INQUIRY   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000700064
+30FECINIPOS         CPAS2             INQUIRY   00000000N000800                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000700056
+30PRG-DESC          CPAS2             INQUIRY   00000000A005000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000700006
+30PRG-UNIDAD        CPAS2             INQUIRY   00000000A000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000700002
+30UNI-DESC          CPAS2             INQUIRY   00000000A005000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000600029
+30REND-D            CPAS2             INQUIRY   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000600023
+30MESINI-D          CPAS2             INQUIRY   00000000N000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000600017
+30FICPRE-D          CPAS2             INQUIRY   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000600014
+30VIGENCIA-D        CPAS2             INQUIRY   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000600012
+30ESTPOST-D         CPAS2             INQUIRY   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000600010
+30DIA-REND-D        CPAS2             INQUIRY   00000000N000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000600007
+30DIA-PAGO-D        CPAS2             INQUIRY   00000000N000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000600004
+30MESFIN-D          CPAS2             INQUIRY   00000000N000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000600002
+30VALSUB-D          CPAS2             INQUIRY   00000000N001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500069
+30TIPSUB-D          CPAS2             INQUIRY   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500067
+30DESCRIP-D         CPAS2             INQUIRY   00000000A005000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500017
+30ANO-D             CPAS2             INQUIRY   00000000N000400                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500012
+30CODSUB-D          CPAS2             INQUIRY   00000000N000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500009
+30TIPATE-D          CPAS2             INQUIRY   00000000A000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500006
+30ARESOC-D          CPAS2             INQUIRY   00000000A000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500002
+30DESCRIP           CPAS2             DEFAULT   00000000A005000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000300009
+30TIPFIC            CPAS2             DEFAULT   00000000A000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200059
+30CODSUB            CPAS2             DEFAULT   00000000N000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200048
+30TIPATE            CPAS2             DEFAULT   00000000A000200                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200035
+30ARESOC            CPAS2             DEFAULT   00000000A000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200021
+30ANO               CPAS2             DEFAULT   00000000N000400                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000200006
+30CPAS2             PASUB-SE1         REFERENCE
+30CPAS2             TABLA-P1          REFERENCE
+30CPAS2             TATEN-P1          REFERENCE
+48SD-ANO            CPAS2             0004N00(0)
+48SD-ARESOC         CPAS2             0003A00( )                                                                                                                                                                                                          D
+48SD-CODSUB         CPAS2             0002N00(0)
+48SD-TIPATE         CPAS2             0002A00( )                                                                                                                                                                                                          D
+48SD-TIPFIC         CPAS2             0002A00( )                                                                                                                                                                                                          D
+48SD-UNI            CPAS2             0003A00(UNI)                                                                                                                                                                                                        D
+42CPAS2DW; GLB.COPY = (1)                                                                                       N
+42CPAS2    MV; SD-ANO      ANO                                                                                  N
+42CPAS2    MV; SD-ARESOC   ARESOC                                                                               N
+42CPAS2    MV; SD-TIPATE   TIPATE                                                                               N
+42CPAS2    MV; SD-CODSUB   CODSUB                                                                               N
+42CPAS2    MV; SD-TIPFIC   TIPFIC                                                                               N
+42CPAS2END;                                                                                                     N
+42CPAS2                                                                                                         N
+42CPAS2MV; GD-NOMAS           MENSAJE                                                                           N
+42CPAS2                                                                                                         N
+42CPAS2                                                                                                         N
+42CPAS2DT;FROM PASUB-SE1 (SD-ANO SD-ARESOC SD-TIPATE SD-CODSUB) SERIAL                                          N
+42CPAS2    DW;PASUB.ANO NOT = SD-ANO                                                                            N
+42CPAS2       BK;                                                                                               N
+42CPAS2    END;                                                                                                 N
+42CPAS2    MV; GD-MAS  MENSAJE                                                                                  N
+42CPAS2    BK;                                                                                                  N
+42CPAS2END;                                                                                                     N
+42CPAS2                                                                                                         N
+42CPAS2DW; MENSAJE  =   GD-NOMAS                                                                                N
+42CPAS2EE;                                                                                                      N
+42CPAS2                                                                                                         N
+42CPAS2MV; PASUB.ANO           ANO-D                                                                            N
+42CPAS2MV; PASUB.ARESOC        ARESOC-D                                                                         N
+42CPAS2MV; PASUB.CODSUB        CODSUB-D                                                                         N
+42CPAS2MV; PASUB.DESCRIP       DESCRIP-D                                                                        N
+42CPAS2MV; PASUB.EST-POSTU     ESTPOST-D                                                                        N
+42CPAS2MV; PASUB.DIA-PAGO      DIA-PAGO-D                                                                       N
+42CPAS2MV; PASUB.DIA-REND      DIA-REND-D                                                                       N
+42CPAS2MV; PASUB.MESFINSUB     MESFIN-D                                                                         N
+42CPAS2MV; PASUB.MESINISUB     MESINI-D                                                                         N
+42CPAS2MV; PASUB.RENDICION     REND-D                                                                           N
+42CPAS2MV; PASUB.TIPATE        TIPATE-D                                                                         N
+42CPAS2MV; PASUB.TIPSUB        TIPSUB-D                                                                         N
+42CPAS2MV; PASUB.VALSUB        VALSUB-D                                                                         N
+42CPAS2MV; PASUB.VIGENCIA      VIGENCIA-D                                                                       N
+42CPAS2MV; PASUB.ARESOC        ARESOC                                                                           N
+42CPAS2MV; PASUB.TIPATE        TIPATE                                                                           N
+42CPAS2MV; PASUB.CODSUB        CODSUB                                                                           N
+42CPAS2MV; PASUB.ANO           ANO                                                                              N
+42CPAS2MV; PASUB.DESCRIP       DESCRIP                                                                          N
+42CPAS2MV; PASUB.INDFICPRE     FICPRE-D                                                                         N
+42CPAS2MV; PASUB.FECINIPOS     FECINIPOS                                                                        N
+42CPAS2MV; PASUB.FECTERPOS     FECTERPOS                                                                        N
+42CPAS2                                                                                                         N
+42CPAS2                                                                                                         N
+42CPAS2DT; EVERY TATEN-P1(PASUB.ARESOC PASUB.TIPATE)                                                            N
+42CPAS2    MV; TATEN.DESCRI    PRG-DESC                                                                         N
+42CPAS2    MV; TATEN.UNIDAD    PRG-UNIDAD                                                                       N
+42CPAS2    BK;                                                                                                  N
+42CPAS2END;                                                                                                     N
+42CPAS2                                                                                                         N
+42CPAS2DT; EVERY TABLA-P1(SD-UNI PRG-UNIDAD)                                                                    N
+42CPAS2    MV; TABLA.DESCRI    UNI-DESC                                                                         N
+42CPAS2    BK;                                                                                                  N
+42CPAS2END;                                                                                                     N
+43CPAS2DW; GLB.COPY = (1)                                                                                       N
+43CPAS2    DW;ANO = GLB.ZEROS                                                                                   N
+43CPAS2        ME;ERROR (DEBE SELECCIONAR UN A/O)                                                               N
+43CPAS2    EE;                                                                                                  N
+43CPAS2    MV; ARESOC      SD-ARESOC                                                                            N
+43CPAS2    MV; TIPATE      SD-TIPATE                                                                            N
+43CPAS2    MV; CODSUB      SD-CODSUB                                                                            N
+43CPAS2    MV; ANO         SD-ANO                                                                               N
+43CPAS2    MV; TIPFIC      SD-TIPFIC                                                                            N
+43CPAS2END;                                                                                                     N
+35CONSULTAS         CPAS2             INCLUDES  0     0      *         *

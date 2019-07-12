@@ -1,0 +1,118 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:56:59 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10CMUSUMI00000000CONSULTA MASIVA USUARIO       000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000500060009 Y
+71CMUSU             E1AA472EBC73A44DAC6A170ADA3CE7FE669A055518FF4F47B502AA80E65CEB661810FC31EFA449499F4706F995467BA82C66BD2FDE614F408AAF217067DFA7727F6BCEA592AC4B48B1F1AF5E69B2AE52326630E32096BA4EAD0C221F9A0D6A7A94F17B734CDBAE4E876CA75030985D41
+90CMUSU             ESTADO:                                                                         0002400707 NNNN N                    000NNNNNNN01
+90CMUSU             ------------------------------------------------------------------------------  0000400278 NNNN N                    000NNNNNNN01
+90CMUSU             APEMAT:                                                                         0000303307 NNNN N                    000NNNNNNN01
+90CMUSU             APEPAT:                                                                         0000300207 NNNN N                    000NNNNNNN01
+90CMUSU             NOMBRES:                                                                        0000203008 NNNN N                    000NNNNNNN01
+90CMUSU             RUT:                                                                            0000201204 NNNN N                    000NNNNNNN01
+90CMUSU             TIPO:                                                                           0000200205 NNNN N                    000NNNNNNN01
+90CMUSU             CONSULTA MASIVA DE USUARIOS                                                     0000103927 NNNN N                    000NNNNNNN01
+30MENJ35            CMUSU             INQUIRY   00000000A003500                           MENSAJE DE 35 POSICIONES                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400043
+30ESTADO-F          CMUSU             DEFAULT   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400015
+30APEMAT            CMUSU             INQUIRY   00000000A002000                           APELLIDO MATERNO USUARIO                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000600053
+30APEPAT            CMUSU             INQUIRY   00000000A002000                           APELLIDO PATERNO USUARIO                                    D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000600032
+30NOMBRES           CMUSU             INQUIRY   00000000A003000                           NOMBRES USUARIO                                             D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000600002
+30CORREO            CMUSU             INQUIRY   00000000A006000                           CORREO DE USUARIO                                           D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500021
+30ESTADO            CMUSU             INQUIRY   00000000A000100                           ESTADO                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500019
+30FECPASS           CMUSU             INQUIRY   00000000N000800                           FECHA PASWORD                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500011
+30RUT               CMUSU             INQUIRY   00000000A001000                           RUT USUARIO                                                 D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500001
+30APEMAT-B          CMUSU             DEFAULT   00000000A002000                           CONSULTA POR APELLIDO MATERNO                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000300041
+30APEPAT-B          CMUSU             DEFAULT   00000000A002000                           CONSULTA POR APELLIDO PATERNO                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000300010
+30NOMBRES-B         CMUSU             DEFAULT   00000000A003000                           CONSULTA POR NOMBRE                                         D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200039
+30RUT-B             CMUSU             DEFAULT   00000000A001000                           CONSULTA POR RUT                                            D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200017
+30OPCION            CMUSU             DEFAULT   00000000A000100                           OPCION DE CONSULTA                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000200008
+48SD-APEMAT         CMUSU             0020A00( )                                                                                                                                            APELLIDO MATERNO                                              D
+48SD-APEPAT         CMUSU             0020A00( )                                                                                                                                            APELLIDO PATERNO                                              D
+48SD-ESTADO         CMUSU             0001A00( )                                                                                                                                                                                                          D
+48SD-NOMBRES        CMUSU             0030A00( )                                                                                                                                            NOMBRES USUARIO                                               D
+48SD-OPCION         CMUSU             0001A00( )                                                                                                                                                                                                          D
+48SD-RUT            CMUSU             0010A00( )                                                                                                                                            RUT USUARIO                                                   D
+42CMUSUDW; GLB.COPY    =   (1)                                                                                  N
+42CMUSU    MV; SD-OPCION           OPCION                                                                       N
+42CMUSU    MV; SD-RUT              RUT-B                                                                        N
+42CMUSU    MV; SD-NOMBRES          NOMBRES-B                                                                    N
+42CMUSU    MV; SD-APEPAT           APEPAT-B                                                                     N
+42CMUSU    MV; SD-APEMAT           APEMAT-B                                                                     N
+42CMUSU    MV; SD-ESTADO           ESTADO-F                                                                     N
+42CMUSUEND;                                                                                                     N
+42CMUSU                                                                                                         N
+42CMUSUMV; GD-CF-NO       MENJ35                                                                                N
+42CMUSU                                                                                                         N
+42CMUSU:BUSQUEDA POR RUT                                                                                        N
+42CMUSUDW; OPCION = (R)                                                                                         N
+42CMUSU    DW; ESTADO-F    =   GLB.SPACES                                                                       N
+42CMUSU        DT; FROM SEUSU-SS1 (RUT-B) SERIAL                                                                N
+42CMUSU            MV; GD-CF-SI            MENJ35                                                               N
+42CMUSU            BK;                                                                                          N
+42CMUSU        END;                                                                                             N
+42CMUSU    ELSE;                                                                                                N
+42CMUSU        DT; FROM SEUSU-SS2 (RUT-B) SERIAL                                                                N
+42CMUSU            MV; GD-CF-SI            MENJ35                                                               N
+42CMUSU            BK;                                                                                          N
+42CMUSU        END;                                                                                             N
+42CMUSU    END;                                                                                                 N
+42CMUSUEND;                                                                                                     N
+42CMUSU                                                                                                         N
+42CMUSU:BUSQUEDA POR NOMBRE                                                                                     N
+42CMUSUDW; OPCION  =   (N)                                                                                      N
+42CMUSU    DW; ESTADO-F    =   GLB.SPACES                                                                       N
+42CMUSU        DT; FROM SEUSU-SS3 (NOMBRES-B APEPAT-B APEMAT-B) SERIAL                                          N
+42CMUSU            MV; GD-CF-SI            MENJ35                                                               N
+42CMUSU            BK;                                                                                          N
+42CMUSU        END;                                                                                             N
+42CMUSU    ELSE;                                                                                                N
+42CMUSU        DT; FROM SEUSU-SS4 (NOMBRES-B APEPAT-B APEMAT-B) SERIAL                                          N
+42CMUSU            MV; GD-CF-SI            MENJ35                                                               N
+42CMUSU            BK;                                                                                          N
+42CMUSU        END;                                                                                             N
+42CMUSU    END;                                                                                                 N
+42CMUSUEND;                                                                                                     N
+42CMUSU                                                                                                         N
+42CMUSU:BUSQUEDA POR APELLIDO                                                                                   N
+42CMUSUDW; OPCION  =   (A)                                                                                      N
+42CMUSU    DW; ESTADO-F    =   GLB.SPACES                                                                       N
+42CMUSU        DT; FROM SEUSU-SS5 (APEPAT-B APEMAT-B NOMBRES-B) SERIAL                                          N
+42CMUSU            MV; GD-CF-SI            MENJ35                                                               N
+42CMUSU            BK;                                                                                          N
+42CMUSU        END;                                                                                             N
+42CMUSU    ELSE;                                                                                                N
+42CMUSU        DT; FROM SEUSU-SS6 (APEPAT-B APEMAT-B NOMBRES-B) SERIAL                                          N
+42CMUSU            MV; GD-CF-SI            MENJ35                                                               N
+42CMUSU            BK;                                                                                          N
+42CMUSU        END;                                                                                             N
+42CMUSU    END;                                                                                                 N
+42CMUSUEND;                                                                                                     N
+42CMUSU                                                                                                         N
+42CMUSUDW; MENJ35  =   GD-CF-NO                                                                                 N
+42CMUSUEE;                                                                                                      N
+42CMUSU                                                                                                         N
+42CMUSUMV; SEUSU.RUT      RUT-B                                                                                 N
+42CMUSUMV; SEUSU.NOMBRES  NOMBRES-B                                                                             N
+42CMUSUMV; SEUSU.APEPAT   APEPAT-B                                                                              N
+42CMUSUMV; SEUSU.APEMAT   APEMAT-B                                                                              N
+42CMUSU                                                                                                         N
+42CMUSUMV; SEUSU.RUT      RUT                                                                                   N
+42CMUSUMV; SEUSU.FECPASS  FECPASS                                                                               N
+42CMUSUMV; SEUSU.ESTADO   ESTADO                                                                                N
+42CMUSUMV; SEUSU.NOMBRES  NOMBRES                                                                               N
+42CMUSUMV; SEUSU.APEPAT   APEPAT                                                                                N
+42CMUSUMV; SEUSU.APEMAT   APEMAT                                                                                N
+42CMUSUMV; SEUSU.CORREO   CORREO                                                                                N
+43CMUSUDW; GLB.COPY    =   (1)                                                                                  N
+43CMUSU    MV; OPCION          SD-OPCION                                                                        N
+43CMUSU    MV; RUT-B           SD-RUT                                                                           N
+43CMUSU    MV; NOMBRES-B       SD-NOMBRES                                                                       N
+43CMUSU    MV; APEPAT-B        SD-APEPAT                                                                        N
+43CMUSU    MV; APEMAT-B        SD-APEMAT                                                                        N
+43CMUSU    MV; ESTADO-F        SD-ESTADO                                                                        N
+43CMUSUEND;                                                                                                     N
+35SEGURIDAD         CMUSU             INCLUDES  0     0      *         *

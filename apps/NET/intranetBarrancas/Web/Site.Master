@@ -1,0 +1,149 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title id="PageTitle" runat="server"></title>
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/bootstrap-toggle.min.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/dashboard.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/Font-Awesome-4.4.0/css/font-awesome.min.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/dataTables.bootstrap.min.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/responsive.bootstrap.min.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/buttons.dataTables.min.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/jquery-ui.min.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/jquery.steps.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/jquery.filer.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/metisMenu.min.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/jquery.datetimepicker.css?v=<%=scriptVersion %>" />
+  <!-- CSS Default -->
+  <link rel="stylesheet" href="../css/proexsi-style.css?v=<%=scriptVersion %>" />
+  <link rel="stylesheet" href="../css/lc-style.css?v=<%=scriptVersion %>" />
+</head>
+<body style="background-image: url('../img/logo-agua.png'); background-repeat: no-repeat;
+  background-attachment: fixed; background-position: center; background-position-y: center;
+  background-size: cover;">
+  <form id="Form1" runat="server">
+  <nav class="navbar navbar-default navbar-fixed-top" style="z-index: 5;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="../img/logolc.png" alt="" class="img-logo" />
+          <span class="span-titulo-sistema">
+            <b id="bSistemaNombre" runat="server"></b>
+          </span>  
+        </div>
+        <div id="navbar" align="center">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i>
+                  <span id="spnUsuario" runat="server" class="span-usuario"></span>
+                  <br />
+                  <span id="spnRol" runat="server" class="span-rol"></span>
+                </i>  
+                <i id="iuser" class="fa fa-user fa-fw"></i>  
+                <i id="icaret" class="fa fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-user">
+                <li><a href="frmCambioClave.aspx"><i class="fa fa-user fa-fw"></i> Cambio Clave</a></li>
+                <li class="divider"></li>
+                <li><a href="../Default.aspx?Close=1"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesi&oacute;n</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <nav class="navbar navbar-default navbar-fixed-top sidebar" role="navigation" style="overflow-y: auto;">
+	    <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+		        <span class="sr-only">Menú</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+		      </button>
+          <div class="menuHeader">
+            <img src="../img/logolc.png" alt="" class="img-logo" />
+            <span class="span-titulo-sistema">
+              <b id="bSistemaNombreMin" runat="server"></b>
+            </span>
+          </div>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+		      <ul class="nav navbar-nav" id="menu" runat="server" clientidmode="Static" style="display:none;"></ul>
+		    </div>
+	    </div>
+	  </nav>
+  <div class="container-fluid">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="dialogo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-danger ">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;</button>
+          <h4 class="modal-title" id="myModalLabel">
+            <asp:Label ID="lblDialogTitulo" runat="server" /></h4>
+        </div>
+        <div class="modal-body">
+          <asp:Label ID="lblDialogMsg" runat="server" /></div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal fade bs-example-modal-lg" id="modalFinSesion" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-danger">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="H1">
+            Fin de Sesi&oacute;n</h4>
+        </div>
+        <div class="modal-body">
+          Su sesi&oacute;n ha caducado, vuelva a ingresar al sitio.</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="javascript: window.location = ('../Default.aspx')">
+            Volver</button></div>
+      </div>
+    </div>
+  </div>
+  <!-- login -->
+  <script src="../js/services/sLogin.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery-1.12.3.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.11.4.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery.ui.touch-punch.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery.steps.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery.validate.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery.timers.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/bootstrap-toggle.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery.dataTables.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/dataTables.bootstrap.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/dataTables.responsive.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/responsive.bootstrap.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/dataTables.buttons.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jszip.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/pdfmake.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/vfs_fonts.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/buttons.html5.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/generales.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/metisMenu.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery.filer.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/jquery.datetimepicker.full.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/Site.Master.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/bootbox/bootbox.min.js?v=<%=scriptVersion %>" type="text/javascript"></script>
+  <script src="../js/loadingoverlay/src/loadingoverlay.min.js?v=<%=scriptVersion %>"
+    type="text/javascript"></script>
+  </form>
+</html>

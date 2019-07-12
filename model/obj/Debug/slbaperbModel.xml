@@ -1,0 +1,245 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+slbaperbModel
+</name>
+</assembly>
+<members>
+<member name="M:slbaperbModel.StrMappingConverter.fromMappingToString(System.String)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:slbaperbModel.StrMappingConverter">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.XmlHandler.translateInvalidCharacters(System.String)">
+	<summary>
+	</summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:slbaperbModel.XmlHandler">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:slbaperbModel.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:slbaperbModel.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:slbaperbModel.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="M:slbaperbModel.Tipos.oMAUSU.__IspecToModel(slbaperbDll.MAUSU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oMAUSU.__ModelToIspec">
+	<summary>
+	</summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oMAUSU.consultar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oMAUSU.agregar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oMAUSU.modificar">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oMAUSU.borrar(System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oMAUSU.__callIspec(slbaperbDll.MAUSU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:slbaperbModel.Tipos.oMAUSU">
+	<summary>
+ 09/05/2019 pcornejo: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:slbaperbModel.Tipos.oINLI3">
+	<summary>
+ 03/06/2019 rtorreblanca: creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.toRealString(System.String)">
+	<summary>
+ '10/05/2019 creacion Pablo Cornejo 
+ </summary>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gMcpFormatTime(System.String)">
+	<summary>
+	</summary>
+	<param name="hora"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gGetStringBetween2Strings(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="source"></param>
+	<param name="firstString"></param>
+	<param name="secondString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gGetMd5(System.String)">
+	<summary>
+	</summary>
+	<param name="str"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gMcpFormatDate(System.String,slbaperbModel.Funciones.DateFormats)">
+	<summary>
+	</summary>
+	<param name="fecha"></param>
+	<param name="format"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gFormatPeriod(System.String)">
+	<summary>
+	</summary>
+	<param name="periodo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gFormatDate(System.String)">
+	<summary>
+	</summary>
+	<param name="fecha"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gSafeSubstring(System.String,System.Int32,System.Int32)">
+	<summary>
+  Substring seguro
+ </summary>
+	<param name="texto"></param>
+	<param name="indice"></param>
+	<param name="largo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gFormatTime(System.String)">
+	<summary>
+  HHMMSSMS en HH:MM:SS:MS
+ </summary>
+	<param name="hora">HHMMSSMS</param>
+	<returns>HH:MM:SS</returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gToSqlDecimal(System.String)">
+	<summary>
+  remueve separador de miles
+ remplaza separador decimal de , a .
+ </summary>
+	<param name="value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gHoraCerosIzq(System.Int32)">
+	<summary>
+	</summary>
+	<param name="hora"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gValidaRut(System.String)">
+	<summary>
+	</summary>
+	<param name="rut"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.gCleanMappingChars(System.String)">
+	<summary>
+ Reemplaza caracteres extraños del mapping.
+ </summary>
+	<param name="path"></param>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Funciones.glimpiarCadenaReporte(System.String)">
+	<summary>
+	</summary>
+	<param name="cadena"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oCONTA.#ctor(slbaperbDll.CONTA.CFType)">
+	<summary>
+	</summary>
+	<param name="miCONTAFType"></param>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oCONTA.__callIspec(slbaperbDll.CONTA)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oCONTA.consultar(System.String)">
+	<summary>
+	</summary>
+	<param name="tipreg"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oCONTA.consultar(System.String,System.String,System.String)">
+	<summary>
+	</summary>
+	<param name="tipreg"></param>
+	<param name="tiporden"></param>
+	<param name="alfa2"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:slbaperbModel.Tipos.oCONTA">
+	<summary>
+ 08/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:slbaperbModel.Tipos.oICLIC">
+	<summary>
+ 30/05/2019 rtorreblanca: Creación.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oCMOXU.#ctor(slbaperbDll.CMOXU.CFType)">
+	<summary>
+	</summary>
+	<param name="miCMOXUCFType"></param>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oCMOXU.consultaPermisosUsuario(System.String,System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="codsis"></param>
+	<param name="rut"></param>
+	<param name="rol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:slbaperbModel.Tipos.oCMOXU.__callIspec(slbaperbDll.CMOXU)">
+	<summary>
+	</summary>
+	<param name="Ispec"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:slbaperbModel.Tipos.oCMOXU">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:slbaperbModel.Tipos.oICOLI">
+	<summary>
+ 31/05/2019 jcalderón: Creación.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

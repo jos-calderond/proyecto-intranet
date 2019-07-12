@@ -1,0 +1,17 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:43 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10SEUXRMO00000000SEG - USUARIOS X ROL          000000         YNNNYN00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71SEUXR             E71608202493554698257B512F511696549AD78CD9CBE147B57288B8C6F020AEC5A288CA0A6D7B49B492AB7309C9C8528CEFCAEE9072914C964AEBFE42A585A7D125F6D376C4704BA0664029115D1ED66C9C61B38A4194489E4BE8F111886E52497F65F942ACF04A94273A480CDF9CC6
+30RUT               SEUXR             OUTPUT    00000000A001000                           RUT USUARIO                                                 D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30MAINT             SEUXR             OUTPUT    00000000A000100                           MAINT                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30INDROLPRE         SEUXR             OUTPUT    00000000A000100                           INDICADOR ROL PREDETERMINADO                                D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30FECTER            SEUXR             OUTPUT    00000000N000800                           FECHA TERMINO                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30FECINI            SEUXR             OUTPUT    00000000N000800                           FECHA INICIO                                                D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30CODROL            SEUXR             OUTPUT    00000000N000300                           CODIGO ROL                                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+35SEGURIDAD         SEUXR             INCLUDES  0     0      *         *

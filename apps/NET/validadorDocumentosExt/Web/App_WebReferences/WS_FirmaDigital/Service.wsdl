@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ProexsiFirmaDigital/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ProexsiFirmaDigital/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ProexsiFirmaDigital/">
+      <s:element name="Consulta_FirmaDigital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoIntercambio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NombreConfiguracion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FormatoDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="archivo_xml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nomarchivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consulta_FirmaDigitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consulta_FirmaDigitalResult" type="tns:ConsultaFirmadigital" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ConsultaFirmadigital">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="WS_Respuesta" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="WS_Mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WS_Documento" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidarDirectorio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Institucion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sistema" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipDoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarDirectorioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidarDirectorioResult" type="tns:Configuracion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Configuracion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="WS_Respuesta" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="WS_Codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WS_Institucion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WS_Sistema" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WS_TipDoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WS_Error" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CodigoValidador">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CodigoValidadorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodigoValidadorResult" type="tns:Configuracion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testConn">
+        <s:complexType />
+      </s:element>
+      <s:element name="testConnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testConnResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Consulta_FirmaDigitalSoapIn">
+    <wsdl:part name="parameters" element="tns:Consulta_FirmaDigital" />
+  </wsdl:message>
+  <wsdl:message name="Consulta_FirmaDigitalSoapOut">
+    <wsdl:part name="parameters" element="tns:Consulta_FirmaDigitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidarDirectorioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarDirectorio" />
+  </wsdl:message>
+  <wsdl:message name="ValidarDirectorioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarDirectorioResponse" />
+  </wsdl:message>
+  <wsdl:message name="CodigoValidadorSoapIn">
+    <wsdl:part name="parameters" element="tns:CodigoValidador" />
+  </wsdl:message>
+  <wsdl:message name="CodigoValidadorSoapOut">
+    <wsdl:part name="parameters" element="tns:CodigoValidadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="testConnSoapIn">
+    <wsdl:part name="parameters" element="tns:testConn" />
+  </wsdl:message>
+  <wsdl:message name="testConnSoapOut">
+    <wsdl:part name="parameters" element="tns:testConnResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Consulta_FirmaDigital">
+      <wsdl:input message="tns:Consulta_FirmaDigitalSoapIn" />
+      <wsdl:output message="tns:Consulta_FirmaDigitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarDirectorio">
+      <wsdl:input message="tns:ValidarDirectorioSoapIn" />
+      <wsdl:output message="tns:ValidarDirectorioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CodigoValidador">
+      <wsdl:input message="tns:CodigoValidadorSoapIn" />
+      <wsdl:output message="tns:CodigoValidadorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testConn">
+      <wsdl:input message="tns:testConnSoapIn" />
+      <wsdl:output message="tns:testConnSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Consulta_FirmaDigital">
+      <soap:operation soapAction="http://ProexsiFirmaDigital/Consulta_FirmaDigital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarDirectorio">
+      <soap:operation soapAction="http://ProexsiFirmaDigital/ValidarDirectorio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CodigoValidador">
+      <soap:operation soapAction="http://ProexsiFirmaDigital/CodigoValidador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testConn">
+      <soap:operation soapAction="http://ProexsiFirmaDigital/testConn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Consulta_FirmaDigital">
+      <soap12:operation soapAction="http://ProexsiFirmaDigital/Consulta_FirmaDigital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarDirectorio">
+      <soap12:operation soapAction="http://ProexsiFirmaDigital/ValidarDirectorio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CodigoValidador">
+      <soap12:operation soapAction="http://ProexsiFirmaDigital/CodigoValidador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testConn">
+      <soap12:operation soapAction="http://ProexsiFirmaDigital/testConn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:60591/Ws_FirmaDigital/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:60591/Ws_FirmaDigital/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

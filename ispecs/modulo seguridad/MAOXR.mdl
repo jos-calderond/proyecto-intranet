@@ -1,0 +1,239 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:10 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10MAOXRMI00000000MANTENEDOR OPCIONES X ROL     000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000500050019 Y
+71MAOXR             A7DA98BFF929F647B4DAAEB8D4E74BD4E2497E9A2C20E24FA3599B4E3B6984760D0FE2D34032384695420F05906915B08C8890C356712547B71875C4F432655D7D99645C75D9064A9C40A97AF0658C18568D40B68891074788F67632D6F8DF9EA60F9B392FD5814689C538B5BF14916B
+90MAOXR             ------------------------------------------------------------------------------  0000400278 NNNN N                    000NNNNNNN01
+90MAOXR             OPCION:                                                                         0000301307 NNNN N                    000NNNNNNN01
+90MAOXR             ROL:                                                                            0000300204 NNNN N                    000NNNNNNN01
+90MAOXR             MANTENEDOR DE OPCIONES POR ROL                                                  0000202830 NNNN N                    000NNNNNNN01
+90MAOXR             CODUSU:                                                                         0000106207 NNNN N                    000NNNNNNN01
+30MENJ35            MAOXR             INQUIRY   00000000A003500                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0002400043
+30ACCION            MAOXR             DEFAULT   00000000A000100                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500077
+30DESCRIP           MAOXR             INQUIRY   00000000A005000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000500008
+30CODOPC            MAOXR             DEFAULT   00000000N000300                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000500002
+30CODOPC-B          MAOXR             DEFAULT   00000000N000300                           CODIGO OPCION                                               D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000300021
+30CODROL            MAOXR             DEFAULT   00000000N000300                           CODIGO ROL                                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000300007
+30CODUSU            MAOXR             DEFAULT   00000000A001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100069
+30MANT              MAOXR             DEFAULT   00000000A000300                           ACCION                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100031
+30MAOXR             LOG-SEOXR         INSERT
+48SD-CODOPC         MAOXR             0003N00(0)                                                                                                                                            CODIGO OPCION
+48SD-CODROL         MAOXR             0003N00(0)                                                                                                                                            CODIGO ROL
+42MAOXRDW; GLB.COPY    =   (1)                                                                                  N
+42MAOXR    MV; (INQ)           MANT                                                                             N
+42MAOXR    MV; SD-CODOPC       CODOPC-B                                                                         N
+42MAOXR    MV; SD-CODROL       CODROL                                                                           N
+42MAOXREND;                                                                                                     N
+42MAOXR                                                                                                         N
+42MAOXRMV; GD-CF-NO       MENJ35                                                                                N
+42MAOXR                                                                                                         N
+42MAOXRDW; CODROL  =   GLB.ZEROS                                                                                N
+42MAOXREE;                                                                                                      N
+42MAOXR                                                                                                         N
+42MAOXRDT; GROUP SEOXR-SE1 (CODROL) FROM (CODOPC-B) SERIAL                                                      N
+42MAOXR    MV; GD-CF-SI            MENJ35                                                                       N
+42MAOXR    BK;                                                                                                  N
+42MAOXREND;                                                                                                     N
+42MAOXR                                                                                                         N
+42MAOXRDW; MENJ35 =  GD-CF-NO                                                                                   N
+42MAOXREE;                                                                                                      N
+42MAOXR                                                                                                         N
+42MAOXRMV; SEOXR.CODOPC    CODOPC                                                                               N
+42MAOXR                                                                                                         N
+42MAOXRDT; EVERY SEOPC-SE1 (CODOPC)                                                                             N
+42MAOXR    MV; SEOPC.DESCRIP       DESCRIP                                                                      N
+42MAOXR    BK;                                                                                                  N
+42MAOXREND;                                                                                                     N
+43MAOXRDW; MANT    NOT =   (INQ) AND                                                                            N
+43MAOXRDW; MANT    NOT =   (CHG) AND                                                                            N
+43MAOXRDW; MANT    NOT =   (DEL) AND                                                                            N
+43MAOXRDW; MANT    NOT =   (ADD)                                                                                N
+43MAOXR    ME; ERROR GD-ERR-MANT                                                                                N
+43MAOXREE;                                                                                                      N
+43MAOXR                                                                                                         N
+43MAOXRDW; GLB.COPY    =   (1)                                                                                  N
+43MAOXR    MV; CODOPC-B       SD-CODOPC                                                                         N
+43MAOXR    MV; CODROL         SD-CODROL                                                                         N
+43MAOXREND;                                                                                                     N
+43MAOXR                                                                                                         N
+43MAOXRDW; CODROL     =   GLB.ZEROS                                                                             N
+43MAOXR    ME; ERROR ( DEBE INGRESAR CODIGO ROL)                                                                N
+43MAOXREE;                                                                                                      N
+43MAOXR                                                                                                         N
+43MAOXRDW; MANT    =   (CHG) OR                                                                                 N
+43MAOXRDW; MANT    =   (ADD)                                                                                    N
+43MAOXR    DT; EVERY SEROL-SE1 (CODROL)                                                                         N
+43MAOXR        BK;                                                                                              N
+43MAOXR    END;                                                                                                 N
+43MAOXR                                                                                                         N
+43MAOXR    DW; GLB.STATUS  NOT =   GLB.SPACES                                                                   N
+43MAOXR        ME; ERROR ( CODIGO DE ROL NO EXISTE)                                                             N
+43MAOXR    EE;                                                                                                  N
+43MAOXR                                                                                                         N
+43MAOXR    DW; CODOPC  NOT =   GLB.ZEROS                                                                        N
+43MAOXR        DW; ACCION = GLB.SPACES                                                                          N
+43MAOXR        EE;                                                                                              N
+43MAOXR                                                                                                         N
+43MAOXR        DW; ACCION  NOT =   (A) AND                                                                      N
+43MAOXR        DW; ACCION  NOT =   (D)                                                                          N
+43MAOXR            ME; ERROR ( ACCION DEBE SER A O D)                                                           N
+43MAOXR        EE;                                                                                              N
+43MAOXR                                                                                                         N
+43MAOXR        DT; EVERY SEOPC-SE1 (CODOPC)                                                                     N
+43MAOXR            BK;                                                                                          N
+43MAOXR        END;                                                                                             N
+43MAOXR                                                                                                         N
+43MAOXR        DW; GLB.STATUS  NOT =   GLB.SPACES                                                               N
+43MAOXR            ME; ERROR ( CODIGO DE OPCION NO EXISTE)                                                      N
+43MAOXR        EE;                                                                                              N
+43MAOXR                                                                                                         N
+43MAOXR        DW; ACCION  =   (A)                                                                              N
+43MAOXR            DT; EVERY SEOXR-SE1 (CODROL CODOPC)                                                          N
+43MAOXR                BK;                                                                                      N
+43MAOXR            END;                                                                                         N
+43MAOXR                                                                                                         N
+43MAOXR            DW; GLB.STATUS  =   GLB.SPACES                                                               N
+43MAOXR                ME; CODOPC ( OPCION YA ASOCIADA AL ROL)                                                  N
+43MAOXR            EE;                                                                                          N
+43MAOXR        END;                                                                                             N
+43MAOXR                                                                                                         N
+43MAOXR        DW; ACCION  =   (D)                                                                              N
+43MAOXR            DT; EVERY SEOXR-SE1 (CODROL CODOPC)                                                          N
+43MAOXR                BK;                                                                                      N
+43MAOXR            END;                                                                                         N
+43MAOXR                                                                                                         N
+43MAOXR            DW; GLB.STATUS  NOT =   GLB.SPACES                                                           N
+43MAOXR                ME; CODOPC ( OPCION NO ASOCIADA AL ROL)                                                  N
+43MAOXR            EE;                                                                                          N
+43MAOXR        END;                                                                                             N
+43MAOXR    END;                                                                                                 N
+43MAOXREND;                                                                                                     N
+41MAOXR             00DW; MANT    =   (INQ)                                                                                    N
+41MAOXR             00    ::SALIR LG                                                                                           N
+41MAOXR             00EE;                                                                                                      N
+41MAOXR             00                                                                                                         N
+41MAOXR             00DW; MANT    =   (ADD)                                                                                    N
+41MAOXR             00    DW; ACCION  =   (A)                                                                                  N
+41MAOXR             00                                                                                                         N
+41MAOXR             00        :MV; CODROL      GD-COD10                                                                        N
+41MAOXR             00        :INS; DEL-CEROS                                                                                  N
+41MAOXR             00        : MV; GD-COD10    GD-LOG-ID1                                                                     N
+41MAOXR             00                                                                                                         N
+41MAOXR             00        :MV; CODOPC      GD-COD10                                                                        N
+41MAOXR             00        :INS; DEL-CEROS                                                                                  N
+41MAOXR             00        : MV; GD-COD10    GD-LOG-ID2                                                                     N
+41MAOXR             00                                                                                                         N
+41MAOXR             00        AUTO.ENTRY; SEOXR                                                                                N
+41MAOXR             00            AU; CODOPC          CODOPC                                                                   N
+41MAOXR             00            AU; CODROL          CODROL                                                                   N
+41MAOXR             00        AUTO;WRITE                                                                                       N
+41MAOXR             00                                                                                                         N
+41MAOXR             00        ::AUIDTORIA                                                                                      N
+41MAOXR             00        MV;GLB.SPACES      GD-LOG                                                                        N
+41MAOXR             00        MV;CODUSU          GD-LOG-CODUSU                                                                 N
+41MAOXR             00        MV;(ADD)           GD-LOG-ACCION                                                                 N
+41MAOXR             00        MV;(SEOXR)         GD-LOG-ESTRU                                                                  N
+41MAOXR             00        MV;(NUEVO)         GD-LOG-TIPOREG                                                                N
+41MAOXR             00        INS;LOG-SEOXR                                                   Y                                N
+41MAOXR             00    END;                                                                                                 N
+41MAOXR             00ELSE;                                                                                                    N
+41MAOXR             00    DW; MANT    =   (CHG)                                                                                N
+41MAOXR             00        DW; ACCION  =   (A)                                                                              N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            :MV; CODROL      GD-COD10                                                                    N
+41MAOXR             00            :INS; DEL-CEROS                                                                              N
+41MAOXR             00            : MV; GD-COD10    GD-LOG-ID1                                                                 N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            :MV; CODOPC      GD-COD10                                                                    N
+41MAOXR             00            :INS; DEL-CEROS                                                                              N
+41MAOXR             00            : MV; GD-COD10    GD-LOG-ID2                                                                 N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            AUTO.ENTRY; SEOXR                                                                            N
+41MAOXR             00                AU; CODOPC          CODOPC                                                               N
+41MAOXR             00                AU; CODROL          CODROL                                                               N
+41MAOXR             00            AUTO;WRITE                                                                                   N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            ::AUIDTORIA                                                                                  N
+41MAOXR             00            MV;GLB.SPACES      GD-LOG                                                                    N
+41MAOXR             00            MV;CODUSU          GD-LOG-CODUSU                                                             N
+41MAOXR             00            MV;(ADD)           GD-LOG-ACCION                                                             N
+41MAOXR             00            MV;(SEOXR)         GD-LOG-ESTRU                                                              N
+41MAOXR             00            MV;(NUEVO)         GD-LOG-TIPOREG                                                            N
+41MAOXR             00            INS;LOG-SEOXR                                               Y                                N
+41MAOXR             00                                                                                                         N
+41MAOXR             00        END;                                                                                             N
+41MAOXR             00                                                                                                         N
+41MAOXR             00        DW; ACCION  =   (D)                                                                              N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            :MV; CODROL      GD-COD10                                                                    N
+41MAOXR             00            :INS; DEL-CEROS                                                                              N
+41MAOXR             00            : MV; GD-COD10    GD-LOG-ID1                                                                 N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            :MV; CODOPC      GD-COD10                                                                    N
+41MAOXR             00            :INS; DEL-CEROS                                                                              N
+41MAOXR             00            : MV; GD-COD10    GD-LOG-ID2                                                                 N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            DT; EVERY SEOXR-SE1 (CODROL CODOPC)                                                          N
+41MAOXR             00                BK;                                                                                      N
+41MAOXR             00            END;                                                                                         N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            :: AUDITORIA ANTES DEL CAMBIO                                                                N
+41MAOXR             00            MV;GLB.SPACES      GD-LOG                                                                    N
+41MAOXR             00            MV;CODUSU          GD-LOG-CODUSU                                                             N
+41MAOXR             00            MV;(DEL)           GD-LOG-ACCION                                                             N
+41MAOXR             00            MV;(SEOXR)         GD-LOG-ESTRU                                                              N
+41MAOXR             00            MV;(ANTER)         GD-LOG-TIPOREG                                                            N
+41MAOXR             00            INS;LOG-SEOXR                                               Y                                N
+41MAOXR             00                                                                                                         N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            FL; (D)             SEOXR.MAINT                                                              N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            ::AUIDTORIA POST CAMBIO                                                                      N
+41MAOXR             00            MV;(SEOXR)         GD-LOG-ESTRU                                                              N
+41MAOXR             00            MV;(NUEVO)         GD-LOG-TIPOREG                                                            N
+41MAOXR             00            INS;LOG-SEOXR                                               Y                                N
+41MAOXR             00                                                                                                         N
+41MAOXR             00        END;                                                                                             N
+41MAOXR             00    END;                                                                                                 N
+41MAOXR             00                                                                                                         N
+41MAOXR             00    DW; MANT    =   (DEL)                                                                                N
+41MAOXR             00        DT; GROUP SEOXR-SE1 (CODROL) FROM (GLB.ZEROS)                                                    N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            :MV; CODROL      GD-COD10                                                                    N
+41MAOXR             00            :INS; DEL-CEROS                                                                              N
+41MAOXR             00            : MV; GD-COD10    GD-LOG-ID1                                                                 N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            :MV; CODOPC      GD-COD10                                                                    N
+41MAOXR             00            :INS; DEL-CEROS                                                                              N
+41MAOXR             00            : MV; GD-COD10    GD-LOG-ID2                                                                 N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            DT; EVERY SEOXR-SE1 (CODROL CODOPC)                                                          N
+41MAOXR             00                BK;                                                                                      N
+41MAOXR             00            END;                                                                                         N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            :: AUDITORIA ANTES DEL CAMBIO                                                                N
+41MAOXR             00            MV;GLB.SPACES      GD-LOG                                                                    N
+41MAOXR             00            MV;CODUSU          GD-LOG-CODUSU                                                             N
+41MAOXR             00            MV;(DEL)           GD-LOG-ACCION                                                             N
+41MAOXR             00            MV;(SEOXR)         GD-LOG-ESTRU                                                              N
+41MAOXR             00            MV;(ANTER)         GD-LOG-TIPOREG                                                            N
+41MAOXR             00            INS;LOG-SEOXR                                               Y                                N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            FL; (D)             SEOXR.MAINT                                                              N
+41MAOXR             00                                                                                                         N
+41MAOXR             00                                                                                                         N
+41MAOXR             00            ::AUIDTORIA POST CAMBIO                                                                      N
+41MAOXR             00            MV;(SEOXR)         GD-LOG-ESTRU                                                              N
+41MAOXR             00            MV;(NUEVO)         GD-LOG-TIPOREG                                                            N
+41MAOXR             00            INS;LOG-SEOXR                                               Y                                N
+41MAOXR             00                                                                                                         N
+41MAOXR             00                                                                                                         N
+41MAOXR             00        END;                                                                                             N
+41MAOXR             00    END;                                                                                                 N
+41MAOXR             00END;                                                                                                     N
+35SEGURIDAD         MAOXR             INCLUDES  0     0      *         *

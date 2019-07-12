@@ -1,0 +1,178 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:21 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10MAUXRMI00000000MANTENEDOR USUARIO X ROL      000000         YNNNNY00000          PRIMARY   DEFAULT   NYN000                    NNEW         N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71MAUXR             378CEB2D5959F4498A0DB2ED455A053AF49A92901D82AD498ED176D1B236E5290D0FE2D34032384695420F05906915B0476C3FD5216C864796BB5535B59839127D99645C75D9064A9C40A97AF0658C18568D40B68891074788F67632D6F8DF9EA60F9B392FD5814689C538B5BF14916B
+90MAUXR             FECHA TER:                                                                      0000800210 NNNN N                    000NNNNNNN01
+90MAUXR             FECHA INI:                                                                      0000700210 NNNN N                    000NNNNNNN01
+90MAUXR             ------------------------------------------------------------------------------  0000500278 NNNN N                    000NNNNNNN01
+90MAUXR             INDICADOR ROL PREDETERMINADO:                                                   0000403729 NNNN N                    000NNNNNNN01
+90MAUXR             ROL:                                                                            0000402004 NNNN N                    000NNNNNNN01
+90MAUXR             RUT:                                                                            0000400204 NNNN N                    000NNNNNNN01
+90MAUXR             MANTENEDOR DE ROL DE USUARIO                                                    0000202528 NNNN N                    000NNNNNNN01
+90MAUXR             CODUSU:                                                                         0000106007 NNNN N                    000NNNNNNN01
+30FECTER            MAUXR             DEFAULT   00000000N000800                           FECHA DE TERMINIO                                           D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000800013
+30FECINI            MAUXR             DEFAULT   00000000N000800                           FECHA INICIO                                                D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000700013
+30INDROLPRE         MAUXR             DEFAULT   00000000A000100                           INDICADOR ROL PREDETERMINADO                                D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400067
+30CODROL            MAUXR             DEFAULT   00000000N000300                           CODIGO ROL                                                  D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000400025
+30RUT               MAUXR             DEFAULT   00000000A001000                           RUT USUARIO                                                 D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000400007
+30CODUSU            MAUXR             DEFAULT   00000000A001000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100068
+30MANT              MAUXR             DEFAULT   00000000A000300                           ACCION                                                      D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000100031
+30MAUXR             LOG-SEUXR         INSERT
+48SD-CODROL         MAUXR             0003N00(0)                                                                                                                                            CODIGO ROL
+48SD-FLAG           MAUXR             0001A00( )                                                                                                                                                                                                          D
+48SD-RUT            MAUXR             0010A00( )                                                                                                                                            RUT USUARIO                                                   D
+42MAUXRMV; (INQ)           MANT                                                                                 N
+42MAUXRMV; SD-RUT          RUT                                                                                  N
+42MAUXRMV; SD-CODROL       CODROL                                                                               N
+42MAUXR                                                                                                         N
+42MAUXRDT; EVERY SEUXR-SE1 (RUT CODROL)                                                                         N
+42MAUXR    BK;                                                                                                  N
+42MAUXREND;                                                                                                     N
+42MAUXR                                                                                                         N
+42MAUXRDW; GLB.STATUS NOT = GLB.SPACES                                                                          N
+42MAUXREE;                                                                                                      N
+42MAUXR                                                                                                         N
+42MAUXRMV; SEUXR.CODROL     CODROL                                                                              N
+42MAUXRMV; SEUXR.FECINI     FECINI                                                                              N
+42MAUXRMV; SEUXR.FECTER     FECTER                                                                              N
+42MAUXRMV; SEUXR.RUT        RUT                                                                                 N
+42MAUXRMV; SEUXR.INDROLPRE  INDROLPRE                                                                           N
+43MAUXRDW; MANT    NOT =   (INQ) AND                                                                            N
+43MAUXRDW; MANT    NOT =   (CHG) AND                                                                            N
+43MAUXRDW; MANT    NOT =   (DEL) AND                                                                            N
+43MAUXRDW; MANT    NOT =   (ADD)                                                                                N
+43MAUXR    ME; ERROR GD-ERR-MANT                                                                                N
+43MAUXREE;                                                                                                      N
+43MAUXR                                                                                                         N
+43MAUXRMV; RUT            SD-RUT                                                                                N
+43MAUXRMV; CODROL         SD-CODROL                                                                             N
+43MAUXR                                                                                                         N
+43MAUXRDW; CODROL     =   GLB.ZEROS                                                                             N
+43MAUXR    ME; ERROR ( DEBE INGRESAR CODIGO ROL)                                                                N
+43MAUXREE;                                                                                                      N
+43MAUXR                                                                                                         N
+43MAUXRDW; RUT     =   GLB.ZEROS                                                                                N
+43MAUXR    ME; ERROR ( DEBE INGRESAR RUT USUARIO)                                                               N
+43MAUXREE;                                                                                                      N
+43MAUXR                                                                                                         N
+43MAUXRDT; EVERY SEUXR-SE1 (RUT CODROL)                                                                         N
+43MAUXR    BK;                                                                                                  N
+43MAUXREND;                                                                                                     N
+43MAUXR                                                                                                         N
+43MAUXRDW; GLB.STATUS  NOT =   GLB.SPACES AND                                                                   N
+43MAUXRDW; MANT        NOT =   (ADD)                                                                            N
+43MAUXR    ME; ERROR GD-ERR-REG-NO                                                                              N
+43MAUXREE;                                                                                                      N
+43MAUXR                                                                                                         N
+43MAUXRDW; GLB.STATUS  =   GLB.SPACES AND                                                                       N
+43MAUXRDW; MANT        =   (ADD)                                                                                N
+43MAUXR    ME; ERROR GD-ERR-REG-SI                                                                              N
+43MAUXREE;                                                                                                      N
+43MAUXR                                                                                                         N
+43MAUXRDW; MANT    =   (CHG) OR                                                                                 N
+43MAUXRDW; MANT    =   (ADD)                                                                                    N
+43MAUXR    DT; EVERY SEROL-SE1 (CODROL)                                                                         N
+43MAUXR        BK;                                                                                              N
+43MAUXR    END;                                                                                                 N
+43MAUXR                                                                                                         N
+43MAUXR    DW; GLB.STATUS  NOT =   GLB.SPACES                                                                   N
+43MAUXR        ME; ERROR ( ROL NO EXISTE)                                                                       N
+43MAUXR    EE;                                                                                                  N
+43MAUXR                                                                                                         N
+43MAUXR    DT; EVERY SEUSU-SE1 (RUT)                                                                            N
+43MAUXR        BK;                                                                                              N
+43MAUXR    END;                                                                                                 N
+43MAUXR                                                                                                         N
+43MAUXR    DW; GLB.STATUS  NOT =   GLB.SPACES                                                                   N
+43MAUXR        ME; ERROR ( USUARIO NO EXISTE)                                                                   N
+43MAUXR    EE;                                                                                                  N
+43MAUXR                                                                                                         N
+43MAUXREND;                                                                                                     N
+41MAUXR             00DW; MANT    =   (INQ)                                                                                    N
+41MAUXR             00    ::SALIR LG                                                                                           N
+41MAUXR             00EE;                                                                                                      N
+41MAUXR             00                                                                                                         N
+41MAUXR             00DW; MANT = (CHG) OR                                                                                      N
+41MAUXR             00DW; MANT = (DEL)                                                                                         N
+41MAUXR             00    DT;EVERY SEUXR-SE1 (RUT CODROL)                                                                      N
+41MAUXR             00       BK;                                                                                               N
+41MAUXR             00    END;                                                                                                 N
+41MAUXR             00END;                                                                                                     N
+41MAUXR             00                                                                                                         N
+41MAUXR             00::AUIDTORIA ANTES DEL CAMBIO                                                                             N
+41MAUXR             00MV;GLB.SPACES      GD-LOG                                                                                N
+41MAUXR             00DW; MANT = (CHG) OR                                                                                      N
+41MAUXR             00DW; MANT = (DEL)                                                                                         N
+41MAUXR             00    MV;CODUSU          GD-LOG-CODUSU                                                                     N
+41MAUXR             00    MV;MANT            GD-LOG-ACCION                                                                     N
+41MAUXR             00    MV;(SEUXR)         GD-LOG-ESTRU                                                                      N
+41MAUXR             00    MV;(ANTER)         GD-LOG-TIPOREG                                                                    N
+41MAUXR             00    INS;LOG-SEUXR                                                       Y                                N
+41MAUXR             00END;                                                                                                     N
+41MAUXR             00                                                                                                         N
+41MAUXR             00                                                                                                         N
+41MAUXR             00DW; MANT    =   (ADD)                                                                                    N
+41MAUXR             00                                                                                                         N
+41MAUXR             00    DW; INDROLPRE = (S)                                                                                  N
+41MAUXR             00        DT; GROUP SEUXR-SE1 (RUT) FROM (GLB.ZEROS)                                                       N
+41MAUXR             00            DW;SEUXR.INDROLPRE NOT = (N)                                                                 N
+41MAUXR             00                FL; (N)             SEUXR.INDROLPRE                                                      N
+41MAUXR             00            END;                                                                                         N
+41MAUXR             00        END;                                                                                             N
+41MAUXR             00    END;                                                                                                 N
+41MAUXR             00                                                                                                         N
+41MAUXR             00    DT; EVERY SEUXR-SE1 (RUT CODROL)                                                                     N
+41MAUXR             00        BK;                                                                                              N
+41MAUXR             00    END;                                                                                                 N
+41MAUXR             00                                                                                                         N
+41MAUXR             00    AUTO.ENTRY; SEUXR                                                                                    N
+41MAUXR             00        AU; CODROL          CODROL                                                                       N
+41MAUXR             00        AU; FECINI          FECINI                                                                       N
+41MAUXR             00        AU; FECTER          FECTER                                                                       N
+41MAUXR             00        AU; RUT             RUT                                                                          N
+41MAUXR             00        AU; INDROLPRE       INDROLPRE                                                                    N
+41MAUXR             00    AUTO;WRITE                                                                                           N
+41MAUXR             00                                                                                                         N
+41MAUXR             00ELSE;                                                                                                    N
+41MAUXR             00    DW; MANT    =   (CHG)                                                                                N
+41MAUXR             00                                                                                                         N
+41MAUXR             00        DW; INDROLPRE = (S)                                                                              N
+41MAUXR             00            DT; GROUP SEUXR-SE1 (RUT) FROM (GLB.ZEROS)                                                   N
+41MAUXR             00                DW;SEUXR.INDROLPRE NOT = (N)                                                             N
+41MAUXR             00                    FL; (N)             SEUXR.INDROLPRE                                                  N
+41MAUXR             00                END;                                                                                     N
+41MAUXR             00            END;                                                                                         N
+41MAUXR             00        END;                                                                                             N
+41MAUXR             00                                                                                                         N
+41MAUXR             00        DT; EVERY SEUXR-SE1 (RUT CODROL)                                                                 N
+41MAUXR             00            BK;                                                                                          N
+41MAUXR             00        END;                                                                                             N
+41MAUXR             00                                                                                                         N
+41MAUXR             00        FL; FECINI          SEUXR.FECINI                                                                 N
+41MAUXR             00        FL; FECTER          SEUXR.FECTER                                                                 N
+41MAUXR             00        FL; INDROLPRE       SEUXR.INDROLPRE                                                              N
+41MAUXR             00    END;                                                                                                 N
+41MAUXR             00                                                                                                         N
+41MAUXR             00    DW; MANT    =   (DEL)                                                                                N
+41MAUXR             00                                                                                                         N
+41MAUXR             00        DT; EVERY SEUXR-SE1 (RUT CODROL)                                                                 N
+41MAUXR             00            BK;                                                                                          N
+41MAUXR             00        END;                                                                                             N
+41MAUXR             00        FL; (D)     SEUXR.MAINT                                                                          N
+41MAUXR             00    END;                                                                                                 N
+41MAUXR             00END;                                                                                                     N
+41MAUXR             00                                                                                                         N
+41MAUXR             00::AUDITORIA POST CAMBIOS                                                                                 N
+41MAUXR             00                                                                                                         N
+41MAUXR             00MV;CODUSU          GD-LOG-CODUSU                                                                         N
+41MAUXR             00MV;MANT            GD-LOG-ACCION                                                                         N
+41MAUXR             00MV;(SEUXR)         GD-LOG-ESTRU                                                                          N
+41MAUXR             00MV;(NUEVO)         GD-LOG-TIPOREG                                                                        N
+41MAUXR             00INS;LOG-SEUXR                                                           Y                                N
+35SEGURIDAD         MAUXR             INCLUDES  0     0      *         *

@@ -1,0 +1,18 @@
+
+     UNISYS Confidential
+
+     Created by croman on 13-03-2019, 16:57:28 by Enterprise Application Developer 003.003.3310.2
+
+00DELCSOCB  DELCSOCB  SISTEMA_SOCIAL                P3.12.00Y.NYYNDISCO02   INI000 NNN    NNNNN          UK01YENGLISH   10241900                    NYN                  0000EWNNNNNNNN003.003.3310.2 NDY Y N0000LYNNN NNN0000NNN0200004NN
+03DELCSOCB  00YNRVNSNYYYLNNVRVNYY 167772150       N000                                NN0000N0000000000000000000000000000000016777215YUUUN
+26DELCSOCB                                                                                                                                              Y              N
+10SEOPCMO00000000SEG - OPCION                  000000         YNNNYN00000          PRIMARY   DEFAULT   NYN000                    NN           N000                                NN0000N00000000000000000000000000000000YNNNNNNNYYYN                            DNN   NDNYYN01920000000000000 Y
+71SEOPC             2E8454FFFCF70D4F89877F45DFE038D7228E3337BB322B40A597EA0B657BC3AAC798522AF8E28140813CA4F425A068340A6D889BAEB64E4B8B515EB9F4B328DCA4CEF6D9191AFC44A35BBB11D4F8DC3E7E095B9834B49C43A03A81CF7D4F5BF58E80E2265EFF7E42BE3F381E59EFB90B
+30ORDEN             SEOPC             OUTPUT    00000000N000300                           ORDEN OPCION EN CATEGORIA                                   D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30MAINT             SEOPC             OUTPUT    00000000A000100                           MAINT                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30ICONO             SEOPC             OUTPUT    00000000A002000                                                                                       D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30FORMU             SEOPC             OUTPUT    00000000A007000                           FORMULARIO OPCION                                           D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30DESCRIP           SEOPC             OUTPUT    00000000A005000                           DESCRIPCION OPCION                                          D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000NDN0000000000
+30CODPADRE          SEOPC             OUTPUT    00000000N000300                           CODIGO OPCION PADRE                                         D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+30CODIGO            SEOPC             OUTPUT    00000000N000300                           CODIGO OPCCION                                              D DD NNNN N                    000NNNNNNNN      DDNNNNN                  D                                    0000N N0000000000
+35SEGURIDAD         SEOPC             INCLUDES  0     0      *         *

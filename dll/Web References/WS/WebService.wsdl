@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CMOXR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODOPC_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODROL_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODSIS" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CMOXRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CMOXRResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CMOXU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODOPC_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ROL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODSIS" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CMOXUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CMOXUResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MAOPM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ACCESO1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACCESO2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACCESO3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACCESO4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MANT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OPCION1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OPCION2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OPCION3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OPCION4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OPCIONB" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SISTEMA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MAOPMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MAOPMResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MAUSU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="APEMAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APEPAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CORREO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESTADO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECPASS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INICIALES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MANT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOMBRES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PASS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODSIS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UNIDAD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MAUSUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MAUSUResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CONTA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPORDEN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPREG_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ALFA01_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ALFA02_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODIGO_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DESCRI_B" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CONTAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CONTAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MTUSU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="APEMAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APEPAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MANT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOMBRES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OPCION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PASSCONFIR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PASSNEW" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MTUSUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MTUSUResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CTURO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODOPC_C" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODROL_C" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODSIS_C" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU_C" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CTUROResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CTUROResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IANTP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="USUARIO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TELEFO_FUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COMUNA_FUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACLARA_FUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NCALLE_FUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CALLE_FUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MAIL_PER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOMBRE_CON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TELEFO_CON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACTIVO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MEDPAG" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CTACTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODBANCO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VAMENU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MANT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IANTPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IANTPResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IIMTU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PRIORIDAD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OPCION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MANT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PASSMAIL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IIMTUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IIMTUResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IICTU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRIORIDA_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IICTUResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IICTUResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IMROL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODOPCB" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODROL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODSIS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MANT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PERMISO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IMROLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IMROLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICFUN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICFUNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ICFUNResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IMESL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ANO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ANOINI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IMESLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IMESLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICLIC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECINI" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VAMENU" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICLICResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ICLICResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INLI3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VALPROMCOT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VALPROMLIQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VALRECIBIR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VALSUBSID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VALCOTIZA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ANO_AVISO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUM_AVISO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODAREA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECANTECED" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FEC_AVISO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECANT_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPLIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESTLIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECRECLIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECTER_CON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECINI_CON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRI_AMP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OBSER2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OBSER1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PERREMUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VALREMB" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OBSERV_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESPECI" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DIAGNO_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECRESL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODDIAG" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPSUB" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODEST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACLARAM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CORRELA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RESSSAL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SERVSAL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COMUNAM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMEROM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CALLEM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTHIJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTMED" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APEMATM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FONOMED" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APEPATM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOMMED_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MESCON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECNAC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECACC_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NRODIA_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMLIC_DV" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMLIC_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPMED" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACLARA_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FONO_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COMUNA_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NCALLE_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CALLE_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODOCU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACTLAB" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODJORNADA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODLICEN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECEMI" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECINI_LIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VACLICF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VASILIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VAANLIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VAULLIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VAMENU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MANT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="INLI3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="INLI3Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICOLI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ANO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COD_D" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COD_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="COD_H" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DIA_TRABAJ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPOLIQ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICOLIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ICOLIResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CTUSM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PRIORIDA_B" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODUSU" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CTUSMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CTUSMResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CINLI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INDMAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMSEC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MONTO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECENV" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECING" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMLIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECLIC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VAMENU" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MAINT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CINLIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CINLIResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICOL2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMBAS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPBAS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PROCESO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ANO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VAMENU" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICOL2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ICOL2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICOL4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMBAS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPBAS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PROCESO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MES" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ANO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="INST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VAMENU" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICOL4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ICOL4Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICERW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ORQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CARGOJEFE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMCERT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOMBREJEF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CARGOFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MESREM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ANOREM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SEXO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APEMATFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APEPATFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOMBREFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ANO_C" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SECMOV_C" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SECUN_C" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUTFUN_C" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPOCER_C" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MANT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VARIOS_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODAREA_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESTA_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TCONTRA_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPOCON_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPPAGO_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CCOSTO_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FTERCON_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FINICON_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SEC_MOV_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SEC_CON_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GCCOSTO_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPOFUN_P" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FINGCORP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FINGSER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NUMBIE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VARIOS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CENTROCOST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPOFUN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPO_PAGO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TCONTRA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ESTA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPOCON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECTERCON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FECINICON" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ICERWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ICERWResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CMOXRSoapIn">
+    <wsdl:part name="parameters" element="tns:CMOXR" />
+  </wsdl:message>
+  <wsdl:message name="CMOXRSoapOut">
+    <wsdl:part name="parameters" element="tns:CMOXRResponse" />
+  </wsdl:message>
+  <wsdl:message name="CMOXUSoapIn">
+    <wsdl:part name="parameters" element="tns:CMOXU" />
+  </wsdl:message>
+  <wsdl:message name="CMOXUSoapOut">
+    <wsdl:part name="parameters" element="tns:CMOXUResponse" />
+  </wsdl:message>
+  <wsdl:message name="MAOPMSoapIn">
+    <wsdl:part name="parameters" element="tns:MAOPM" />
+  </wsdl:message>
+  <wsdl:message name="MAOPMSoapOut">
+    <wsdl:part name="parameters" element="tns:MAOPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="MAUSUSoapIn">
+    <wsdl:part name="parameters" element="tns:MAUSU" />
+  </wsdl:message>
+  <wsdl:message name="MAUSUSoapOut">
+    <wsdl:part name="parameters" element="tns:MAUSUResponse" />
+  </wsdl:message>
+  <wsdl:message name="CONTASoapIn">
+    <wsdl:part name="parameters" element="tns:CONTA" />
+  </wsdl:message>
+  <wsdl:message name="CONTASoapOut">
+    <wsdl:part name="parameters" element="tns:CONTAResponse" />
+  </wsdl:message>
+  <wsdl:message name="MTUSUSoapIn">
+    <wsdl:part name="parameters" element="tns:MTUSU" />
+  </wsdl:message>
+  <wsdl:message name="MTUSUSoapOut">
+    <wsdl:part name="parameters" element="tns:MTUSUResponse" />
+  </wsdl:message>
+  <wsdl:message name="CTUROSoapIn">
+    <wsdl:part name="parameters" element="tns:CTURO" />
+  </wsdl:message>
+  <wsdl:message name="CTUROSoapOut">
+    <wsdl:part name="parameters" element="tns:CTUROResponse" />
+  </wsdl:message>
+  <wsdl:message name="IANTPSoapIn">
+    <wsdl:part name="parameters" element="tns:IANTP" />
+  </wsdl:message>
+  <wsdl:message name="IANTPSoapOut">
+    <wsdl:part name="parameters" element="tns:IANTPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIMTUSoapIn">
+    <wsdl:part name="parameters" element="tns:IIMTU" />
+  </wsdl:message>
+  <wsdl:message name="IIMTUSoapOut">
+    <wsdl:part name="parameters" element="tns:IIMTUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IICTUSoapIn">
+    <wsdl:part name="parameters" element="tns:IICTU" />
+  </wsdl:message>
+  <wsdl:message name="IICTUSoapOut">
+    <wsdl:part name="parameters" element="tns:IICTUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMROLSoapIn">
+    <wsdl:part name="parameters" element="tns:IMROL" />
+  </wsdl:message>
+  <wsdl:message name="IMROLSoapOut">
+    <wsdl:part name="parameters" element="tns:IMROLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICFUNSoapIn">
+    <wsdl:part name="parameters" element="tns:ICFUN" />
+  </wsdl:message>
+  <wsdl:message name="ICFUNSoapOut">
+    <wsdl:part name="parameters" element="tns:ICFUNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMESLSoapIn">
+    <wsdl:part name="parameters" element="tns:IMESL" />
+  </wsdl:message>
+  <wsdl:message name="IMESLSoapOut">
+    <wsdl:part name="parameters" element="tns:IMESLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICLICSoapIn">
+    <wsdl:part name="parameters" element="tns:ICLIC" />
+  </wsdl:message>
+  <wsdl:message name="ICLICSoapOut">
+    <wsdl:part name="parameters" element="tns:ICLICResponse" />
+  </wsdl:message>
+  <wsdl:message name="INLI3SoapIn">
+    <wsdl:part name="parameters" element="tns:INLI3" />
+  </wsdl:message>
+  <wsdl:message name="INLI3SoapOut">
+    <wsdl:part name="parameters" element="tns:INLI3Response" />
+  </wsdl:message>
+  <wsdl:message name="ICOLISoapIn">
+    <wsdl:part name="parameters" element="tns:ICOLI" />
+  </wsdl:message>
+  <wsdl:message name="ICOLISoapOut">
+    <wsdl:part name="parameters" element="tns:ICOLIResponse" />
+  </wsdl:message>
+  <wsdl:message name="CTUSMSoapIn">
+    <wsdl:part name="parameters" element="tns:CTUSM" />
+  </wsdl:message>
+  <wsdl:message name="CTUSMSoapOut">
+    <wsdl:part name="parameters" element="tns:CTUSMResponse" />
+  </wsdl:message>
+  <wsdl:message name="CINLISoapIn">
+    <wsdl:part name="parameters" element="tns:CINLI" />
+  </wsdl:message>
+  <wsdl:message name="CINLISoapOut">
+    <wsdl:part name="parameters" element="tns:CINLIResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICOL2SoapIn">
+    <wsdl:part name="parameters" element="tns:ICOL2" />
+  </wsdl:message>
+  <wsdl:message name="ICOL2SoapOut">
+    <wsdl:part name="parameters" element="tns:ICOL2Response" />
+  </wsdl:message>
+  <wsdl:message name="ICOL4SoapIn">
+    <wsdl:part name="parameters" element="tns:ICOL4" />
+  </wsdl:message>
+  <wsdl:message name="ICOL4SoapOut">
+    <wsdl:part name="parameters" element="tns:ICOL4Response" />
+  </wsdl:message>
+  <wsdl:message name="ICERWSoapIn">
+    <wsdl:part name="parameters" element="tns:ICERW" />
+  </wsdl:message>
+  <wsdl:message name="ICERWSoapOut">
+    <wsdl:part name="parameters" element="tns:ICERWResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="CMOXR">
+      <wsdl:input message="tns:CMOXRSoapIn" />
+      <wsdl:output message="tns:CMOXRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CMOXU">
+      <wsdl:input message="tns:CMOXUSoapIn" />
+      <wsdl:output message="tns:CMOXUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MAOPM">
+      <wsdl:input message="tns:MAOPMSoapIn" />
+      <wsdl:output message="tns:MAOPMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MAUSU">
+      <wsdl:input message="tns:MAUSUSoapIn" />
+      <wsdl:output message="tns:MAUSUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CONTA">
+      <wsdl:input message="tns:CONTASoapIn" />
+      <wsdl:output message="tns:CONTASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MTUSU">
+      <wsdl:input message="tns:MTUSUSoapIn" />
+      <wsdl:output message="tns:MTUSUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CTURO">
+      <wsdl:input message="tns:CTUROSoapIn" />
+      <wsdl:output message="tns:CTUROSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IANTP">
+      <wsdl:input message="tns:IANTPSoapIn" />
+      <wsdl:output message="tns:IANTPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IIMTU">
+      <wsdl:input message="tns:IIMTUSoapIn" />
+      <wsdl:output message="tns:IIMTUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IICTU">
+      <wsdl:input message="tns:IICTUSoapIn" />
+      <wsdl:output message="tns:IICTUSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IMROL">
+      <wsdl:input message="tns:IMROLSoapIn" />
+      <wsdl:output message="tns:IMROLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ICFUN">
+      <wsdl:input message="tns:ICFUNSoapIn" />
+      <wsdl:output message="tns:ICFUNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IMESL">
+      <wsdl:input message="tns:IMESLSoapIn" />
+      <wsdl:output message="tns:IMESLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ICLIC">
+      <wsdl:input message="tns:ICLICSoapIn" />
+      <wsdl:output message="tns:ICLICSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="INLI3">
+      <wsdl:input message="tns:INLI3SoapIn" />
+      <wsdl:output message="tns:INLI3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ICOLI">
+      <wsdl:input message="tns:ICOLISoapIn" />
+      <wsdl:output message="tns:ICOLISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CTUSM">
+      <wsdl:input message="tns:CTUSMSoapIn" />
+      <wsdl:output message="tns:CTUSMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CINLI">
+      <wsdl:input message="tns:CINLISoapIn" />
+      <wsdl:output message="tns:CINLISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ICOL2">
+      <wsdl:input message="tns:ICOL2SoapIn" />
+      <wsdl:output message="tns:ICOL2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ICOL4">
+      <wsdl:input message="tns:ICOL4SoapIn" />
+      <wsdl:output message="tns:ICOL4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ICERW">
+      <wsdl:input message="tns:ICERWSoapIn" />
+      <wsdl:output message="tns:ICERWSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CMOXR">
+      <soap:operation soapAction="http://tempuri.org/CMOXR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CMOXU">
+      <soap:operation soapAction="http://tempuri.org/CMOXU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MAOPM">
+      <soap:operation soapAction="http://tempuri.org/MAOPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MAUSU">
+      <soap:operation soapAction="http://tempuri.org/MAUSU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CONTA">
+      <soap:operation soapAction="http://tempuri.org/CONTA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MTUSU">
+      <soap:operation soapAction="http://tempuri.org/MTUSU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTURO">
+      <soap:operation soapAction="http://tempuri.org/CTURO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IANTP">
+      <soap:operation soapAction="http://tempuri.org/IANTP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IIMTU">
+      <soap:operation soapAction="http://tempuri.org/IIMTU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IICTU">
+      <soap:operation soapAction="http://tempuri.org/IICTU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IMROL">
+      <soap:operation soapAction="http://tempuri.org/IMROL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICFUN">
+      <soap:operation soapAction="http://tempuri.org/ICFUN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IMESL">
+      <soap:operation soapAction="http://tempuri.org/IMESL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICLIC">
+      <soap:operation soapAction="http://tempuri.org/ICLIC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INLI3">
+      <soap:operation soapAction="http://tempuri.org/INLI3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICOLI">
+      <soap:operation soapAction="http://tempuri.org/ICOLI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTUSM">
+      <soap:operation soapAction="http://tempuri.org/CTUSM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CINLI">
+      <soap:operation soapAction="http://tempuri.org/CINLI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICOL2">
+      <soap:operation soapAction="http://tempuri.org/ICOL2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICOL4">
+      <soap:operation soapAction="http://tempuri.org/ICOL4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICERW">
+      <soap:operation soapAction="http://tempuri.org/ICERW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CMOXR">
+      <soap12:operation soapAction="http://tempuri.org/CMOXR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CMOXU">
+      <soap12:operation soapAction="http://tempuri.org/CMOXU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MAOPM">
+      <soap12:operation soapAction="http://tempuri.org/MAOPM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MAUSU">
+      <soap12:operation soapAction="http://tempuri.org/MAUSU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CONTA">
+      <soap12:operation soapAction="http://tempuri.org/CONTA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MTUSU">
+      <soap12:operation soapAction="http://tempuri.org/MTUSU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTURO">
+      <soap12:operation soapAction="http://tempuri.org/CTURO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IANTP">
+      <soap12:operation soapAction="http://tempuri.org/IANTP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IIMTU">
+      <soap12:operation soapAction="http://tempuri.org/IIMTU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IICTU">
+      <soap12:operation soapAction="http://tempuri.org/IICTU" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IMROL">
+      <soap12:operation soapAction="http://tempuri.org/IMROL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICFUN">
+      <soap12:operation soapAction="http://tempuri.org/ICFUN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IMESL">
+      <soap12:operation soapAction="http://tempuri.org/IMESL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICLIC">
+      <soap12:operation soapAction="http://tempuri.org/ICLIC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INLI3">
+      <soap12:operation soapAction="http://tempuri.org/INLI3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICOLI">
+      <soap12:operation soapAction="http://tempuri.org/ICOLI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CTUSM">
+      <soap12:operation soapAction="http://tempuri.org/CTUSM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CINLI">
+      <soap12:operation soapAction="http://tempuri.org/CINLI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICOL2">
+      <soap12:operation soapAction="http://tempuri.org/ICOL2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICOL4">
+      <soap12:operation soapAction="http://tempuri.org/ICOL4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ICERW">
+      <soap12:operation soapAction="http://tempuri.org/ICERW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:51738/ws/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:51738/ws/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,228 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body,html{
+  height: 100%;
+  padding-top: 50px;
+}
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+
+/*
+ * Main content
+ */
+
+nav.sidebar, .main{
+  -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+  transition: margin 200ms ease-out;
+}
+
+.main{
+  padding: 0px 10px 0 10px;
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+    position: absolute;
+    width: calc(100% - 40px); 
+    margin-left: 40px;
+    margin-top: 0px;
+    float: right;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1330px) {
+
+  .main{
+      width: calc(100% - 200px);
+      margin-left: 200px;
+      margin-top: 0px;
+      z-index: 2;
+  }
+}
+
+.main .page-header {
+  margin-top: 0px;
+}
+
+/*
+ * Sidebar
+ */
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+  color: #CCC;
+  background-color: transparent;
+}
+
+nav:hover .forAnimate {
+  opacity: 1;
+}
+
+section {
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+
+  nav.sidebar:hover + .main{
+      margin-left: 200px;
+      z-index: 3;
+  }
+
+  nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+
+  nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+      text-align: center;
+      width: 100%;
+      margin-left: 0px;
+  }
+
+  nav.sidebar a{
+      padding-right: 13px;
+  }
+
+  nav.sidebar .navbar-nav > li:first-child{
+      border-top: 1px #e5e5e5 solid;
+  }
+
+  nav.sidebar .navbar-nav > li{
+      border-bottom: 1px #e5e5e5 solid;
+  }
+
+  nav.sidebar .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+
+  nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+      padding: 0 0px 0 0px;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+      color: #777;
+  }
+
+  nav.sidebar{
+      width: 200px;
+      height: 100%;
+      margin-left: -160px;
+      margin-top: 50px;
+      float: left;
+      margin-bottom: 0px;
+  }
+
+  nav.sidebar li {
+      width: 100%;
+  }
+
+  nav.sidebar:hover{
+      margin-left: 0px;
+  }
+
+  .forAnimate{
+      opacity: 0;
+  }
+}
+ 
+@media (min-width: 1330px) {
+
+  nav.sidebar{
+      margin-left: 0px;
+      margin-top: 50px;
+      float: left;
+  }
+
+  nav.sidebar .forAnimate{
+      opacity: 1;
+  }
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+.sidebar .fa.arrow:before {
+    content: "\f104";
+}
+
+.sidebar .active>a>.fa.arrow:before {
+    content: "\f107";
+}
+
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+    border-bottom: 0!important;
+}
+
+.sidebar .nav-second-level li a {
+    padding-left: 37px;
+}
+
+.sidebar .nav-third-level li a {
+    padding-left: 52px;
+}
